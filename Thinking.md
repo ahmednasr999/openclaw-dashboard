@@ -128,4 +128,36 @@ _(Dump thoughts here without editing)_
 
 ---
 
+## 🚀 WORKFLOW AUTOMATION IDEAS
+
+### CV Creation Pipeline (2026-02-10)
+**Current state:** Built CV-tailor skill, job-tracker skill, Google Sheets integration
+
+**Goal:** Make CV creation smarter, more automated, less cost
+
+**Current workflow:**
+1. Send LinkedIn job link + JD
+2. I parse requirements
+3. Match to profile
+4. Generate tailored CV
+5. Add to Google Sheet (Row X)
+6. GitHub commit
+
+**Desired improvements:**
+- [ ] Auto-parse JD without manual input
+- [ ] ATS score optimization built-in
+- [ ] Batch process multiple jobs at once
+- [ ] Lower API costs (use local models where possible)
+- [ ] Auto-generate cover letters in same flow
+- [ ] Smart prioritization (auto-rank jobs by fit)
+
+**Constraints:**
+- No new API purchases
+- Maximize existing infrastructure
+- Keep quality high
+
+**Next step:** Review current cost structure, identify optimization points
+
+---
+
 *This is your thinking space. No structure required. Add, delete, modify as needed.*
