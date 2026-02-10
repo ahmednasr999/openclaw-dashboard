@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post 002B - Clean Infographic</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #1a1a1a;
+        }
+        .post-container {
+            width: 1200px;
+            height: 627px;
+            background: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+        }
+        .left-panel {
+            width: 45%;
+            background: #304254;
+            padding: 60px 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo {
+            width: 40px;
+            height: 40px;
+            background: #ffffff;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #304254;
+            font-size: 18px;
+        }
+        .brand-text {
+            color: #ffffff;
+        }
+        .brand-text .name {
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .brand-text .tagline {
+            font-size: 11px;
+            opacity: 0.7;
+        }
+        .left-content {
+            color: #ffffff;
+        }
+        .left-content h2 {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        .left-content .highlight {
+            color: #ff6b35;
+        }
+        .left-content p {
+            font-size: 16px;
+            opacity: 0.8;
+            line-height: 1.6;
+        }
+        .right-panel {
+            width: 55%;
+            padding: 60px 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .infographic-title {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #304254;
+            margin-bottom: 40px;
+            font-weight: 600;
+        }
+        .insight-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e8e8e8;
+        }
+        .insight-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        .insight-number {
+            width: 36px;
+            height: 36px;
+            background: #ff6b35;
+            color: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 16px;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        .insight-text h3 {
+            font-size: 18px;
+            color: #304254;
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
+        .insight-text p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="post-container">
+        <div class="left-panel">
+            <div class="logo-area">
+                <div class="logo">AN</div>
+                <div class="brand-text">
+                    <div class="name">Ahmed Nasr</div>
+                    <div class="tagline">AN & Co. Consulting</div>
+                </div>
+            </div>
+            <div class="left-content">
+                <h2>What Western Consultants <span class="highlight">Get Wrong</span> About Saudi Transformation</h2>
+                <p>Three critical misconceptions that derail transformation initiatives in the Kingdom.</p>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="infographic-title">Common Mistakes</div>
+            <div class="insight-item">
+                <div class="insight-number">1</div>
+                <div class="insight-text">
+                    <h3>Ignoring Cultural Velocity</h3>
+                    <p>Applying Western timelines without accounting for local decision-making rhythms</p>
+                </div>
+            </div>
+            <div class="insight-item">
+                <div class="insight-number">2</div>
+                <div class="insight-text">
+                    <h3>Top-Down Only Approach</h3>
+                    <p>Missing the crucial stakeholder ecosystem beyond the C-suite</p>
+                </div>
+            </div>
+            <div class="insight-item">
+                <div class="insight-number">3</div>
+                <div class="insight-text">
+                    <h3>One-Size Frameworks</h3>
+                    <p>Importing playbooks without local context adaptation</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post 002A - Bold Statement</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #1a1a1a;
+        }
+        .post-container {
+            width: 1200px;
+            height: 627px;
+            background: linear-gradient(135deg, #304254 0%, #1a2530 100%);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 60px 80px;
+        }
+        .accent-bar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(90deg, #ff6b35 0%, #ff8c5a 50%, #ff6b35 100%);
+        }
+        .quote-mark {
+            position: absolute;
+            top: 40px;
+            right: 60px;
+            font-size: 200px;
+            color: rgba(255, 107, 53, 0.15);
+            font-family: Georgia, serif;
+            line-height: 1;
+            font-weight: bold;
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+        .topic {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #ff6b35;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        .headline {
+            font-size: 52px;
+            font-weight: 800;
+            color: #ffffff;
+            line-height: 1.15;
+            margin-bottom: 25px;
+        }
+        .headline span {
+            color: #ff6b35;
+        }
+        .subtext {
+            font-size: 22px;
+            color: rgba(255, 255, 255, 0.75);
+            line-height: 1.5;
+            max-width: 800px;
+        }
+        .footer {
+            position: absolute;
+            bottom: 50px;
+            left: 80px;
+            right: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .logo {
+            width: 45px;
+            height: 45px;
+            background: #ffffff;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #304254;
+            font-size: 20px;
+        }
+        .brand-name {
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .brand-tagline {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 12px;
+        }
+        .cta {
+            font-size: 13px;
+            color: #ff6b35;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="post-container">
+        <div class="accent-bar"></div>
+        <div class="quote-mark">"</div>
+        <div class="content">
+            <div class="topic">Saudi Transformation</div>
+            <h1 class="headline">What Western Consultants<br><span>Get Wrong</span></h1>
+            <p class="subtext">The counter-intuitive truths about transformation in the Kingdom that nobody talks about.</p>
+        </div>
+        <div class="footer">
+            <div class="logo-area">
+                <div class="logo">AN</div>
+                <div>
+                    <div class="brand-name">Ahmed Nasr</div>
+                    <div class="brand-tagline">AN & Co. Consulting</div>
+                </div>
+            </div>
+            <div class="cta">Read the full insight →</div>
+        </div>
+    </div>
+</body>
+</html>

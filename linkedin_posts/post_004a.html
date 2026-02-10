@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post 004A - Map/Regional Visual</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #1a1a1a;
+        }
+        .post-container {
+            width: 1200px;
+            height: 627px;
+            background: #0f172a;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            padding: 60px;
+        }
+        .content-section {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            z-index: 2;
+        }
+        .topic {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #ff6b35;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        .headline {
+            font-size: 48px;
+            font-weight: 800;
+            color: #ffffff;
+            line-height: 1.1;
+            margin-bottom: 25px;
+        }
+        .headline span {
+            color: #ff6b35;
+        }
+        .subtext {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.6;
+            margin-bottom: 35px;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .stat-box {
+            background: rgba(48, 66, 84, 0.5);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 3px solid #ff6b35;
+        }
+        .stat-number {
+            font-size: 32px;
+            font-weight: 800;
+            color: #ffffff;
+        }
+        .stat-label {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.6);
+            margin-top: 5px;
+        }
+        .map-section {
+            width: 55%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .map-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .region-circle {
+            position: absolute;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            font-weight: 700;
+            box-shadow: 0 0 40px rgba(255, 107, 53, 0.3);
+        }
+        .region-1 {
+            width: 140px;
+            height: 140px;
+            background: linear-gradient(135deg, #304254, #1a2530);
+            border: 3px solid #ff6b35;
+            top: 20%;
+            left: 25%;
+        }
+        .region-2 {
+            width: 160px;
+            height: 160px;
+            background: linear-gradient(135deg, #304254, #1a2530);
+            border: 3px solid #ff8c5a;
+            top: 40%;
+            right: 15%;
+        }
+        .region-3 {
+            width: 130px;
+            height: 130px;
+            background: linear-gradient(135deg, #304254, #1a2530);
+            border: 3px solid #ffa07a;
+            bottom: 15%;
+            left: 35%;
+        }
+        .region-name {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .region-count {
+            font-size: 28px;
+            font-weight: 800;
+            margin-top: 5px;
+        }
+        .connection-line {
+            position: absolute;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #ff6b35, transparent);
+            opacity: 0.5;
+        }
+        .line-1 {
+            width: 150px;
+            top: 35%;
+            left: 35%;
+            transform: rotate(25deg);
+        }
+        .line-2 {
+            width: 180px;
+            top: 55%;
+            left: 40%;
+            transform: rotate(-35deg);
+        }
+        .line-3 {
+            width: 120px;
+            bottom: 35%;
+            left: 45%;
+            transform: rotate(15deg);
+        }
+        .logo-footer {
+            position: absolute;
+            bottom: 40px;
+            left: 60px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo-box {
+            width: 35px;
+            height: 35px;
+            background: #ffffff;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #304254;
+            font-size: 14px;
+        }
+        .logo-text {
+            color: #ffffff;
+        }
+        .logo-text .name {
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .logo-text .tagline {
+            font-size: 11px;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="post-container">
+        <div class="content-section">
+            <div class="topic">Leadership</div>
+            <h1 class="headline">Managing 40+ People<br><span>Across 3 Countries</span></h1>
+            <p class="subtext">The reality of multi-regional operations: time zones, cultures, and the art of async communication.</p>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-number">40+</div>
+                    <div class="stat-label">Team Members</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Countries</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">7</div>
+                    <div class="stat-label">Time Zones</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">1</div>
+                    <div class="stat-label">Mission</div>
+                </div>
+            </div>
+        </div>
+        <div class="map-section">
+            <div class="map-container">
+                <div class="connection-line line-1"></div>
+                <div class="connection-line line-2"></div>
+                <div class="connection-line line-3"></div>
+                <div class="region-circle region-1">
+                    <div class="region-name">Saudi</div>
+                    <div class="region-count">18</div>
+                </div>
+                <div class="region-circle region-2">
+                    <div class="region-name">UAE</div>
+                    <div class="region-count">15</div>
+                </div>
+                <div class="region-circle region-3">
+                    <div class="region-name">Egypt</div>
+                    <div class="region-count">12</div>
+                </div>
+            </div>
+        </div>
+        <div class="logo-footer">
+            <div class="logo-box">AN</div>
+            <div class="logo-text">
+                <div class="name">Ahmed Nasr</div>
+                <div class="tagline">AN & Co. Consulting</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AN & Co. LinkedIn Post</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Libre Franklin', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* LinkedIn Post Container - 1200 x 627px */
+        .linkedin-post {
+            width: 1200px;
+            height: 627px;
+            background: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header with Logo */
+        .header {
+            padding: 32px 48px 20px 48px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .logo {
+            width: 56px;
+            height: 56px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .brand-name {
+            font-size: 22px;
+            font-weight: 300;
+            color: #000000;
+            letter-spacing: -0.5px;
+        }
+
+        .brand-tagline {
+            font-size: 11px;
+            font-weight: 300;
+            color: #304254;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 4px;
+        }
+
+        /* Main Content */
+        .content {
+            flex: 1;
+            padding: 36px 48px 40px 48px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* Warning/Time Stamp */
+        .timestamp {
+            font-size: 15px;
+            font-weight: 600;
+            color: #304254;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 28px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .warning-icon {
+            font-size: 18px;
+        }
+
+        /* Main Headline */
+        .main-text {
+            font-size: 38px;
+            font-weight: 700;
+            color: #000000;
+            line-height: 1.35;
+            margin-bottom: 28px;
+            letter-spacing: -0.3px;
+        }
+
+        .main-text .highlight {
+            color: #304254;
+        }
+
+        .main-text .metric {
+            font-size: 52px;
+            font-weight: 700;
+            color: #000000;
+            display: block;
+            margin: 8px 0;
+            letter-spacing: -1px;
+        }
+
+        /* Quote/Punchline */
+        .punchline {
+            font-size: 22px;
+            font-weight: 300;
+            color: #304254;
+            line-height: 1.5;
+            margin-bottom: 32px;
+            padding-left: 20px;
+            border-left: 3px solid #304254;
+        }
+
+        .punchline strong {
+            font-weight: 600;
+            color: #000000;
+        }
+
+        /* Author Signature */
+        .signature {
+            margin-top: auto;
+            padding-top: 24px;
+            border-top: 1px solid #e5e5e5;
+        }
+
+        .author-name {
+            font-size: 18px;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 6px;
+        }
+
+        .author-credentials {
+            font-size: 13px;
+            font-weight: 300;
+            color: #304254;
+            letter-spacing: 0.5px;
+        }
+
+        /* Decorative Elements */
+        .accent-line {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 6px;
+            height: 100%;
+            background: #304254;
+        }
+
+        .corner-accent {
+            position: absolute;
+            bottom: 48px;
+            right: 48px;
+            width: 80px;
+            height: 80px;
+            border-right: 2px solid #304254;
+            border-bottom: 2px solid #304254;
+            opacity: 0.3;
+        }
+
+        /* Export Button (not part of image) */
+        .export-controls {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .export-btn {
+            background: #304254;
+            color: white;
+            border: none;
+            padding: 12px 32px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 4px;
+            font-family: 'Libre Franklin', sans-serif;
+        }
+
+        .export-btn:hover {
+            background: #1a2a38;
+        }
+    </style>
+</head>
+<body>
+    <div class="linkedin-post" id="post">
+        <div class="accent-line"></div>
+        
+        <div class="header">
+            <div class="logo-container">
+                <img src="https://ahmednasr999.github.io/openclaw-dashboard/logo_ahmed_nasr.jpg" alt="AN & Co." class="logo">
+                <div>
+                    <div class="brand-name">AN & Co.</div>
+                    <div class="brand-tagline">Consulting</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="timestamp">
+                <span class="warning-icon">⚠️</span>
+                2:47 AM — SYSTEM LOCKUP
+            </div>
+
+            <div class="main-text">
+                <span class="metric">30,000</span>
+                orders stuck in queue.<br>
+                Engineers panicking.<br>
+                Customers furious.
+            </div>
+
+            <div class="punchline">
+                This is what scale actually looks like.<br>
+                <strong>Not dashboards. Physics.</strong>
+            </div>
+
+            <div class="signature">
+                <div class="author-name">— Ahmed Nasr</div>
+                <div class="author-credentials">Ex-Talabat • 30K → 7M Daily Orders • Transformation Leader</div>
+            </div>
+        </div>
+
+        <div class="corner-accent"></div>
+    </div>
+
+    <script>
+        // Auto-capture for PNG export
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('LinkedIn Post Design Ready');
+            console.log('Dimensions: 1200 x 627px');
+            console.log('Brand Colors: #ffffff (white), #000000 (black), #304254 (slate blue)');
+        });
+    </script>
+</body>
+</html>

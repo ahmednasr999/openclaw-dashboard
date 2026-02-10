@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post 005B - Timeline/Story Style</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #1a1a1a;
+        }
+        .post-container {
+            width: 1200px;
+            height: 627px;
+            background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+            position: relative;
+            overflow: hidden;
+            padding: 60px 70px;
+        }
+        .header {
+            margin-bottom: 50px;
+        }
+        .topic {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #ff6b35;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        .headline {
+            font-size: 38px;
+            font-weight: 800;
+            color: #304254;
+            line-height: 1.2;
+        }
+        .headline span {
+            color: #ff6b35;
+        }
+        .timeline {
+            display: flex;
+            position: relative;
+            padding-top: 20px;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 45px;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #304254 0%, #ff6b35 100%);
+            border-radius: 2px;
+        }
+        .timeline-item {
+            flex: 1;
+            position: relative;
+            padding-right: 30px;
+        }
+        .timeline-item:last-child {
+            padding-right: 0;
+        }
+        .timeline-dot {
+            width: 24px;
+            height: 24px;
+            background: #ffffff;
+            border: 4px solid #304254;
+            border-radius: 50%;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 20px;
+        }
+        .timeline-item.highlight .timeline-dot {
+            border-color: #ff6b35;
+            background: #ff6b35;
+        }
+        .timeline-date {
+            font-size: 13px;
+            color: #888;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        .timeline-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #304254;
+            margin-bottom: 10px;
+        }
+        .timeline-desc {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.5;
+        }
+        .timeline-metric {
+            font-size: 28px;
+            font-weight: 800;
+            color: #304254;
+            margin-top: 10px;
+        }
+        .timeline-item.highlight .timeline-metric {
+            color: #ff6b35;
+        }
+        .footer {
+            position: absolute;
+            bottom: 40px;
+            left: 70px;
+            right: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 30px;
+            border-top: 1px solid #e0e0e0;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo-box {
+            width: 35px;
+            height: 35px;
+            background: #304254;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .logo-text {
+            color: #304254;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .cta {
+            font-size: 13px;
+            color: #ff6b35;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="post-container">
+        <div class="header">
+            <div class="topic">The Journey</div>
+            <h1 class="headline">233x Scale: <span>The Reality Nobody Talks About</span></h1>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Month 0</div>
+                <div class="timeline-title">The Beginning</div>
+                <div class="timeline-desc">Small team, big dreams</div>
+                <div class="timeline-metric">2</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Month 6</div>
+                <div class="timeline-title">First Breakthrough</div>
+                <div class="timeline-desc">Found product-market fit</div>
+                <div class="timeline-metric">12x</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Month 12</div>
+                <div class="timeline-title">Rapid Expansion</div>
+                <div class="timeline-desc">Scaling systems & team</div>
+                <div class="timeline-metric">87x</div>
+            </div>
+            <div class="timeline-item highlight">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Month 18</div>
+                <div class="timeline-title">Full Scale</div>
+                <div class="timeline-desc">Operating at capacity</div>
+                <div class="timeline-metric">233x</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Today</div>
+                <div class="timeline-title">Sustainable Growth</div>
+                <div class="timeline-desc">Optimized operations</div>
+                <div class="timeline-metric">466</div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="logo-area">
+                <div class="logo-box">AN</div>
+                <div class="logo-text">Ahmed Nasr | AN & Co. Consulting</div>
+            </div>
+            <div class="cta">The behind-the-scenes story →</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post 006B - Clean Quote Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #1a1a1a;
+        }
+        .post-container {
+            width: 1200px;
+            height: 627px;
+            background: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 80px 100px;
+        }
+        .accent-bar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(90deg, #304254 0%, #ff6b35 100%);
+        }
+        .quote-mark {
+            position: absolute;
+            top: 50px;
+            left: 60px;
+            font-size: 120px;
+            color: rgba(48, 66, 84, 0.08);
+            font-family: Georgia, serif;
+            line-height: 1;
+            font-weight: bold;
+        }
+        .topic {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #ff6b35;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        .quote-text {
+            font-size: 42px;
+            font-weight: 700;
+            color: #304254;
+            line-height: 1.3;
+            margin-bottom: 50px;
+        }
+        .quote-text span {
+            color: #ff6b35;
+        }
+        .context-box {
+            background: #f8f9fa;
+            border-left: 4px solid #ff6b35;
+            padding: 25px 30px;
+            margin-bottom: 50px;
+        }
+        .context-box p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+        }
+        .author-row {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .author-avatar {
+            width: 55px;
+            height: 55px;
+            background: linear-gradient(135deg, #304254, #ff6b35);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .author-info {
+            flex: 1;
+        }
+        .author-name {
+            font-size: 18px;
+            font-weight: 700;
+            color: #304254;
+        }
+        .author-title {
+            font-size: 14px;
+            color: #888;
+        }
+        .metric-badge {
+            background: #304254;
+            color: #ffffff;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-align: center;
+        }
+        .metric-value {
+            font-size: 28px;
+            font-weight: 800;
+        }
+        .metric-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="post-container">
+        <div class="accent-bar"></div>
+        <div class="quote-mark">"</div>
+        <div class="topic">AI Transformation</div>
+        <p class="quote-text">95% AI adoption isn't about the <span>algorithm</span>—<br>it's about the <span>people</span> using it.</p>
+        <div class="context-box">
+            <p>Change management beats technical complexity. Organizations don't fail at AI because their models aren't good enough—they fail because they forget that technology is only as effective as the humans operating it.</p>
+        </div>
+        <div class="author-row">
+            <div class="author-avatar">AN</div>
+            <div class="author-info">
+                <div class="author-name">Ahmed Nasr</div>
+                <div class="author-title">CEO, AN & Co. Consulting</div>
+            </div>
+            <div class="metric-badge">
+                <div class="metric-value">95%</div>
+                <div class="metric-label">Adoption</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

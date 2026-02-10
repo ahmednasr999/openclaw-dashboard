@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post 006A - Human + Tech Balance</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #1a1a1a;
+        }
+        .post-container {
+            width: 1200px;
+            height: 627px;
+            background: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+        }
+        .left-panel {
+            width: 50%;
+            background: #304254;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+        .left-panel::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -50px;
+            transform: translateY(-50%);
+            width: 100px;
+            height: 100px;
+            background: #304254;
+            border-radius: 50%;
+        }
+        .topic {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #ff6b35;
+            margin-bottom: 25px;
+            font-weight: 600;
+            position: relative;
+            z-index: 1;
+        }
+        .headline {
+            font-size: 42px;
+            font-weight: 800;
+            color: #ffffff;
+            line-height: 1.15;
+            margin-bottom: 25px;
+            position: relative;
+            z-index: 1;
+        }
+        .headline span {
+            color: #ff6b35;
+        }
+        .subtext {
+            font-size: 17px;
+            color: rgba(255, 255, 255, 0.75);
+            line-height: 1.6;
+            position: relative;
+            z-index: 1;
+        }
+        .right-panel {
+            width: 50%;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .visual-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .circle-human, .circle-tech {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .circle-human {
+            background: linear-gradient(135deg, #304254 0%, #4a6075 100%);
+            color: #ffffff;
+        }
+        .circle-tech {
+            background: linear-gradient(135deg, #ff6b35 0%, #ff8c5a 100%);
+            color: #ffffff;
+        }
+        .circle-icon {
+            font-size: 36px;
+            margin-bottom: 5px;
+        }
+        .circle-label {
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .plus-sign {
+            font-size: 40px;
+            color: #304254;
+            font-weight: 300;
+        }
+        .stats-row {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 30px;
+            border-top: 1px solid #e8e8e8;
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-value {
+            font-size: 36px;
+            font-weight: 800;
+            color: #ff6b35;
+        }
+        .stat-label {
+            font-size: 13px;
+            color: #666;
+            margin-top: 5px;
+        }
+        .footer-logo {
+            position: absolute;
+            bottom: 40px;
+            left: 60px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #ffffff;
+        }
+        .footer-logo .logo-box {
+            width: 32px;
+            height: 32px;
+            background: #ffffff;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #304254;
+            font-weight: bold;
+            font-size: 13px;
+        }
+        .footer-logo .name {
+            font-weight: 600;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="post-container">
+        <div class="left-panel">
+            <div class="topic">Change Management</div>
+            <h1 class="headline">95% AI Adoption:<br><span>It's Not About</span> The Algorithm</h1>
+            <p class="subtext">The secret to successful AI implementation isn't better models—it's better change management.</p>
+            <div class="footer-logo">
+                <div class="logo-box">AN</div>
+                <div class="name">Ahmed Nasr</div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="visual-container">
+                <div class="circle-human">
+                    <div class="circle-icon">👥</div>
+                    <div class="circle-label">People</div>
+                </div>
+                <div class="plus-sign">+</div>
+                <div class="circle-tech">
+                    <div class="circle-icon">🤖</div>
+                    <div class="circle-label">Technology</div>
+                </div>
+            </div>
+            <div class="stats-row">
+                <div class="stat-item">
+                    <div class="stat-value">95%</div>
+                    <div class="stat-label">Adoption Rate</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">70%</div>
+                    <div class="stat-label">Industry Avg</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">25pp</div>
+                    <div class="stat-label">Above Average</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post 007B - Graph/Chart Visual</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #1a1a1a;
+        }
+        .post-container {
+            width: 1200px;
+            height: 627px;
+            background: #ffffff;
+            position: relative;
+            overflow: hidden;
+        }
+        .header {
+            background: #304254;
+            padding: 40px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-left {
+            color: #ffffff;
+        }
+        .topic {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #ff6b35;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .headline {
+            font-size: 32px;
+            font-weight: 700;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #ffffff;
+        }
+        .logo-box {
+            width: 36px;
+            height: 36px;
+            background: #ffffff;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #304254;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .logo-name {
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .main-content {
+            padding: 50px 60px;
+            display: flex;
+            gap: 50px;
+        }
+        .chart-section {
+            flex: 1;
+            position: relative;
+        }
+        .chart-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #304254;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .chart-container {
+            height: 280px;
+            position: relative;
+            border-left: 2px solid #e0e0e0;
+            border-bottom: 2px solid #e0e0e0;
+            padding: 20px;
+        }
+        .chart-line {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            height: 200px;
+        }
+        .chart-area {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .chart-area svg {
+            width: 100%;
+            height: 100%;
+        }
+        .chart-point {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background: #ff6b35;
+            border: 3px solid #ffffff;
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        .point-1 { bottom: 20%; left: 5%; }
+        .point-2 { bottom: 35%; left: 25%; }
+        .point-3 { bottom: 45%; left: 45%; }
+        .point-4 { bottom: 55%; left: 65%; }
+        .point-5 { bottom: 85%; left: 90%; }
+        
+        .y-labels {
+            position: absolute;
+            left: -45px;
+            top: 20px;
+            bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size: 11px;
+            color: #888;
+        }
+        .x-labels {
+            position: absolute;
+            bottom: -30px;
+            left: 20px;
+            right: 20px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 11px;
+            color: #888;
+        }
+        .insights-section {
+            width: 320px;
+        }
+        .insights-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #304254;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .insight-item {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border-left: 4px solid #ff6b35;
+        }
+        .insight-item.alt {
+            border-left-color: #304254;
+        }
+        .insight-value {
+            font-size: 28px;
+            font-weight: 800;
+            color: #304254;
+            margin-bottom: 5px;
+        }
+        .insight-label {
+            font-size: 13px;
+            color: #666;
+        }
+        .footer-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 8px;
+            background: linear-gradient(90deg, #304254 0%, #ff6b35 100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="post-container">
+        <div class="header">
+            <div class="header-left">
+                <div class="topic">Financial Impact</div>
+                <div class="headline">3x Profit Increase Through Transformation</div>
+            </div>
+            <div class="logo-area">
+                <div class="logo-box">AN</div>
+                <div class="logo-name">Ahmed Nasr</div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="chart-section">
+                <div class="chart-title">Profit Growth Trajectory</div>
+                <div class="chart-container">
+                    <div class="y-labels">
+                        <span>3x</span>
+                        <span>2x</span>
+                        <span>1x</span>
+                        <span>0</span>
+                    </div>
+                    <div class="chart-line">
+                        <div class="chart-area">
+                            <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+                                <defs>
+                                    <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#ff6b35;stop-opacity:0.3" />
+                                        <stop offset="100%" style="stop-color:#ff6b35;stop-opacity:0" />
+                                    </linearGradient>
+                                </defs>
+                                <path d="M0,80 L20,65 L40,55 L60,45 L100,15 L100,100 L0,100 Z" fill="url(#chartGradient)" />
+                                <path d="M0,80 L20,65 L40,55 L60,45 L100,15" fill="none" stroke="#ff6b35" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="chart-point point-1"></div>
+                        <div class="chart-point point-2"></div>
+                        <div class="chart-point point-3"></div>
+                        <div class="chart-point point-4"></div>
+                        <div class="chart-point point-5"></div>
+                    </div>
+                    <div class="x-labels">
+                        <span>Q1</span>
+                        <span>Q2</span>
+                        <span>Q3</span>
+                        <span>Q4</span>
+                        <span>Q6</span>
+                    </div>
+                </div>
+            </div>
+            <div class="insights-section">
+                <div class="insights-title">Key Results</div>
+                <div class="insight-item">
+                    <div class="insight-value">3x</div>
+                    <div class="insight-label">Profit Increase</div>
+                </div>
+                <div class="insight-item alt">
+                    <div class="insight-value">18 mo</div>
+                    <div class="insight-label">Implementation Period</div>
+                </div>
+                <div class="insight-item">
+                    <div class="insight-value">40%</div>
+                    <div class="insight-label">Operational Efficiency</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bar"></div>
+    </div>
+</body>
+</html>

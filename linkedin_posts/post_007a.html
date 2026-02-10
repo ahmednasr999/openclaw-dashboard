@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post 007A - Bold Metric Style</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #1a1a1a;
+        }
+        .post-container {
+            width: 1200px;
+            height: 627px;
+            background: linear-gradient(135deg, #304254 0%, #1a2530 50%, #304254 100%);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px;
+        }
+        .post-container::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 400px;
+            height: 400px;
+            background: rgba(255, 107, 53, 0.1);
+            border-radius: 50%;
+        }
+        .post-container::after {
+            content: '';
+            position: absolute;
+            bottom: -150px;
+            left: -150px;
+            width: 500px;
+            height: 500px;
+            background: rgba(255, 107, 53, 0.05);
+            border-radius: 50%;
+        }
+        .topic {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #ff6b35;
+            margin-bottom: 20px;
+            font-weight: 600;
+            position: relative;
+            z-index: 1;
+        }
+        .main-metric {
+            font-size: 200px;
+            font-weight: 900;
+            color: #ffffff;
+            line-height: 1;
+            position: relative;
+            z-index: 1;
+            text-shadow: 0 10px 50px rgba(0,0,0,0.3);
+        }
+        .main-metric span {
+            color: #ff6b35;
+        }
+        .headline {
+            font-size: 32px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.9);
+            margin-top: 10px;
+            position: relative;
+            z-index: 1;
+        }
+        .subheadline {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.6);
+            margin-top: 15px;
+            position: relative;
+            z-index: 1;
+        }
+        .results-row {
+            display: flex;
+            gap: 60px;
+            margin-top: 50px;
+            position: relative;
+            z-index: 1;
+        }
+        .result-item {
+            text-align: center;
+        }
+        .result-value {
+            font-size: 28px;
+            font-weight: 800;
+            color: #ff6b35;
+        }
+        .result-label {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.6);
+            margin-top: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .logo-footer {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            z-index: 1;
+        }
+        .logo-box {
+            width: 38px;
+            height: 38px;
+            background: #ffffff;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #304254;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .logo-text {
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="post-container">
+        <div class="topic">Business Results</div>
+        <div class="main-metric">3<span>x</span></div>
+        <div class="headline">Profit Increase Through Transformation</div>
+        <div class="subheadline">Real results from strategic consulting engagement</div>
+        <div class="results-row">
+            <div class="result-item">
+                <div class="result-value">18 months</div>
+                <div class="result-label">Timeline</div>
+            </div>
+            <div class="result-item">
+                <div class="result-value">$12M</div>
+                <div class="result-label">Revenue Impact</div>
+            </div>
+            <div class="result-item">
+                <div class="result-value">40%</div>
+                <div class="result-label">Efficiency Gain</div>
+            </div>
+        </div>
+        <div class="logo-footer">
+            <div class="logo-box">AN</div>
+            <div class="logo-text">Ahmed Nasr | AN & Co. Consulting</div>
+        </div>
+    </div>
+</body>
+</html>

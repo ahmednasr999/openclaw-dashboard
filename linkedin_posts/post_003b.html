@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post 003B - Professional Portrait Style</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #1a1a1a;
+        }
+        .post-container {
+            width: 1200px;
+            height: 627px;
+            background: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+        }
+        .content-area {
+            width: 65%;
+            padding: 70px 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .topic {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #ff6b35;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        .headline {
+            font-size: 44px;
+            font-weight: 800;
+            color: #304254;
+            line-height: 1.15;
+            margin-bottom: 30px;
+        }
+        .headline span {
+            color: #ff6b35;
+        }
+        .quote {
+            font-size: 20px;
+            color: #555;
+            line-height: 1.7;
+            font-style: italic;
+            border-left: 4px solid #304254;
+            padding-left: 25px;
+            margin-bottom: 40px;
+        }
+        .stats-row {
+            display: flex;
+            gap: 40px;
+        }
+        .stat-item {
+            text-align: left;
+        }
+        .stat-number {
+            font-size: 32px;
+            font-weight: 800;
+            color: #304254;
+        }
+        .stat-label {
+            font-size: 13px;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 5px;
+        }
+        .portrait-area {
+            width: 35%;
+            background: linear-gradient(180deg, #304254 0%, #1a2530 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            padding-bottom: 60px;
+            position: relative;
+        }
+        .portrait-area::before {
+            content: '';
+            position: absolute;
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 180px;
+            height: 180px;
+            background: linear-gradient(135deg, #ff6b35 0%, #ff8c5a 100%);
+            border-radius: 50%;
+            opacity: 0.9;
+        }
+        .portrait-area::after {
+            content: 'AN';
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 72px;
+            font-weight: 800;
+            color: #ffffff;
+        }
+        .portrait-name {
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            z-index: 1;
+        }
+        .portrait-title {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            z-index: 1;
+        }
+        .accent-line {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: #ff6b35;
+        }
+    </style>
+</head>
+<body>
+    <div class="post-container">
+        <div class="accent-line"></div>
+        <div class="content-area">
+            <div class="topic">Personal Story</div>
+            <h1 class="headline">Why I Still Code<br><span>(Sometimes)</span></h1>
+            <p class="quote">"Technical teams can smell management theory from a mile away. If you want to lead transformation, you need to understand the tools."</p>
+            <div class="stats-row">
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Years Coding</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">40+</div>
+                    <div class="stat-label">Tech Projects</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Excuses Made</div>
+                </div>
+            </div>
+        </div>
+        <div class="portrait-area">
+            <div class="portrait-name">Ahmed Nasr</div>
+            <div class="portrait-title">CEO & Founder</div>
+        </div>
+    </div>
+</body>
+</html>
