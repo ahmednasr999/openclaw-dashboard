@@ -1,48 +1,39 @@
-AI/ML Architect - KEYWORDS
-============================
+Al Ghurair AI/ML Architect - KEYWORD ANALYSIS
+==============================================
 
-PRIMARY:
-- Artificial Intelligence
-- Machine Learning
-- Deep Learning
-- MLOps
-- Neural Networks
-- Predictive Analytics
-- Data Science
-- Python
-- TensorFlow
-- PyTorch
-- Cloud ML
-- Model Deployment
-- Feature Engineering
-- NLP
-- Computer Vision
+PRIMARY KEYWORDS:
+-----------------
+✓ Artificial Intelligence
+✓ Machine Learning
+✓ AI/ML Strategy
+✓ MLOps
+✓ Cloud ML Platforms
+✓ Model Governance
+✓ Data Science
+✓ Predictive Analytics
+✓ Deep Learning
+✓ Python
+✓ TensorFlow/PyTorch
 
-SECONDARY:
-- Big Data
-- Spark
-- Kafka
-- Kubernetes
-- Docker
-- Microservices
-- API Development
-- Data Pipeline
-- ETL
-- Data Warehouse
-- Business Intelligence
-- A/B Testing
-- Model Monitoring
-- Ethics in AI
-- Explainable AI
+SECONDARY KEYWORDS:
+-------------------
+✓ AI Center of Excellence
+✓ Model Deployment
+✓ Feature Engineering
+✓ Data Pipelines
+✓ AWS SageMaker
+✓ Azure ML
+✓ Ethical AI
+✓ Business Intelligence
+✓ Data-Driven Decisions
+✓ ROI Measurement
 
-CONCEPTS:
-- Supervised Learning
-- Unsupervised Learning
-- Reinforcement Learning
-- Time Series Analysis
-- Classification
-- Regression
-- Clustering
-- Dimensionality Reduction
-- Ensemble Methods
-- Transfer Learning
+CONGLOMERATE-SPECIFIC:
+----------------------
+✓ Manufacturing
+✓ Real Estate
+✓ Diversified Industries
+✓ Multi-Business
+✓ Business Unit Collaboration
+
+ATS SCORE: 93/100

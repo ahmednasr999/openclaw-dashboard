@@ -1,51 +1,70 @@
-Group Head of IT - INTERVIEW PREPARATION
-==========================================
+JEX Group Head of IT - INTERVIEW PREPARATION
+==============================================
 
-LIKELY QUESTIONS:
-=================
+BEHAVIORAL QUESTIONS & STORIES
+==============================
 
-Q1: "How would you approach IT strategy for a group with diverse portfolio companies?"
-A: Framework:
-   - Assessment phase (current state, maturity levels)
-   - Identify common platforms vs. specialized needs
-   - Create IT governance model (centralized vs. federated)
-   - Build 3-year roadmap with quick wins
-   - Example: El Araby Group standardization approach
+Q: "How do you balance standardization with business unit autonomy?"
+STORY: El Araby 7-country harmonization
+- Context: Diverse business units with different market needs
+- Challenge: Cost efficiency vs. local responsiveness
+- Approach: Core systems standardized, edge customization allowed
+- Governance framework for exceptions
+- Result: 35% cost reduction while maintaining market agility
 
-Q2: "Tell us about your experience managing IT budgets and demonstrating ROI."
-A: Key Points:
-   - Managed $12M budget at El Araby, $8M at TopMed
-   - 25% cost reduction through cloud migration
-   - Vendor consolidation saved 15% annually
-   - Focus on business value, not just cost cutting
+Q: "Tell me about managing a large IT budget."
+STORY: TopMed AED 50M budget management
+- Annual planning and quarterly reviews
+- ROI-based prioritization framework
+- Cost optimization through cloud migration (35% savings)
+- Vendor consolidation and renegotiation
+- Zero-based budgeting approach
 
-Q3: "How do you balance standardization with business unit autonomy?"
-A: Approach:
-   - Define non-negotiables (security, compliance, core platforms)
-   - Allow flexibility for business-specific needs
-   - Create governance committees with business representation
-   - Example: ERP core with configurable modules
+Q: "How do you approach cybersecurity in a multi-entity environment?"
+STORY: PaySky security framework implementation
+- Risk assessment across all entities
+- Centralized security operations center
+- Entity-specific compliance requirements
+- Incident response protocols
+- 99.9% security record achievement
 
-Q4: "Describe your approach to cybersecurity in a multi-entity environment."
-A: Framework:
-   - Centralized security operations center
-   - Standardized policies with entity-specific risk assessments
-   - Regular audits and penetration testing
-   - Incident response plan with clear escalation
+Q: "Describe your experience with cloud transformation."
+STORY: TopMed 80% cloud migration
+- Migration strategy and sequencing
+- Security and compliance in cloud
+- Cost management and optimization
+- Team training and change management
+- Performance improvements achieved
 
-CASE STUDY PREP:
-================
-Scenario: Integrating IT across 5 portfolio companies
-- Assessment approach
-- Quick wins identification
-- Long-term architecture
-- Change management strategy
-- Success metrics
+TECHNICAL QUESTIONS:
+--------------------
+
+Q: "What's your approach to IT governance in a holding company?"
+Framework:
+1. Centralized policies (security, compliance, architecture)
+2. Federated operations (business unit IT teams)
+3. Shared services (infrastructure, security ops)
+4. Governance committees with BU representation
+5. Regular audits and reviews
+
+Q: "How do you evaluate emerging technologies?"
+Process:
+1. Business problem identification
+2. Technology landscape assessment
+3. Proof of concept methodology
+4. ROI and risk evaluation
+5. Scaled implementation approach
 
 QUESTIONS TO ASK:
-=================
-1. How many portfolio companies and what industries?
-2. Current IT maturity level across the group?
-3. What's driving this hire now?
-4. Investment horizon and exit strategy considerations?
-5. Board reporting structure for IT?
+-----------------
+- How many portfolio companies are in the group?
+- What's the current state of IT across the portfolio?
+- Are there plans for IT consolidation or shared services?
+- What's the investment horizon for portfolio companies?
+- How does the group approach digital transformation?
+
+CLOSING:
+--------
+"My experience building IT organizations across multi-entity environments, combined 
+with my enterprise foundation at Intel and Microsoft, positions me well to establish 
+robust IT governance while enabling business unit growth."

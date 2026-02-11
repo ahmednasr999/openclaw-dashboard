@@ -1,49 +1,49 @@
-Group Head of IT - SKILLS GAP ANALYSIS
-========================================
+JEX Group Head of IT - SKILLS GAP ANALYSIS
+============================================
 
-✅ STRONG MATCHES:
-==================
-1. Multi-Entity IT Management
-   - Led IT at El Araby Group (7 countries, 15,000+ employees)
-   - Currently CTO at TopMed (group with multiple entities)
-   - Gap: NONE - Direct experience
+GAP ASSESSMENT
+==============
 
-2. IT Strategy & Architecture
-   - Enterprise architecture experience across all roles
-   - Cloud-first strategy implementation
-   - Gap: NONE - Core competency
+MATCHING STRENGTHS:
+-------------------
+✓ Group-level IT strategy experience (El Araby, TopMed)
+✓ Multi-entity governance (7 countries)
+✓ Budget management (AED 50M+)
+✓ Cybersecurity frameworks
+✓ Cloud transformation
+✓ Team building (45+ professionals)
+✓ Vendor management
+✓ Private equity/holding exposure
 
-3. Budget & Vendor Management
-   - Managed $8M-$12M IT budgets
-   - Negotiated $5M+ vendor contracts
-   - Gap: NONE - Proven track record
+IDENTIFIED GAPS:
+----------------
 
-4. Team Leadership at Scale
-   - Led 85+ person IT organization
-   - Built teams from scratch
-   - Gap: NONE - Strong experience
+1. PRIVATE EQUITY SPECIFIC EXPERIENCE
+   Gap: No explicit PE/Investment firm IT leadership
+   Current: Holding company experience at El Araby
+   Mitigation: Emphasize portfolio company advisory work
+   Action: Reference consulting work with investment-backed companies
 
-5. Cybersecurity & Compliance
-   - ISO 27001 certification achieved
-   - PCI DSS Level 1 compliance
-   - CISSP certified
-   - Gap: NONE - Well qualified
+2. INFRASTRUCTURE DEPTH
+   Gap: More transformation-focused than ops-focused
+   Current: Strong in strategy and transformation
+   Mitigation: Intel/Microsoft enterprise infrastructure foundation
+   Action: Emphasize hands-on technical background
 
-⚠️ AREAS TO EMPHASIZE:
-======================
-1. Private Equity Environment
-   - Limited explicit PE experience
-   - BUT: Worked in investment/VC backed companies
-   - Strategy: Highlight investor reporting and ROI focus
+3. UAE REGULATORY FRAMEWORK
+   Gap: Specific UAE IT governance regulations
+   Current: General compliance experience
+   Mitigation: Healthcare and fintech regulatory experience
+   Action: Research UAE data protection and IT governance requirements
 
-2. Portfolio Company Model
-   - Experience with group structure
-   - Emphasize balancing standardization vs. autonomy
-   - Strategy: Prepare examples of governance frameworks
+4. BOARD-LEVEL REPORTING
+   Gap: Limited explicit board/C-suite interaction described
+   Current: C-level stakeholder management
+   Mitigation: Executive committee experience at TopMed
+   Action: Emphasize executive communication and governance
 
-🎯 INTERVIEW PREPARATION:
-=========================
-1. Prepare case study on standardizing IT across multiple entities
-2. Develop framework for IT investment prioritization
-3. Research common PE portfolio company challenges
-4. Prepare cybersecurity incident response scenario
+OVERALL FIT SCORE: 88%
+----------------------
+Strong candidate with transferable group IT leadership experience.
+Private equity environment may be new but holding company experience
+provides relevant foundation.

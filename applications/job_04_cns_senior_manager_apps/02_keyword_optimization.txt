@@ -1,46 +1,8 @@
-CNS Applications - KEYWORDS
-=============================
+CNS Senior Manager Applications - ANALYSIS
+===========================================
 
-APPLICATION MANAGEMENT:
-- Application Lifecycle Management
-- ALM
-- ERP
-- CRM
-- Enterprise Applications
-- Custom Development
-- Support & Maintenance
-- SLA Management
-- Vendor Management
-- License Management
+KEYWORDS: Application Delivery, SDLC, SLA, Client Management, ERP, Team Leadership
 
-DELIVERY:
-- SDLC
-- Agile
-- Scrum
-- Waterfall
-- Project Delivery
-- Change Management
-- Release Management
-- Quality Assurance
-- Testing
-- Deployment
+GAPS: Limited recent pure application management; more transformation-focused
 
-TECHNICAL:
-- SAP
-- Oracle
-- Microsoft Dynamics
-- .NET
-- Java
-- SQL
-- APIs
-- Integration
-- Cloud Applications
-- SaaS
-
-LEADERSHIP:
-- Team Management
-- Client Relationship
-- Stakeholder Management
-- Vendor Management
-- Budget Management
-- Resource Planning
+FIT: 80% - Strong delivery background, team leadership experience

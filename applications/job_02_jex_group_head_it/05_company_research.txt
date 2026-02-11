@@ -1,31 +1,20 @@
-Jex Recruitment / Client - COMPANY RESEARCH
-=============================================
+JEX Group - Company Research
+=============================
 
-RECRUITER: Jex Recruitment
-============================
-- Boutique executive search firm
-- Focus: Senior leadership in PE-backed companies
-- Consultant: Harrison Ashdown (Principal)
-- Approach: High-touch, relationship-driven
+Jex Recruitment is a boutique executive search firm specializing in C-level and 
+senior leadership placements, particularly in private equity-backed companies and 
+investment holding groups across the Middle East.
 
-CLIENT PROFILE (Inferred):
-==========================
+CLIENT CONTEXT (Typical):
+---------------------------
 - UAE-based investment group or holding company
-- Multiple portfolio companies/business verticals
-- Likely private equity backed
-- Seeking IT transformation leadership
+- Multiple business verticals/portfolio companies
+- Need for centralized IT leadership
+- Likely private equity or family office backed
 
-KEY CONSIDERATIONS:
-===================
-- PE environment: Focus on value creation, exit preparation
-- May require due diligence support for acquisitions
-- Standardization opportunities across portfolio
-- Governance and reporting to investment committee
-
-ALIGNMENT POINTS:
-=================
-✓ Multi-entity IT leadership experience
-✓ Transformation track record
-✓ Budget management at scale
-✓ Regional UAE experience
-✓ Both strategic and operational capability
+APPROACH STRATEGY:
+------------------
+- Emphasize multi-entity IT governance experience
+- Highlight budget management and ROI focus
+- Demonstrate private equity/holding company understanding
+- Show cultural fit for investment environment
