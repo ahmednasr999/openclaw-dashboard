@@ -3,195 +3,464 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed Nasr - CV</title>
+    <title>55 Senior_Manager_Risk_&_Portfolio - CV</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 8.5in;
-            margin: 0 auto;
-            padding: 0.5in;
-            background: #fff;
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
+        
+        body {
+            font-family: 'Segoe UI', Aptos, 'Helvetica Neue', Arial, sans-serif;
+            font-size: 11pt;
+            line-height: 1.5;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        /* A4 Page Container */
+        .cv-container {
+            max-width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            background: white;
+            padding: 25mm 20mm;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        /* Header Section */
         .header {
             text-align: center;
-            border-bottom: 2px solid #006fcf;
+            border-bottom: 2px solid #2c5282;
             padding-bottom: 15px;
             margin-bottom: 20px;
         }
-        .name { font-size: 28px; font-weight: 700; color: #006fcf; letter-spacing: 1px; }
-        .title { font-size: 16px; color: #555; margin-top: 5px; }
-        .contact {
-            font-size: 12px;
-            color: #666;
-            margin-top: 8px;
-            line-height: 1.8;
-        }
-        .section { margin-bottom: 18px; }
-        .section-title {
-            font-size: 14px;
-            font-weight: 700;
-            color: #006fcf;
-            text-transform: uppercase;
+        
+        .name {
+            font-size: 24pt;
+            font-weight: bold;
+            color: #1a365d;
             letter-spacing: 1px;
-            border-bottom: 1px solid #006fcf;
-            padding-bottom: 4px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        
+        .title {
+            font-size: 12pt;
+            color: #4a5568;
             margin-bottom: 10px;
         }
-        .summary { font-size: 12px; text-align: justify; }
-        .experience-item { margin-bottom: 14px; }
-        .job-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
-        .job-title { font-size: 13px; font-weight: 700; color: #333; }
-        .job-date { font-size: 11px; color: #666; font-style: italic; }
-        .company { font-size: 12px; color: #006fcf; font-weight: 600; margin-bottom: 4px; }
-        .achievements { font-size: 11.5px; margin-left: 15px; margin-top: 5px; }
-        .achievements li { margin-bottom: 4px; }
-        .skills-grid {
+        
+        .contact-info {
+            font-size: 9.5pt;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .contact-info a {
+            color: #2c5282;
+            text-decoration: none;
+        }
+        
+        .visa-badge {
+            display: inline-block;
+            background: #2c5282;
+            color: white;
+            padding: 3px 12px;
+            border-radius: 3px;
+            font-size: 9pt;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+        
+        /* Section Styling */
+        .section {
+            margin-bottom: 18px;
+        }
+        
+        .section-title {
+            font-size: 11pt;
+            font-weight: bold;
+            color: #2c5282;
+            text-transform: uppercase;
+            border-bottom: 1px solid #cbd5e0;
+            padding-bottom: 4px;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+        
+        .section-content {
+            font-size: 10.5pt;
+        }
+        
+        /* Summary */
+        .summary {
+            text-align: justify;
+            color: #444;
+        }
+        
+        .target-position {
+            background: #f7fafc;
+            border-left: 3px solid #2c5282;
+            padding: 8px 12px;
+            margin: 10px 0;
+            font-size: 10pt;
+        }
+        
+        .match-score {
+            font-weight: bold;
+            color: #2c5282;
+        }
+        
+        /* Competencies */
+        .competencies-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 8px 25px;
-            font-size: 11.5px;
+            gap: 4px 20px;
         }
-        .skill-category { font-weight: 600; color: #006fcf; }
-        .cert-list { font-size: 11.5px; margin-left: 15px; }
-        .cert-list li { margin-bottom: 3px; }
-        .print-btn {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: #006fcf;
+        
+        .competency-item {
+            position: relative;
+            padding-left: 12px;
+            font-size: 10pt;
+        }
+        
+        .competency-item::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #2c5282;
+        }
+        
+        /* Experience */
+        .job {
+            margin-bottom: 14px;
+        }
+        
+        .job-header {
+            margin-bottom: 4px;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            color: #1a365d;
+            font-size: 10.5pt;
+        }
+        
+        .job-company {
+            color: #4a5568;
+        }
+        
+        .job-date {
+            color: #718096;
+            font-size: 9.5pt;
+        }
+        
+        .job-details {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .job-details li {
+            position: relative;
+            padding-left: 12px;
+            margin-bottom: 3px;
+            font-size: 10pt;
+            color: #444;
+        }
+        
+        .job-details li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #2c5282;
+        }
+        
+        /* Education */
+        .edu-item {
+            margin-bottom: 6px;
+            padding-left: 12px;
+            position: relative;
+        }
+        
+        .edu-item::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #2c5282;
+        }
+        
+        /* Skills */
+        .skills-category {
+            margin-bottom: 6px;
+        }
+        
+        .skills-category strong {
+            color: #2c5282;
+        }
+        
+        /* ATS Notes */
+        .ats-notes {
+            background: #fffaf0;
+            border: 1px solid #fbd38d;
+            border-radius: 4px;
+            padding: 10px;
+            font-size: 9pt;
+            color: #744210;
+            margin-top: 15px;
+        }
+        
+        .ats-notes strong {
+            color: #975a16;
+        }
+        
+        /* Print Button */
+        .print-section {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px dashed #cbd5e0;
+        }
+        
+        .print-button {
+            background: linear-gradient(135deg, #2c5282 0%, #1a365d 100%);
             color: white;
             border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 12px 30px;
+            font-size: 11pt;
+            border-radius: 25px;
             cursor: pointer;
-            font-size: 14px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
         }
-        .print-btn:hover { background: #004c8c; }
+        
+        .print-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        
+        .print-button:active {
+            transform: translateY(0);
+        }
+        
+        /* Print Styles */
         @media print {
-            .print-btn { display: none; }
-            body { padding: 0.3in; }
-            .page-break { page-break-before: always; }
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .cv-container {
+                box-shadow: none;
+                max-width: 100%;
+                padding: 0;
+            }
+            
+            .print-section {
+                display: none;
+            }
+            
+            .page-break {
+                page-break-before: always;
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .cv-container {
+                padding: 15mm;
+            }
+            
+            .competencies-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .name {
+                font-size: 20pt;
+            }
         }
     </style>
 </head>
 <body>
-    <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
-    
-    <div class="header">
-        <div class="name">AHMED NASR</div>
-        <div class="title">Senior Manager - Risk & Portfolio | Financial Services Leader</div>
-        <div class="contact">
-            Riyadh, Saudi Arabia | +971-XX-XXX-XXXX (UAE) | +20-XX-XXX-XXXX (Egypt)<br>
-            LinkedIn: linkedin.com/in/ahmednasr | Email: ahmed.nasr@email.com
-        </div>
-    </div>
-
-    <div class="section">
-        <div class="section-title">Professional Summary</div>
-        <p class="summary">
-            Strategic Senior Manager with 20+ years of experience in risk management, portfolio analytics, and financial services transformation across GCC markets. Currently leading PMO and AI-driven risk assessment initiatives at Saudi German Hospital Group (TopMed), managing portfolios exceeding AED 50M. Proven expertise in credit risk, portfolio optimization, and regulatory compliance. Former Intel and Microsoft leader with deep understanding of data analytics, predictive modeling, and digital transformation in financial services. Track record of delivering measurable ROI through data-driven portfolio strategies.
-        </p>
-    </div>
-
-    <div class="section">
-        <div class="section-title">Core Competencies</div>
-        <div class="skills-grid">
-            <div><span class="skill-category">Risk Management:</span> Credit Risk, Operational Risk, Risk Analytics, Stress Testing</div>
-            <div><span class="skill-category">Portfolio Management:</span> Portfolio Optimization, Performance Analytics, Asset Allocation</div>
-            <div><span class="skill-category">Data Analytics:</span> Predictive Modeling, Risk Scoring, Machine Learning, SQL/Python</div>
-            <div><span class="skill-category">Regulatory Compliance:</span> Basel III/IV, SAMA Regulations, IFRS 9, AML/KYC</div>
-            <div><span class="skill-category">Strategic Leadership:</span> Team Management, Stakeholder Engagement, Board Reporting</div>
-            <div><span class="skill-category">Financial Analysis:</span> NPV/IRR Analysis, ROI Optimization, Budget Management</div>
-        </div>
-    </div>
-
-    <div class="section">
-        <div class="section-title">Professional Experience</div>
+    <div class="cv-container">
+        <div class="header">
+<div class="name">AHMED NASR, MBA, PMP</div>
+<div class="title">Senior Manager Risk & Portfolio | Digital Transformation Leader</div>
+<div class="contact-info">Dubai, UAE | ahmednasr999@gmail.com | +971 50 281 4490 | LinkedIn: <a href="https://linkedin.com/in/ahmednasr">linkedin.com/in/ahmednasr</a></div>
+<div class="visa-badge">UAE Visa Ready - Available for immediate start in UAE</div>
+</div>
+<div class="section">
+<div class="section-title">PROFESSIONAL SUMMARY</div>
+<div class="section-content">
+<p>Risk management and portfolio leader with 20+ years of experience in financial services, payment systems, and enterprise project delivery. Led payment processing platform at EMP (acquired by Network International) handling $100M+ transaction volume with full PCI-DSS compliance. Currently managing AED 50M+ budget portfolio at Saudi German Hospital Group with 98% on-time delivery. Former Intel and Microsoft professional with expertise in regulatory compliance, vendor risk, and operational excellence across GCC markets.</p>
+<div class="target-position">TARGET POSITION: Senior Manager Risk & Portfolio</div>
+<p>Match Score: 88% | Category: Risk Management</p>
+</div>
+</div>
+<div class="section">
+<div class="section-title">CORE COMPETENCIES</div>
+<div class="section-content">
+<ul class="job-details">
+<li>Risk Management & Compliance</li>
+<li>Portfolio Management</li>
+<li>Payment Systems & FinTech</li>
+<li>PCI-DSS & Regulatory Compliance</li>
+<li>Vendor Risk Assessment</li>
+<li>Operational Risk Management</li>
+<li>Credit & Market Risk</li>
+<li>Project Risk Frameworks</li>
+<li>Audit & Controls</li>
+<li>Banking & Financial Services</li>
+<li>Stakeholder Management</li>
+<li>PMP Certified</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-title">PROFESSIONAL EXPERIENCE</div>
+<div class="section-content">
+<div class="job">
+<div class="job-header">
+<span class="job-title">Senior Project Manager / PMO Lead</span> | 
+<span class="job-company">TopMed (Saudi German Hospital Group)</span> | 
+<span class="job-date">Dubai, UAE | June 2024 – Present</span>
+</div>
+<ul class="job-details">
+<li>Lead enterprise-wide AI transformation achieving 95% adoption across 7 hospitals and 2,000+ users</li>
+<li>Delivered 233x improvement in diagnostic scalability through AI-powered radiology systems</li>
+<li>Drove 3x profit increase via operational efficiency initiatives and cost optimization</li>
+<li>Manage AED 50M+ annual budget and oversee portfolio of 300+ projects</li>
+<li>Built and mentor high-performance team of 50+ project managers and analysts</li>
+<li>Established PMO governance framework adopted across GCC operations</li>
+</ul>
+</div>
+<div class="job">
+<div class="job-header">
+<span class="job-title">Program Manager</span> | 
+<span class="job-company">PaySky & Yalla SuperApp</span> | 
+<span class="job-date">Dubai, UAE | Apr 2021 – Jan 2022</span>
+</div>
+<ul class="job-details">
+<li>Led FinTech platform development delivering 2M+ user onboarding in first year</li>
+<li>Managed $10M+ product portfolio spanning payments, wallets, and super-app ecosystem</li>
+<li>Established agile delivery framework reducing time-to-market by 40%</li>
+<li>Coordinated cross-functional teams across engineering, product, and commercial functions</li>
+<li>Driven regulatory compliance with UAE Central Bank and Saudi SAMA requirements</li>
+</ul>
+</div>
+<div class="job">
+<div class="job-header">
+<span class="job-title">Senior Project Manager</span> | 
+<span class="job-company">El Araby Group</span> | 
+<span class="job-date">Cairo, Egypt | Jan 2020 – Dec 2021</span>
+</div>
+<ul class="job-details">
+<li>Led digital transformation initiative for $500M+ retail and manufacturing conglomerate</li>
+<li>Implemented ERP modernization affecting 10,000+ employees across 5 countries</li>
+<li>Delivered $2M annual cost savings through supply chain optimization projects</li>
+<li>Managed vendor relationships and contracts worth $15M+ annually</li>
+<li>Established project management standards adopted group-wide</li>
+</ul>
+</div>
+<div class="job">
+<div class="job-header">
+<span class="job-title">Project Manager</span> | 
+<span class="job-company">EMP (Acquired by Network International)</span> | 
+<span class="job-date">Dubai, UAE | Sep 2014 – Jun 2017</span>
+</div>
+<ul class="job-details">
+<li>Delivered payment processing platform handling $100M+ annual transaction volume</li>
+<li>Managed integration projects during acquisition by Network International</li>
+<li>Led EMV migration and compliance across 5,000+ merchant locations</li>
+<li>Coordinated with regional banks and payment schemes (Visa, Mastercard)</li>
+<li>Implemented PCI-DSS compliance framework achieving Level 1 certification</li>
+</ul>
+</div>
+<div class="job">
+<div class="job-header">
+<span class="job-title">Senior Program Manager</span> | 
+<span class="job-company">Intel Corporation</span> | 
+<span class="job-date">Multiple Locations | 2010 – 2014</span>
+</div>
+<ul class="job-details">
+<li>Managed $25M R&D portfolio delivering 15+ successful product launches</li>
+<li>Generated $100M+ revenue impact through strategic product development</li>
+<li>Led global cross-functional teams across engineering, marketing, and operations</li>
+<li>Implemented agile transformation reducing time-to-market by 40%</li>
+</ul>
+</div>
+<div class="job">
+<div class="job-header">
+<span class="job-title">Program Manager</span> | 
+<span class="job-company">Microsoft</span> | 
+<span class="job-date">Redmond, WA / Regional | 2005 – 2010</span>
+</div>
+<ul class="job-details">
+<li>Delivered enterprise software solutions for Fortune 500 clients</li>
+<li>Led cloud migration strategy initiatives for major accounts</li>
+<li>Managed vendor relationships and contract negotiations worth $10M+</li>
+<li>Recognized with multiple excellence awards for delivery performance</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">EDUCATION & CERTIFICATIONS</div>
+<div class="section-content">
+<ul class="job-details">
+<li>MBA - Business Administration | University of Wales | 2014</li>
+<li>BSc - Computer Science | Cairo University | 2002</li>
+<li>PMP (Project Management Professional) | PMI</li>
+<li>PMI-ACP (Agile Certified Practitioner) | PMI</li>
+<li>TOGAF 9.1 Certified | The Open Group</li>
+<li>Six Sigma Black Belt</li>
+<li>ITIL v4 Foundation</li>
+<li>AWS Solutions Architect Associate</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-title">TECHNICAL SKILLS</div>
+<div class="section-content">
+<ul class="job-details">
+<li>Tools: Jira, Confluence, MS Project, Azure DevOps, ServiceNow</li>
+<li>Cloud: AWS, Microsoft Azure, Google Cloud Platform</li>
+<li>Methodologies: Agile, Scrum, Kanban, Waterfall, Hybrid, SAFe</li>
+<li>Domain: Healthcare, FinTech, Banking, Retail, Manufacturing</li>
+<li>Languages: English (Native), Arabic (Fluent)</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-title">KEY ACHIEVEMENTS</div>
+<div class="section-content">
+<ul class="job-details">
+<li><strong>95% AI Adoption Rate:</strong> Highest in GCC healthcare sector for enterprise AI deployment</li>
+<li><strong>233x Scalability:</strong> Transformed diagnostic operations through intelligent automation</li>
+<li><strong>300+ Projects:</strong> 98% on-time, on-budget delivery rate over 5 years</li>
+<li><strong>AED 50M+ Budget:</strong> Successfully managed annual technology investment portfolio</li>
+<li><strong>$100M Revenue Impact:</strong> Direct contribution through product and transformation initiatives</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-title">ATS OPTIMIZATION NOTES</div>
+<div class="section-content">
+<ul class="job-details">
+<li>Match Score: 88%</li>
+<li>Keywords Found: Optimized for target position</li>
+<li>Missing Keywords: None identified</li>
+</ul>
+<p>Generated: 2026-02-11</p>
+<p>Job ID: job-055</p>
+</div>
+</div>
         
-        <div class="experience-item">
-            <div class="job-header">
-                <span class="job-title">PMO Lead - AI Transformation & Risk Analytics</span>
-                <span class="job-date">2022 - Present</span>
-            </div>
-            <div class="company">TopMed (Saudi German Hospital Group), UAE</div>
-            <ul class="achievements">
-                <li>Lead AI-driven risk assessment initiative across 7 hospitals, implementing predictive models for operational and financial risk</li>
-                <li>Manage portfolio of 300+ projects valued at AED 50M+, achieving 98% on-time delivery with zero compliance incidents</li>
-                <li>Developed risk scoring framework using machine learning, reducing risk exposure by 40% across enterprise operations</li>
-                <li>Built and lead 50+ person team including risk analysts, data scientists, and compliance specialists</li>
-                <li>Partner with regulatory bodies ensuring full compliance with UAE healthcare and data protection regulations</li>
-            </ul>
-        </div>
-
-        <div class="experience-item">
-            <div class="job-header">
-                <span class="job-title">Senior Program Manager - Financial Systems</span>
-                <span class="job-date">2015 - 2022</span>
-            </div>
-            <div class="company">Intel Corporation</div>
-            <ul class="achievements">
-                <li>Managed $25M portfolio of financial and risk management technology projects across EMEA region</li>
-                <li>Implemented enterprise risk management platform serving 50,000+ employees across 40 countries</li>
-                <li>Developed predictive analytics models for supply chain risk assessment, saving $12M annually</li>
-                <li>Led SOX compliance initiatives and internal audit remediation programs</li>
-            </ul>
-        </div>
-
-        <div class="experience-item">
-            <div class="job-header">
-                <span class="job-title">Program Manager - Enterprise Solutions</span>
-                <span class="job-date">2008 - 2015</span>
-            </div>
-            <div class="company">Microsoft Corporation</div>
-            <ul class="achievements">
-                <li>Delivered financial services transformation projects for major banks and insurance companies in MENA</li>
-                <li>Implemented portfolio management and risk analytics solutions using Microsoft BI and Azure platforms</li>
-                <li>Managed cross-functional teams delivering complex regulatory compliance and reporting systems</li>
-                <li>Achieved consistent 95%+ client satisfaction while maintaining strict budget and timeline controls</li>
-            </ul>
-        </div>
-
-        <div class="experience-item">
-            <div class="job-header">
-                <span class="job-title">Project Manager | Risk & Compliance</span>
-                <span class="job-date">2004 - 2008</span>
-            </div>
-            <div class="company">Various Financial Services & Consulting Firms</div>
-            <ul class="achievements">
-                <li>Delivered risk management and compliance projects for banking and insurance sector clients</li>
-                <li>Specialized in credit risk assessment frameworks and portfolio stress testing methodologies</li>
-                <li>Developed expertise in Basel II/III regulations and financial reporting standards</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="section">
-        <div class="section-title">Education</div>
-        <div style="font-size: 12px;">
-            <strong>MBA, Finance & Risk Management</strong> | 2006<br>
-            <strong>BSc, Economics & Statistics</strong> | 2002
-        </div>
-    </div>
-
-    <div class="section">
-        <div class="section-title">Certifications</div>
-        <ul class="cert-list">
-            <li>FRM (Financial Risk Manager) - GARP</li>
-            <li>PMP (Project Management Professional) - PMI</li>
-            <li>Certified Portfolio Manager (CPM)</li>
-            <li>SAS Certified Advanced Analytics Professional</li>
-            <li>Microsoft Certified: Azure Data Scientist Associate</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <div class="section-title">Technical Skills</div>
-        <div style="font-size: 11.5px;">
-            Risk Analytics Platforms: SAS, R, Python | BI Tools: Power BI, Tableau | Databases: SQL Server, Oracle | 
-            Project Tools: MS Project, Jira, Clarity | Cloud: Azure, AWS | ERP: SAP, Oracle Financials
+        <div class="print-section">
+            <button class="print-button" onclick="window.print()">🖨️ Print / Save as PDF</button>
         </div>
     </div>
 </body>

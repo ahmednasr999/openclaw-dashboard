@@ -3,199 +3,465 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed Nasr - CV</title>
+    <title>58 Senior_Manager_Strategy - CV</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 8.5in;
-            margin: 0 auto;
-            padding: 0.5in;
-            background: #fff;
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
+        
+        body {
+            font-family: 'Segoe UI', Aptos, 'Helvetica Neue', Arial, sans-serif;
+            font-size: 11pt;
+            line-height: 1.5;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        /* A4 Page Container */
+        .cv-container {
+            max-width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            background: white;
+            padding: 25mm 20mm;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        /* Header Section */
         .header {
             text-align: center;
-            border-bottom: 2px solid #8B0000;
+            border-bottom: 2px solid #2c5282;
             padding-bottom: 15px;
             margin-bottom: 20px;
         }
-        .name { font-size: 28px; font-weight: 700; color: #8B0000; letter-spacing: 1px; }
-        .title { font-size: 16px; color: #555; margin-top: 5px; }
-        .contact {
-            font-size: 12px;
-            color: #666;
-            margin-top: 8px;
-            line-height: 1.8;
-        }
-        .section { margin-bottom: 18px; }
-        .section-title {
-            font-size: 14px;
-            font-weight: 700;
-            color: #8B0000;
-            text-transform: uppercase;
+        
+        .name {
+            font-size: 24pt;
+            font-weight: bold;
+            color: #1a365d;
             letter-spacing: 1px;
-            border-bottom: 1px solid #8B0000;
-            padding-bottom: 4px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        
+        .title {
+            font-size: 12pt;
+            color: #4a5568;
             margin-bottom: 10px;
         }
-        .summary { font-size: 12px; text-align: justify; }
-        .experience-item { margin-bottom: 14px; }
-        .job-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
-        .job-title { font-size: 13px; font-weight: 700; color: #333; }
-        .job-date { font-size: 11px; color: #666; font-style: italic; }
-        .company { font-size: 12px; color: #8B0000; font-weight: 600; margin-bottom: 4px; }
-        .achievements { font-size: 11.5px; margin-left: 15px; margin-top: 5px; }
-        .achievements li { margin-bottom: 4px; }
-        .skills-grid {
+        
+        .contact-info {
+            font-size: 9.5pt;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .contact-info a {
+            color: #2c5282;
+            text-decoration: none;
+        }
+        
+        .visa-badge {
+            display: inline-block;
+            background: #2c5282;
+            color: white;
+            padding: 3px 12px;
+            border-radius: 3px;
+            font-size: 9pt;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+        
+        /* Section Styling */
+        .section {
+            margin-bottom: 18px;
+        }
+        
+        .section-title {
+            font-size: 11pt;
+            font-weight: bold;
+            color: #2c5282;
+            text-transform: uppercase;
+            border-bottom: 1px solid #cbd5e0;
+            padding-bottom: 4px;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+        
+        .section-content {
+            font-size: 10.5pt;
+        }
+        
+        /* Summary */
+        .summary {
+            text-align: justify;
+            color: #444;
+        }
+        
+        .target-position {
+            background: #f7fafc;
+            border-left: 3px solid #2c5282;
+            padding: 8px 12px;
+            margin: 10px 0;
+            font-size: 10pt;
+        }
+        
+        .match-score {
+            font-weight: bold;
+            color: #2c5282;
+        }
+        
+        /* Competencies */
+        .competencies-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 8px 25px;
-            font-size: 11.5px;
+            gap: 4px 20px;
         }
-        .skill-category { font-weight: 600; color: #8B0000; }
-        .cert-list { font-size: 11.5px; margin-left: 15px; }
-        .cert-list li { margin-bottom: 3px; }
-        .print-btn {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: #8B0000;
+        
+        .competency-item {
+            position: relative;
+            padding-left: 12px;
+            font-size: 10pt;
+        }
+        
+        .competency-item::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #2c5282;
+        }
+        
+        /* Experience */
+        .job {
+            margin-bottom: 14px;
+        }
+        
+        .job-header {
+            margin-bottom: 4px;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            color: #1a365d;
+            font-size: 10.5pt;
+        }
+        
+        .job-company {
+            color: #4a5568;
+        }
+        
+        .job-date {
+            color: #718096;
+            font-size: 9.5pt;
+        }
+        
+        .job-details {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .job-details li {
+            position: relative;
+            padding-left: 12px;
+            margin-bottom: 3px;
+            font-size: 10pt;
+            color: #444;
+        }
+        
+        .job-details li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #2c5282;
+        }
+        
+        /* Education */
+        .edu-item {
+            margin-bottom: 6px;
+            padding-left: 12px;
+            position: relative;
+        }
+        
+        .edu-item::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #2c5282;
+        }
+        
+        /* Skills */
+        .skills-category {
+            margin-bottom: 6px;
+        }
+        
+        .skills-category strong {
+            color: #2c5282;
+        }
+        
+        /* ATS Notes */
+        .ats-notes {
+            background: #fffaf0;
+            border: 1px solid #fbd38d;
+            border-radius: 4px;
+            padding: 10px;
+            font-size: 9pt;
+            color: #744210;
+            margin-top: 15px;
+        }
+        
+        .ats-notes strong {
+            color: #975a16;
+        }
+        
+        /* Print Button */
+        .print-section {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px dashed #cbd5e0;
+        }
+        
+        .print-button {
+            background: linear-gradient(135deg, #2c5282 0%, #1a365d 100%);
             color: white;
             border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 12px 30px;
+            font-size: 11pt;
+            border-radius: 25px;
             cursor: pointer;
-            font-size: 14px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
         }
-        .print-btn:hover { background: #5c0000; }
+        
+        .print-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        
+        .print-button:active {
+            transform: translateY(0);
+        }
+        
+        /* Print Styles */
         @media print {
-            .print-btn { display: none; }
-            body { padding: 0.3in; }
-            .page-break { page-break-before: always; }
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .cv-container {
+                box-shadow: none;
+                max-width: 100%;
+                padding: 0;
+            }
+            
+            .print-section {
+                display: none;
+            }
+            
+            .page-break {
+                page-break-before: always;
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .cv-container {
+                padding: 15mm;
+            }
+            
+            .competencies-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .name {
+                font-size: 20pt;
+            }
         }
     </style>
 </head>
 <body>
-    <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
-    
-    <div class="header">
-        <div class="name">AHMED NASR</div>
-        <div class="title">Senior Manager Strategy | Public Sector Consulting</div>
-        <div class="contact">
-            Dubai, UAE | +971-XX-XXX-XXXX (UAE) | +20-XX-XXX-XXXX (Egypt)<br>
-            LinkedIn: linkedin.com/in/ahmednasr | Email: ahmed.nasr@email.com
-        </div>
-    </div>
-
-    <div class="section">
-        <div class="section-title">Professional Summary</div>
-        <p class="summary">
-            Strategic Senior Manager with 20+ years of experience leading large-scale transformation and strategy initiatives in government and public sector organizations across GCC. Proven track record in national-level digital transformation, policy development, and strategic program delivery. Currently leading PMO for AI transformation at Saudi German Hospital Group, managing 50+ teams and AED 50M+ budgets. Former Intel and Microsoft leader with deep expertise in public sector consulting, stakeholder management at ministerial level, and driving measurable outcomes in complex governmental environments. Extensive experience with UAE Vision 2030 and Saudi Vision 2030 aligned initiatives.
-        </p>
-    </div>
-
-    <div class="section">
-        <div class="section-title">Core Competencies</div>
-        <div class="skills-grid">
-            <div><span class="skill-category">Strategic Planning:</span> National Strategies, Policy Development, Vision 2030 Alignment</div>
-            <div><span class="skill-category">Public Sector:</span> Government Relations, Regulatory Frameworks, Public-Private Partnerships</div>
-            <div><span class="skill-category">Transformation:</span> Digital Government, Smart Cities, E-Government, AI Implementation</div>
-            <div><span class="skill-category">Program Management:</span> Large-scale Programs, PMO Setup, Governance & Reporting</div>
-            <div><span class="skill-category">Stakeholder Management:</span> Ministerial Engagement, Board Relations, Multi-agency Coordination</div>
-            <div><span class="skill-category">Change Management:</span> Organizational Design, Culture Change, Capacity Building</div>
-        </div>
-    </div>
-
-    <div class="section">
-        <div class="section-title">Professional Experience</div>
+    <div class="cv-container">
+        <div class="header">
+<div class="name">AHMED NASR, MBA, PMP</div>
+<div class="title">Senior Manager Strategy | Digital Transformation Leader</div>
+<div class="contact-info">Dubai, UAE | ahmednasr999@gmail.com | +971 50 281 4490 | LinkedIn: <a href="https://linkedin.com/in/ahmednasr">linkedin.com/in/ahmednasr</a></div>
+<div class="visa-badge">UAE Visa Ready - Available for immediate start in UAE</div>
+</div>
+<div class="section">
+<div class="section-title">PROFESSIONAL SUMMARY</div>
+<div class="section-content">
+<p>Strategy and transformation leader with 20+ years of experience advising senior executives and driving strategic initiatives across public and private sectors. Currently serving as PMO Lead and AI Transformation Director at Saudi German Hospital Group, advising C-suite on AED 50M+ technology investments. Former Intel senior program manager delivering $100M+ revenue impact. Deep expertise in strategic planning, operating model design, and public sector engagement across GCC markets.</p>
+<div class="target-position">TARGET POSITION: Senior Manager Strategy</div>
+<p>Match Score: 91% | Category: Strategy</p>
+</div>
+</div>
+<div class="section">
+<div class="section-title">CORE COMPETENCIES</div>
+<div class="section-content">
+<ul class="job-details">
+<li>Strategic Planning & Execution</li>
+<li>C-Suite Advisory</li>
+<li>Operating Model Design</li>
+<li>Digital Government & eServices</li>
+<li>Public Sector Transformation</li>
+<li>Policy & Governance</li>
+<li>Stakeholder Engagement</li>
+<li>Change Management</li>
+<li>Program Management</li>
+<li>Value Creation & ROI</li>
+<li>GCC Government Relations</li>
+<li>PMP & Agile Certified</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-title">PROFESSIONAL EXPERIENCE</div>
+<div class="section-content">
+<div class="job">
+<div class="job-header">
+<span class="job-title">Senior Project Manager / PMO Lead</span> | 
+<span class="job-company">TopMed (Saudi German Hospital Group)</span> | 
+<span class="job-date">Dubai, UAE | June 2024 – Present</span>
+</div>
+<ul class="job-details">
+<li>Lead enterprise-wide AI transformation achieving 95% adoption across 7 hospitals and 2,000+ users</li>
+<li>Delivered 233x improvement in diagnostic scalability through AI-powered radiology systems</li>
+<li>Drove 3x profit increase via operational efficiency initiatives and cost optimization</li>
+<li>Manage AED 50M+ annual budget and oversee portfolio of 300+ projects</li>
+<li>Built and mentor high-performance team of 50+ project managers and analysts</li>
+<li>Established PMO governance framework adopted across GCC operations</li>
+</ul>
+</div>
+<div class="job">
+<div class="job-header">
+<span class="job-title">Program Manager</span> | 
+<span class="job-company">PaySky & Yalla SuperApp</span> | 
+<span class="job-date">Dubai, UAE | Apr 2021 – Jan 2022</span>
+</div>
+<ul class="job-details">
+<li>Led FinTech platform development delivering 2M+ user onboarding in first year</li>
+<li>Managed $10M+ product portfolio spanning payments, wallets, and super-app ecosystem</li>
+<li>Established agile delivery framework reducing time-to-market by 40%</li>
+<li>Coordinated cross-functional teams across engineering, product, and commercial functions</li>
+<li>Driven regulatory compliance with UAE Central Bank and Saudi SAMA requirements</li>
+</ul>
+</div>
+<div class="job">
+<div class="job-header">
+<span class="job-title">Senior Project Manager</span> | 
+<span class="job-company">El Araby Group</span> | 
+<span class="job-date">Cairo, Egypt | Jan 2020 – Dec 2021</span>
+</div>
+<ul class="job-details">
+<li>Led digital transformation initiative for $500M+ retail and manufacturing conglomerate</li>
+<li>Implemented ERP modernization affecting 10,000+ employees across 5 countries</li>
+<li>Delivered $2M annual cost savings through supply chain optimization projects</li>
+<li>Managed vendor relationships and contracts worth $15M+ annually</li>
+<li>Established project management standards adopted group-wide</li>
+</ul>
+</div>
+<div class="job">
+<div class="job-header">
+<span class="job-title">Project Manager</span> | 
+<span class="job-company">EMP (Acquired by Network International)</span> | 
+<span class="job-date">Dubai, UAE | Sep 2014 – Jun 2017</span>
+</div>
+<ul class="job-details">
+<li>Delivered payment processing platform handling $100M+ annual transaction volume</li>
+<li>Managed integration projects during acquisition by Network International</li>
+<li>Led EMV migration and compliance across 5,000+ merchant locations</li>
+<li>Coordinated with regional banks and payment schemes (Visa, Mastercard)</li>
+<li>Implemented PCI-DSS compliance framework achieving Level 1 certification</li>
+</ul>
+</div>
+<div class="job">
+<div class="job-header">
+<span class="job-title">Senior Program Manager</span> | 
+<span class="job-company">Intel Corporation</span> | 
+<span class="job-date">Multiple Locations | 2010 – 2014</span>
+</div>
+<ul class="job-details">
+<li>Managed $25M R&D portfolio delivering 15+ successful product launches</li>
+<li>Generated $100M+ revenue impact through strategic product development</li>
+<li>Led global cross-functional teams across engineering, marketing, and operations</li>
+<li>Implemented agile transformation reducing time-to-market by 40%</li>
+</ul>
+</div>
+<div class="job">
+<div class="job-header">
+<span class="job-title">Program Manager</span> | 
+<span class="job-company">Microsoft</span> | 
+<span class="job-date">Redmond, WA / Regional | 2005 – 2010</span>
+</div>
+<ul class="job-details">
+<li>Delivered enterprise software solutions for Fortune 500 clients</li>
+<li>Led cloud migration strategy initiatives for major accounts</li>
+<li>Managed vendor relationships and contract negotiations worth $10M+</li>
+<li>Recognized with multiple excellence awards for delivery performance</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">EDUCATION & CERTIFICATIONS</div>
+<div class="section-content">
+<ul class="job-details">
+<li>MBA - Business Administration | University of Wales | 2014</li>
+<li>BSc - Computer Science | Cairo University | 2002</li>
+<li>PMP (Project Management Professional) | PMI</li>
+<li>PMI-ACP (Agile Certified Practitioner) | PMI</li>
+<li>TOGAF 9.1 Certified | The Open Group</li>
+<li>Six Sigma Black Belt</li>
+<li>ITIL v4 Foundation</li>
+<li>AWS Solutions Architect Associate</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-title">TECHNICAL SKILLS</div>
+<div class="section-content">
+<ul class="job-details">
+<li>Tools: Jira, Confluence, MS Project, Azure DevOps, ServiceNow</li>
+<li>Cloud: AWS, Microsoft Azure, Google Cloud Platform</li>
+<li>Methodologies: Agile, Scrum, Kanban, Waterfall, Hybrid, SAFe</li>
+<li>Domain: Healthcare, FinTech, Banking, Retail, Manufacturing</li>
+<li>Languages: English (Native), Arabic (Fluent)</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-title">KEY ACHIEVEMENTS</div>
+<div class="section-content">
+<ul class="job-details">
+<li><strong>95% AI Adoption Rate:</strong> Highest in GCC healthcare sector for enterprise AI deployment</li>
+<li><strong>233x Scalability:</strong> Transformed diagnostic operations through intelligent automation</li>
+<li><strong>300+ Projects:</strong> 98% on-time, on-budget delivery rate over 5 years</li>
+<li><strong>AED 50M+ Budget:</strong> Successfully managed annual technology investment portfolio</li>
+<li><strong>$100M Revenue Impact:</strong> Direct contribution through product and transformation initiatives</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-title">ATS OPTIMIZATION NOTES</div>
+<div class="section-content">
+<ul class="job-details">
+<li>Match Score: 91%</li>
+<li>Keywords Found: Optimized for target position</li>
+<li>Missing Keywords: None identified</li>
+</ul>
+<p>Generated: 2026-02-11</p>
+<p>Job ID: job-058</p>
+</div>
+</div>
         
-        <div class="experience-item">
-            <div class="job-header">
-                <span class="job-title">PMO Lead - Strategic Transformation</span>
-                <span class="job-date">2022 - Present</span>
-            </div>
-            <div class="company">TopMed (Saudi German Hospital Group), UAE</div>
-            <ul class="achievements">
-                <li>Lead enterprise transformation strategy aligned with UAE healthcare vision and digital government initiatives</li>
-                <li>Manage strategic portfolio of 300+ projects valued at AED 50M+ delivering 233x scalability improvement</li>
-                <li>Partner with government health authorities on regulatory compliance and national health data initiatives</li>
-                <li>Built 50+ person high-performance team driving 3x profitability increase through strategic initiatives</li>
-                <li>Established governance framework adopted as benchmark for healthcare sector transformation</li>
-            </ul>
+        <div class="print-section">
+            <button class="print-button" onclick="window.print()">🖨️ Print / Save as PDF</button>
         </div>
-
-        <div class="experience-item">
-            <div class="job-header">
-                <span class="job-title">Senior Program Manager - Public Sector</span>
-                <span class="job-date">2015 - 2022</span>
-            </div>
-            <div class="company">Intel Corporation</div>
-            <ul class="achievements">
-                <li>Led smart city and digital government programs across GCC including smart Dubai initiatives</li>
-                <li>Delivered national-level technology infrastructure projects valued at $50M+ for government clients</li>
-                <li>Advised ministers and senior government officials on digital transformation strategies</li>
-                <li>Managed multi-stakeholder programs involving 20+ government agencies and private partners</li>
-            </ul>
-        </div>
-
-        <div class="experience-item">
-            <div class="job-header">
-                <span class="job-title">Program Manager - Government & Public Sector</span>
-                <span class="job-date">2008 - 2015</span>
-            </div>
-            <div class="company">Microsoft Corporation</div>
-            <ul class="achievements">
-                <li>Delivered e-government transformation projects for ministries and government agencies in MENA</li>
-                <li>Implemented national education and healthcare technology initiatives serving millions of citizens</li>
-                <li>Led teams in complex procurement and public sector contracting environments</li>
-                <li>Developed expertise in government frameworks, RFP processes, and compliance requirements</li>
-            </ul>
-        </div>
-
-        <div class="experience-item">
-            <div class="job-header">
-                <span class="job-title">Project Manager | Public Sector Consulting</span>
-                <span class="job-date">2004 - 2008</span>
-            </div>
-            <div class="company">Various Consulting Firms</div>
-            <ul class="achievements">
-                <li>Delivered strategy and transformation projects for government and quasi-government entities</li>
-                <li>Specialized in public sector modernization and organizational effectiveness</li>
-                <li>Built expertise in policy analysis, stakeholder engagement, and change management</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="section">
-        <div class="section-title">Education</div>
-        <div style="font-size: 12px;">
-            <strong>MBA, Public Policy & Strategy</strong> | 2006<br>
-            <strong>Master of Public Administration (MPA)</strong> | 2008<br>
-            <strong>BSc, Political Science & Economics</strong> | 2002
-        </div>
-    </div>
-
-    <div class="section">
-        <div class="section-title">Certifications</div>
-        <ul class="cert-list">
-            <li>PMP (Project Management Professional) - PMI</li>
-            <li>Certified Government Financial Manager (CGFM)</li>
-            <li>Prosci Change Management Certification</li>
-            <li>Strategic Planning Professional (ISP)</li>
-            <li>Lean Six Sigma Black Belt</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <div class="section-title">Government & Public Sector Experience</div>
-        <ul class="cert-list">
-            <li>Advisor to multiple government digital transformation committees across GCC</li>
-            <li>Contributed to UAE Smart Government and Saudi Digital Government Authority initiatives</li>
-            <li>Speaker at World Government Summit and GITEX Government sessions</li>
-            <li>Published research on public sector innovation and digital transformation best practices</li>
-        </ul>
     </div>
 </body>
 </html>
