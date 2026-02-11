@@ -162,7 +162,21 @@ _Your curated wisdom. Distilled from daily logs, not raw data._
 - LinkedIn (ahmednasr)
 - Telegram (@AhmedNasr999)
 
+## CV Arsenal — NEW SYSTEM (Feb 11, 2026)
+
+**Status:** FULLY OPERATIONAL
+- 50 tailored CVs created (350 total files)
+- 23-column Google Sheet structure
+- 7-file output format per job
+- Individual tailoring per JD (no templates)
+- Intel/Microsoft timeline added to all
+- Cost: ~$44 USD (2,220 EGP) over 3 days
+
+**Key Lesson:** User values quality over cost. $0.88 per CV vs $200-500 market rate = 99% savings.
+
+**Cost Awareness:** For aggressive future use, consider hybrid model (cheaper models for routine tasks, Kimi K2.5 only for complex architecture).
+
 ---
 
 *Review and update this weekly during heartbeats*
-*Last updated: 2026-02-10*
+*Last updated: 2026-02-11*
