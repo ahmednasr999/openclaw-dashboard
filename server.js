@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const { execSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
+const { google } = require('googleapis');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -73,6 +74,16 @@ app.post('/api/process-job', async (req, res) => {
         
         // Generate CV URL
         const cvUrl = `https://ahmednasr999.github.io/openclaw-dashboard/${outputDir}/CV.html`;
+        
+        // Add to Google Sheet
+        console.log('📊 Adding to Google Sheet...');
+        await addToGoogleSheet({
+            company: cleanCompany.replace(/_/g, ' '),
+            role: cleanRole.replace(/_/g, ' '),
+            jobUrl: jobUrl,
+            cvUrl: cvUrl,
+            folder: folderName
+        });
         
         console.log('✅ Complete! CV URL:', cvUrl);
         
@@ -357,6 +368,52 @@ function generateCompanyResearch(jd) {
 function generateLinkedInMessage(jd) {
     const company = extractCompany(jd);
     return `=== LINKEDIN OUTREACH MESSAGE ===\n\nTemplate for ${company} hiring manager:\n\nSubject: ${company} - ${extractRole(jd).replace(/_/g, ' ')}\n\nHi [Name],\n\nI noticed ${company} is hiring for a ${extractRole(jd).replace(/_/g, ' ')} role. With 20+ years leading digital transformation and AI initiatives (most recently achieving 95% AI adoption at TopMed), I'm excited about the opportunity to contribute to your team.\n\nI'd love to connect and learn more about your priorities for this role.\n\nBest,\nAhmed Nasr\n\n---\n\nCONNECTION NOTE:\nAdd when sending connection request:\n\n"Hi [Name], I'm a PMO Lead with 20+ years in digital transformation, currently exploring opportunities in [industry]. Would love to connect!"\n`;
+}
+
+async function addToGoogleSheet({ company, role, jobUrl, cvUrl, folder }) {
+    try {
+        const auth = new google.auth.GoogleAuth({
+            keyFile: '/home/openclaw/.openclaw/config/google-sheets-sa.json',
+            scopes: ['https://www.googleapis.com/auth/spreadsheets']
+        });
+        
+        const client = await auth.getClient();
+        const sheets = google.sheets({ version: 'v4', auth: client });
+        
+        const spreadsheetId = '10HMT9ZjFk9eUyCJJR5iVxMXS6iGV6RBS2XTL1K6DhrA';
+        
+        // Prepare row data
+        const rowData = [
+            company,                    // A: Company
+            role,                       // B: Role
+            'CV Ready',                 // C: Status
+            'High',                     // D: Priority
+            'Yes',                      // E: CV Ready
+            'No',                       // F: Applied
+            '',                         // G: Applied Date
+            '',                         // H: Follow-up Date
+            jobUrl,                     // I: Job URL
+            'Generated via Job Processor', // J: Notes
+            '18+ years experience, Digital transformation track record, PMP, MBA', // K: Competitive Advantages
+            '',                         // L: Deadline/Next Step
+            cvUrl                       // M: CV Link
+        ];
+        
+        // Append row to sheet
+        await sheets.spreadsheets.values.append({
+            spreadsheetId: spreadsheetId,
+            range: 'Sheet1!A:M',
+            valueInputOption: 'RAW',
+            requestBody: {
+                values: [rowData]
+            }
+        });
+        
+        console.log('✅ Added to Google Sheet');
+    } catch (error) {
+        console.error('❌ Google Sheet error:', error.message);
+        // Don't throw - continue even if sheet update fails
+    }
 }
 
 function commitToGitHub(outputDir, folderName) {
