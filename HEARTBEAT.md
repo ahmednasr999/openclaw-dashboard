@@ -43,6 +43,16 @@ Tasks to run during heartbeat checks. Don't just reply HEARTBEAT_OK — be produ
 - [ ] Remove outdated info
 - [ ] Update active projects status
 
+## Skill Learning & Enhancement
+
+**Weekly (Sundays):**
+- [ ] Review week's activities — identify gaps and pain points
+- [ ] Research new skills from skills.sh or community repos
+- [ ] Install 1-2 new skills that address identified needs
+- [ ] Build custom skills for recurring workflows
+- [ ] Document skill usage in TOOLS.md
+- [ ] Archive unused skills to keep arsenal lean
+
 **Bi-weekly:**
 - [ ] Full system health check (automated via cron)
 - [ ] Review job application pipeline

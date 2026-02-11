@@ -1,0 +1,15 @@
+{
+  "lastChecks": {
+    "services": 1770793390,
+    "email": null,
+    "calendar": null,
+    "jobs": null,
+    "linkedin": null,
+    "memory": 1770782603
+  },
+  "quietHours": {
+    "start": "23:00",
+    "end": "08:00",
+    "timezone": "GST"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "batch_id": "batch-2026-02-11T08-54-37",
+  "processed_at": "2026-02-11T08:54:37.474Z",
+  "total_jobs": 3,
+  "successful": 3,
+  "failed": 0,
+  "average_ats_score": 72,
+  "best_matches": [
+    {
+      "id": "job-001",
+      "job_title": "Senior Project Manager",
+      "company": "TechGlobal Solutions",
+      "ats_score": 93
+    },
+    {
+      "id": "job-002",
+      "job_title": "Program Manager",
+      "company": "CloudFirst Consulting",
+      "ats_score": 73
+    },
+    {
+      "id": "job-003",
+      "job_title": "IT Project Coordinator",
+      "company": "IT Project Coordinator SmallTech LLC",
+      "ats_score": 50
+    }
+  ],
+  "results": [
+    {
+      "id": "job-001",
+      "company": "TechGlobal Solutions",
+      "url": null,
+      "status": "success",
+      "job_title": "Senior Project Manager",
+      "location": "Dubai, UAE",
+      "ats_score": 93,
+      "match_level": "excellent",
+      "found_keywords": [
+        "project management",
+        "pmp",
+        "agile",
+        "jira",
+        "stakeholder management",
+        "digital transformation",
+        "ai",
+        "cloud",
+        "banking",
+        "financial services",
+        "uae",
+        "dubai",
+        "bachelor",
+        "mba"
+      ],
+      "missing_keywords": [
+        "8+ years"
+      ],
+      "recommendations": [],
+      "cv_generated": true,
+      "cv_path": "/root/.openclaw/agents/main/workspace/test-batch-output/job-001-jd.json",
+      "error": null,
+      "notes": "Great match - dream company",
+      "priority": "high",
+      "employment_type": null
+    },
+    {
+      "id": "job-002",
+      "company": "CloudFirst Consulting",
+      "url": null,
+      "status": "success",
+      "job_title": "Program Manager",
+      "location": "Riyadh, Saudi Arabia",
+      "ats_score": 73,
+      "match_level": "good",
+      "found_keywords": [
+        "program management",
+        "cloud",
+        "aws",
+        "azure",
+        "devops",
+        "financial services",
+        "arabic",
+        "10+ years"
+      ],
+      "missing_keywords": [
+        "ci/cd",
+        "saudi",
+        "riyadh"
+      ],
+      "recommendations": [
+        "Include technical terms: ci/cd"
+      ],
+      "cv_generated": true,
+      "cv_path": "/root/.openclaw/agents/main/workspace/test-batch-output/job-002-jd.json",
+      "error": null,
+      "notes": "Good opportunity in KSA",
+      "priority": "medium",
+      "employment_type": null
+    },
+    {
+      "id": "job-003",
+      "company": "IT Project Coordinator SmallTech LLC",
+      "url": null,
+      "status": "success",
+      "job_title": "IT Project Coordinator",
+      "location": "Remote",
+      "ats_score": 50,
+      "match_level": "fair",
+      "found_keywords": [
+        "project management",
+        "agile"
+      ],
+      "missing_keywords": [
+        "communication",
+        "3 years"
+      ],
+      "recommendations": [],
+      "cv_generated": true,
+      "cv_path": "/root/.openclaw/agents/main/workspace/test-batch-output/job-003-jd.json",
+      "error": null,
+      "notes": "Entry level - below current level",
+      "priority": "low",
+      "employment_type": null
+    }
+  ],
+  "recommendations": [
+    "Strong overall match. Good job targeting!",
+    "1 job(s) with excellent match - prioritize these applications.",
+    "1 job(s) with good match - strong candidates for application."
+  ],
+  "summary_by_level": {
+    "excellent": 1,
+    "good": 1,
+    "fair": 1,
+    "poor": 0,
+    "unscored": 0
+  }
+}

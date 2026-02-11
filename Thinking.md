@@ -160,4 +160,21 @@ _(Dump thoughts here without editing)_
 
 ---
 
+## 📝 NASR OPERATING RULES (Added 2026-02-10)
+
+### Decision-Making Framework
+When presenting options, always include:
+- **Money:** Investment required
+- **Time:** Implementation duration
+- **Cost:** Ongoing operational cost
+- **Impact:** Expected outcome/benefit
+
+### Execution Protocol
+1. Present thinking/recommendations
+2. Wait for explicit "execute" or "yes"
+3. Never auto-implement without approval
+4. Thinking.md = draft space only
+
+---
+
 *This is your thinking space. No structure required. Add, delete, modify as needed.*

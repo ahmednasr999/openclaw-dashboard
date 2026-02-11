@@ -1,0 +1,30 @@
+{
+  "job_title": "Program Manager",
+  "company": "CloudFirst Consulting",
+  "location": "Riyadh, Saudi Arabia",
+  "salary": null,
+  "employment_type": null,
+  "requirements": [
+    "• 10+ years in program management",
+    "Cloud certifications (AWS/Azure)",
+    "Experience with DevOps and CI/CD",
+    "Financial services experience",
+    "Arabic language skills preferred"
+  ],
+  "responsibilities": [
+    "10+ years in program management"
+  ],
+  "qualifications": [],
+  "skills": [
+    "aws",
+    "azure",
+    "cloud",
+    "devops",
+    "ci/cd",
+    "arabic"
+  ],
+  "experience_years": "10+",
+  "source": "text",
+  "parsed_at": "2026-02-11T08:54:37.465Z",
+  "raw_text": "Program Manager - Cloud Migration\n\nCloudFirst Consulting is hiring a Program Manager for large-scale cloud migration projects.\n\nLocation: Riyadh, Saudi Arabia\n\nRequirements:\n• 10+ years in program management\n• Cloud certifications (AWS/Azure)\n• Experience with DevOps and CI/CD\n• Financial services experience\n• Arabic language skills preferred"
+}

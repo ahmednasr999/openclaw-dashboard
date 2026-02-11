@@ -1,0 +1,26 @@
+[
+  {
+    "id": "job-001",
+    "url": null,
+    "text": "Senior Project Manager - Digital Transformation\n\nTechGlobal Solutions is seeking an experienced Senior Project Manager to lead digital transformation initiatives.\n\nLocation: Dubai, UAE\nSalary: $130,000 - $160,000\n\nRequirements:\n• 8+ years project management experience\n• PMP certification required\n• Bachelor's degree required, MBA preferred\n• Experience with banking/financial services\n• Strong agile and stakeholder management skills\n• Experience with Jira and cloud technologies",
+    "company": "TechGlobal Solutions",
+    "notes": "Great match - dream company",
+    "priority": "high"
+  },
+  {
+    "id": "job-002",
+    "url": null,
+    "text": "Program Manager - Cloud Migration\n\nCloudFirst Consulting is hiring a Program Manager for large-scale cloud migration projects.\n\nLocation: Riyadh, Saudi Arabia\n\nRequirements:\n• 10+ years in program management\n• Cloud certifications (AWS/Azure)\n• Experience with DevOps and CI/CD\n• Financial services experience\n• Arabic language skills preferred",
+    "company": "CloudFirst Consulting",
+    "notes": "Good opportunity in KSA",
+    "priority": "medium"
+  },
+  {
+    "id": "job-003",
+    "url": null,
+    "text": "IT Project Coordinator\n\nSmallTech LLC needs an IT Project Coordinator for internal software projects.\n\nLocation: Remote\n\nRequirements:\n• 2-3 years experience\n• Basic project management knowledge\n• Familiar with agile methodologies\n• Good communication skills",
+    "company": "SmallTech LLC",
+    "notes": "Entry level - below current level",
+    "priority": "low"
+  }
+]
