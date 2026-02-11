@@ -1,0 +1,1 @@
+Hi, I'm Ahmed Nasr, PMO Lead at Saudi German Hospital Group with 20+ years driving transformation across GCC. I led AI adoption achieving 95% penetration and 233x scalability. Interested in discussing how my experience can support your transformation initiatives.

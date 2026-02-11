@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Nasr - CV</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.5in;
+            background: #fff;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #C41E3A;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        .name { font-size: 28px; font-weight: 700; color: #C41E3A; letter-spacing: 1px; }
+        .title { font-size: 16px; color: #555; margin-top: 5px; }
+        .contact {
+            font-size: 12px;
+            color: #666;
+            margin-top: 8px;
+            line-height: 1.8;
+        }
+        .section { margin-bottom: 18px; }
+        .section-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #C41E3A;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #C41E3A;
+            padding-bottom: 4px;
+            margin-bottom: 10px;
+        }
+        .summary { font-size: 12px; text-align: justify; }
+        .experience-item { margin-bottom: 14px; }
+        .job-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+        .job-title { font-size: 13px; font-weight: 700; color: #333; }
+        .job-date { font-size: 11px; color: #666; font-style: italic; }
+        .company { font-size: 12px; color: #C41E3A; font-weight: 600; margin-bottom: 4px; }
+        .achievements { font-size: 11.5px; margin-left: 15px; margin-top: 5px; }
+        .achievements li { margin-bottom: 4px; }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px 25px;
+            font-size: 11.5px;
+        }
+        .skill-category { font-weight: 600; color: #C41E3A; }
+        .cert-list { font-size: 11.5px; margin-left: 15px; }
+        .cert-list li { margin-bottom: 3px; }
+        .print-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #C41E3A;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .print-btn:hover { background: #9a1830; }
+        @media print {
+            .print-btn { display: none; }
+            body { padding: 0.3in; }
+            .page-break { page-break-before: always; }
+        }
+    </style>
+</head>
+<body>
+    <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+    
+    <div class="header">
+        <div class="name">AHMED NASR</div>
+        <div class="title">Project Manager | Banking & Financial Services</div>
+        <div class="contact">
+            Abu Dhabi, UAE | +971-XX-XXX-XXXX (UAE) | +20-XX-XXX-XXXX (Egypt)<br>
+            LinkedIn: linkedin.com/in/ahmednasr | Email: ahmed.nasr@email.com
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <p class="summary">
+            Seasoned Project Manager with 20+ years of experience delivering complex banking and technology projects across GCC financial institutions. Proven expertise in project lifecycle management, stakeholder engagement, and delivering initiatives on time and within budget. Currently leading PMO for AI transformation at Saudi German Hospital Group, successfully managing 300+ projects with AED 50M+ portfolio value. Former Intel and Microsoft leader with deep knowledge of banking operations, digital transformation, and regulatory compliance. Track record of building high-performance teams and driving exceptional project outcomes.
+        </p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Core Competencies</div>
+        <div class="skills-grid">
+            <div><span class="skill-category">Project Management:</span> End-to-End Delivery, PMO, Agile/Waterfall, Risk Management</div>
+            <div><span class="skill-category">Banking:</span> Retail Banking, Corporate Banking, Operations, Regulatory Compliance</div>
+            <div><span class="skill-category">Leadership:</span> Team Building, Stakeholder Management, Vendor Management</div>
+            <div><span class="skill-category">Technology:</span> Core Banking, Digital Channels, Data Analytics, Cloud</div>
+            <div><span class="skill-category">Financial Management:</span> Budget Control, Cost Optimization, ROI Analysis</div>
+            <div><span class="skill-category">Governance:</span> Project Governance, Reporting, Quality Assurance</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Professional Experience</div>
+        
+        <div class="experience-item">
+            <div class="job-header">
+                <span class="job-title">PMO Lead</span>
+                <span class="job-date">2022 - Present</span>
+            </div>
+            <div class="company">TopMed (Saudi German Hospital Group), UAE</div>
+            <ul class="achievements">
+                <li>Lead project management office overseeing 300+ concurrent projects with AED 50M+ total budget</li>
+                <li>Delivered AI transformation initiative achieving 95% adoption rate and 3x profitability improvement</li>
+                <li>Built and manage 50+ person project team across multiple locations</li>
+                <li>Established project governance framework ensuring consistent delivery standards</li>
+                <li>Maintain 98% on-time delivery rate with zero major project overruns</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <span class="job-title">Senior Program Manager</span>
+                <span class="job-date">2015 - 2022</span>
+            </div>
+            <div class="company">Intel Corporation</div>
+            <ul class="achievements">
+                <li>Managed portfolio of 20+ projects annually with $25M+ budget across financial services sector</li>
+                <li>Led banking technology implementations for major financial institutions in GCC</li>
+                <li>Delivered complex integration projects combining legacy and modern technology stacks</li>
+                <li>Mentored team of 12 project managers, improving team delivery metrics by 35%</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <span class="job-title">Project Manager - Banking Solutions</span>
+                <span class="job-date">2008 - 2015</span>
+            </div>
+            <div class="company">Microsoft Corporation</div>
+            <ul class="achievements">
+                <li>Delivered 30+ banking and financial services projects across MENA region</li>
+                <li>Managed projects ranging from $500K to $5M in value, all delivered on time and budget</li>
+                <li>Led teams of 15-25 consultants and technical specialists</li>
+                <li>Developed strong relationships with C-suite executives at major banks</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <span class="job-title">Project Manager | Technology Implementation</span>
+                <span class="job-date">2004 - 2008</span>
+            </div>
+            <div class="company">Various Technology Consulting Firms</div>
+            <ul class="achievements">
+                <li>Managed end-to-end implementation of enterprise systems for banking clients</li>
+                <li>Specialized in project recovery and turnaround for at-risk initiatives</li>
+                <li>Built foundational expertise in project management methodologies and tools</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Education</div>
+        <div style="font-size: 12px;">
+            <strong>MBA, Project Management</strong> | 2006<br>
+            <strong>BSc, Business Information Systems</strong> | 2002
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Certifications</div>
+        <ul class="cert-list">
+            <li>PMP (Project Management Professional) - PMI</li>
+            <li>PMI-ACP (Agile Certified Practitioner)</li>
+            <li>PRINCE2 Practitioner</li>
+            <li>Certified Scrum Master (CSM)</li>
+            <li>ITIL v4 Foundation</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Technical Skills</div>
+        <div style="font-size: 11.5px;">
+            Project Tools: MS Project, Primavera, Jira, Monday.com | Banking Systems: Temenos, FLEXCUBE | 
+            Methodologies: Agile, Scrum, Waterfall, Hybrid | Reporting: Power BI, Tableau
+        </div>
+    </div>
+</body>
+</html>

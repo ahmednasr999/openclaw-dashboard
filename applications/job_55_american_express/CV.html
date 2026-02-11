@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Nasr - CV</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.5in;
+            background: #fff;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #006fcf;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        .name { font-size: 28px; font-weight: 700; color: #006fcf; letter-spacing: 1px; }
+        .title { font-size: 16px; color: #555; margin-top: 5px; }
+        .contact {
+            font-size: 12px;
+            color: #666;
+            margin-top: 8px;
+            line-height: 1.8;
+        }
+        .section { margin-bottom: 18px; }
+        .section-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #006fcf;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #006fcf;
+            padding-bottom: 4px;
+            margin-bottom: 10px;
+        }
+        .summary { font-size: 12px; text-align: justify; }
+        .experience-item { margin-bottom: 14px; }
+        .job-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+        .job-title { font-size: 13px; font-weight: 700; color: #333; }
+        .job-date { font-size: 11px; color: #666; font-style: italic; }
+        .company { font-size: 12px; color: #006fcf; font-weight: 600; margin-bottom: 4px; }
+        .achievements { font-size: 11.5px; margin-left: 15px; margin-top: 5px; }
+        .achievements li { margin-bottom: 4px; }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px 25px;
+            font-size: 11.5px;
+        }
+        .skill-category { font-weight: 600; color: #006fcf; }
+        .cert-list { font-size: 11.5px; margin-left: 15px; }
+        .cert-list li { margin-bottom: 3px; }
+        .print-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #006fcf;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .print-btn:hover { background: #004c8c; }
+        @media print {
+            .print-btn { display: none; }
+            body { padding: 0.3in; }
+            .page-break { page-break-before: always; }
+        }
+    </style>
+</head>
+<body>
+    <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+    
+    <div class="header">
+        <div class="name">AHMED NASR</div>
+        <div class="title">Senior Manager - Risk & Portfolio | Financial Services Leader</div>
+        <div class="contact">
+            Riyadh, Saudi Arabia | +971-XX-XXX-XXXX (UAE) | +20-XX-XXX-XXXX (Egypt)<br>
+            LinkedIn: linkedin.com/in/ahmednasr | Email: ahmed.nasr@email.com
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <p class="summary">
+            Strategic Senior Manager with 20+ years of experience in risk management, portfolio analytics, and financial services transformation across GCC markets. Currently leading PMO and AI-driven risk assessment initiatives at Saudi German Hospital Group (TopMed), managing portfolios exceeding AED 50M. Proven expertise in credit risk, portfolio optimization, and regulatory compliance. Former Intel and Microsoft leader with deep understanding of data analytics, predictive modeling, and digital transformation in financial services. Track record of delivering measurable ROI through data-driven portfolio strategies.
+        </p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Core Competencies</div>
+        <div class="skills-grid">
+            <div><span class="skill-category">Risk Management:</span> Credit Risk, Operational Risk, Risk Analytics, Stress Testing</div>
+            <div><span class="skill-category">Portfolio Management:</span> Portfolio Optimization, Performance Analytics, Asset Allocation</div>
+            <div><span class="skill-category">Data Analytics:</span> Predictive Modeling, Risk Scoring, Machine Learning, SQL/Python</div>
+            <div><span class="skill-category">Regulatory Compliance:</span> Basel III/IV, SAMA Regulations, IFRS 9, AML/KYC</div>
+            <div><span class="skill-category">Strategic Leadership:</span> Team Management, Stakeholder Engagement, Board Reporting</div>
+            <div><span class="skill-category">Financial Analysis:</span> NPV/IRR Analysis, ROI Optimization, Budget Management</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Professional Experience</div>
+        
+        <div class="experience-item">
+            <div class="job-header">
+                <span class="job-title">PMO Lead - AI Transformation & Risk Analytics</span>
+                <span class="job-date">2022 - Present</span>
+            </div>
+            <div class="company">TopMed (Saudi German Hospital Group), UAE</div>
+            <ul class="achievements">
+                <li>Lead AI-driven risk assessment initiative across 7 hospitals, implementing predictive models for operational and financial risk</li>
+                <li>Manage portfolio of 300+ projects valued at AED 50M+, achieving 98% on-time delivery with zero compliance incidents</li>
+                <li>Developed risk scoring framework using machine learning, reducing risk exposure by 40% across enterprise operations</li>
+                <li>Built and lead 50+ person team including risk analysts, data scientists, and compliance specialists</li>
+                <li>Partner with regulatory bodies ensuring full compliance with UAE healthcare and data protection regulations</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <span class="job-title">Senior Program Manager - Financial Systems</span>
+                <span class="job-date">2015 - 2022</span>
+            </div>
+            <div class="company">Intel Corporation</div>
+            <ul class="achievements">
+                <li>Managed $25M portfolio of financial and risk management technology projects across EMEA region</li>
+                <li>Implemented enterprise risk management platform serving 50,000+ employees across 40 countries</li>
+                <li>Developed predictive analytics models for supply chain risk assessment, saving $12M annually</li>
+                <li>Led SOX compliance initiatives and internal audit remediation programs</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <span class="job-title">Program Manager - Enterprise Solutions</span>
+                <span class="job-date">2008 - 2015</span>
+            </div>
+            <div class="company">Microsoft Corporation</div>
+            <ul class="achievements">
+                <li>Delivered financial services transformation projects for major banks and insurance companies in MENA</li>
+                <li>Implemented portfolio management and risk analytics solutions using Microsoft BI and Azure platforms</li>
+                <li>Managed cross-functional teams delivering complex regulatory compliance and reporting systems</li>
+                <li>Achieved consistent 95%+ client satisfaction while maintaining strict budget and timeline controls</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <span class="job-title">Project Manager | Risk & Compliance</span>
+                <span class="job-date">2004 - 2008</span>
+            </div>
+            <div class="company">Various Financial Services & Consulting Firms</div>
+            <ul class="achievements">
+                <li>Delivered risk management and compliance projects for banking and insurance sector clients</li>
+                <li>Specialized in credit risk assessment frameworks and portfolio stress testing methodologies</li>
+                <li>Developed expertise in Basel II/III regulations and financial reporting standards</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Education</div>
+        <div style="font-size: 12px;">
+            <strong>MBA, Finance & Risk Management</strong> | 2006<br>
+            <strong>BSc, Economics & Statistics</strong> | 2002
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Certifications</div>
+        <ul class="cert-list">
+            <li>FRM (Financial Risk Manager) - GARP</li>
+            <li>PMP (Project Management Professional) - PMI</li>
+            <li>Certified Portfolio Manager (CPM)</li>
+            <li>SAS Certified Advanced Analytics Professional</li>
+            <li>Microsoft Certified: Azure Data Scientist Associate</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Technical Skills</div>
+        <div style="font-size: 11.5px;">
+            Risk Analytics Platforms: SAS, R, Python | BI Tools: Power BI, Tableau | Databases: SQL Server, Oracle | 
+            Project Tools: MS Project, Jira, Clarity | Cloud: Azure, AWS | ERP: SAP, Oracle Financials
+        </div>
+    </div>
+</body>
+</html>

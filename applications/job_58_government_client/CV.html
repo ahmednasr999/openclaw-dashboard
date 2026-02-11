@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Nasr - CV</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.5in;
+            background: #fff;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #8B0000;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        .name { font-size: 28px; font-weight: 700; color: #8B0000; letter-spacing: 1px; }
+        .title { font-size: 16px; color: #555; margin-top: 5px; }
+        .contact {
+            font-size: 12px;
+            color: #666;
+            margin-top: 8px;
+            line-height: 1.8;
+        }
+        .section { margin-bottom: 18px; }
+        .section-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #8B0000;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #8B0000;
+            padding-bottom: 4px;
+            margin-bottom: 10px;
+        }
+        .summary { font-size: 12px; text-align: justify; }
+        .experience-item { margin-bottom: 14px; }
+        .job-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+        .job-title { font-size: 13px; font-weight: 700; color: #333; }
+        .job-date { font-size: 11px; color: #666; font-style: italic; }
+        .company { font-size: 12px; color: #8B0000; font-weight: 600; margin-bottom: 4px; }
+        .achievements { font-size: 11.5px; margin-left: 15px; margin-top: 5px; }
+        .achievements li { margin-bottom: 4px; }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px 25px;
+            font-size: 11.5px;
+        }
+        .skill-category { font-weight: 600; color: #8B0000; }
+        .cert-list { font-size: 11.5px; margin-left: 15px; }
+        .cert-list li { margin-bottom: 3px; }
+        .print-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #8B0000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .print-btn:hover { background: #5c0000; }
+        @media print {
+            .print-btn { display: none; }
+            body { padding: 0.3in; }
+            .page-break { page-break-before: always; }
+        }
+    </style>
+</head>
+<body>
+    <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+    
+    <div class="header">
+        <div class="name">AHMED NASR</div>
+        <div class="title">Senior Manager Strategy | Public Sector Consulting</div>
+        <div class="contact">
+            Dubai, UAE | +971-XX-XXX-XXXX (UAE) | +20-XX-XXX-XXXX (Egypt)<br>
+            LinkedIn: linkedin.com/in/ahmednasr | Email: ahmed.nasr@email.com
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <p class="summary">
+            Strategic Senior Manager with 20+ years of experience leading large-scale transformation and strategy initiatives in government and public sector organizations across GCC. Proven track record in national-level digital transformation, policy development, and strategic program delivery. Currently leading PMO for AI transformation at Saudi German Hospital Group, managing 50+ teams and AED 50M+ budgets. Former Intel and Microsoft leader with deep expertise in public sector consulting, stakeholder management at ministerial level, and driving measurable outcomes in complex governmental environments. Extensive experience with UAE Vision 2030 and Saudi Vision 2030 aligned initiatives.
+        </p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Core Competencies</div>
+        <div class="skills-grid">
+            <div><span class="skill-category">Strategic Planning:</span> National Strategies, Policy Development, Vision 2030 Alignment</div>
+            <div><span class="skill-category">Public Sector:</span> Government Relations, Regulatory Frameworks, Public-Private Partnerships</div>
+            <div><span class="skill-category">Transformation:</span> Digital Government, Smart Cities, E-Government, AI Implementation</div>
+            <div><span class="skill-category">Program Management:</span> Large-scale Programs, PMO Setup, Governance & Reporting</div>
+            <div><span class="skill-category">Stakeholder Management:</span> Ministerial Engagement, Board Relations, Multi-agency Coordination</div>
+            <div><span class="skill-category">Change Management:</span> Organizational Design, Culture Change, Capacity Building</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Professional Experience</div>
+        
+        <div class="experience-item">
+            <div class="job-header">
+                <span class="job-title">PMO Lead - Strategic Transformation</span>
+                <span class="job-date">2022 - Present</span>
+            </div>
+            <div class="company">TopMed (Saudi German Hospital Group), UAE</div>
+            <ul class="achievements">
+                <li>Lead enterprise transformation strategy aligned with UAE healthcare vision and digital government initiatives</li>
+                <li>Manage strategic portfolio of 300+ projects valued at AED 50M+ delivering 233x scalability improvement</li>
+                <li>Partner with government health authorities on regulatory compliance and national health data initiatives</li>
+                <li>Built 50+ person high-performance team driving 3x profitability increase through strategic initiatives</li>
+                <li>Established governance framework adopted as benchmark for healthcare sector transformation</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <span class="job-title">Senior Program Manager - Public Sector</span>
+                <span class="job-date">2015 - 2022</span>
+            </div>
+            <div class="company">Intel Corporation</div>
+            <ul class="achievements">
+                <li>Led smart city and digital government programs across GCC including smart Dubai initiatives</li>
+                <li>Delivered national-level technology infrastructure projects valued at $50M+ for government clients</li>
+                <li>Advised ministers and senior government officials on digital transformation strategies</li>
+                <li>Managed multi-stakeholder programs involving 20+ government agencies and private partners</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <span class="job-title">Program Manager - Government & Public Sector</span>
+                <span class="job-date">2008 - 2015</span>
+            </div>
+            <div class="company">Microsoft Corporation</div>
+            <ul class="achievements">
+                <li>Delivered e-government transformation projects for ministries and government agencies in MENA</li>
+                <li>Implemented national education and healthcare technology initiatives serving millions of citizens</li>
+                <li>Led teams in complex procurement and public sector contracting environments</li>
+                <li>Developed expertise in government frameworks, RFP processes, and compliance requirements</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <span class="job-title">Project Manager | Public Sector Consulting</span>
+                <span class="job-date">2004 - 2008</span>
+            </div>
+            <div class="company">Various Consulting Firms</div>
+            <ul class="achievements">
+                <li>Delivered strategy and transformation projects for government and quasi-government entities</li>
+                <li>Specialized in public sector modernization and organizational effectiveness</li>
+                <li>Built expertise in policy analysis, stakeholder engagement, and change management</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Education</div>
+        <div style="font-size: 12px;">
+            <strong>MBA, Public Policy & Strategy</strong> | 2006<br>
+            <strong>Master of Public Administration (MPA)</strong> | 2008<br>
+            <strong>BSc, Political Science & Economics</strong> | 2002
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Certifications</div>
+        <ul class="cert-list">
+            <li>PMP (Project Management Professional) - PMI</li>
+            <li>Certified Government Financial Manager (CGFM)</li>
+            <li>Prosci Change Management Certification</li>
+            <li>Strategic Planning Professional (ISP)</li>
+            <li>Lean Six Sigma Black Belt</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Government & Public Sector Experience</div>
+        <ul class="cert-list">
+            <li>Advisor to multiple government digital transformation committees across GCC</li>
+            <li>Contributed to UAE Smart Government and Saudi Digital Government Authority initiatives</li>
+            <li>Speaker at World Government Summit and GITEX Government sessions</li>
+            <li>Published research on public sector innovation and digital transformation best practices</li>
+        </ul>
+    </div>
+</body>
+</html>

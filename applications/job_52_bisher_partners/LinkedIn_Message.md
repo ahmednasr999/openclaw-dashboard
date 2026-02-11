@@ -1,0 +1,1 @@
+Hi, I'm Ahmed Nasr with 20+ years in advisory roles at Intel, Microsoft, and now leading transformation at Saudi German Hospital Group. I advise C-suite on AED 50M+ investments and delivered 233x scalability improvements. Interested in discussing advisory opportunities at Bisher & Partners.

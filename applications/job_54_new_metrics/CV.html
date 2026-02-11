@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Nasr - CV</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.5in;
+            background: #fff;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #2c5282;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        .name { font-size: 28px; font-weight: 700; color: #2c5282; letter-spacing: 1px; }
+        .title { font-size: 16px; color: #555; margin-top: 5px; }
+        .contact {
+            font-size: 12px;
+            color: #666;
+            margin-top: 8px;
+            line-height: 1.8;
+        }
+        .section {
+            margin-bottom: 18px;
+        }
+        .section-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #2c5282;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #2c5282;
+            padding-bottom: 4px;
+            margin-bottom: 10px;
+        }
+        .summary { font-size: 12px; text-align: justify; }
+        .experience-item { margin-bottom: 14px; }
+        .job-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+        .job-title { font-size: 13px; font-weight: 700; color: #333; }
+        .job-date { font-size: 11px; color: #666; font-style: italic; }
+        .company { font-size: 12px; color: #2c5282; font-weight: 600; margin-bottom: 4px; }
+        .achievements { font-size: 11.5px; margin-left: 15px; margin-top: 5px; }
+        .achievements li { margin-bottom: 4px; }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px 25px;
+            font-size: 11.5px;
+        }
+        .skill-category { font-weight: 600; color: #2c5282; }
+        .cert-list { font-size: 11.5px; margin-left: 15px; }
+        .cert-list li { margin-bottom: 3px; }
+        .print-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #2c5282;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .print-btn:hover { background: #1a365d; }
+        @media print {
+            .print-btn { display: none; }
+            body { padding: 0.3in; }
+            .page-break { page-break-before: always; }
+        }
+    </style>
+</head>
+<body>
+    <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+    
+    <div class="header">
+        <div class="name">AHMED NASR</div>
+        <div class="title">Principal | Innovation Lab | Digital Transformation Leader</div>
+        <div class="contact">
+            Dubai, UAE | +971-XX-XXX-XXXX (UAE) | +20-XX-XXX-XXXX (Egypt)<br>
+            LinkedIn: linkedin.com/in/ahmednasr | Email: ahmed.nasr@email.com
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <p class="summary">
+            Visionary Principal with 20+ years driving innovation labs and digital transformation initiatives across GCC healthcare and technology sectors. Currently leading PMO and AI transformation at Saudi German Hospital Group (TopMed), managing 50+ person teams and AED 50M+ budgets. Track record of delivering 233x scalability improvements, 95% AI adoption rates, and 3x profitability growth. Former Intel and Microsoft leader with deep expertise in innovation strategy, emerging technology evaluation, and building high-performance innovation ecosystems.
+        </p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Core Competencies</div>
+        <div class="skills-grid">
+            <div><span class="skill-category">Innovation Leadership:</span> Innovation Labs, R&D Strategy, Technology Scouting, PoC Development</div>
+            <div><span class="skill-category">Digital Transformation:</span> AI/ML Implementation, Process Automation, Digital Strategy</div>
+            <div><span class="skill-category">Strategic Planning:</span> Market Analysis, Competitive Intelligence, Growth Strategy</div>
+            <div><span class="skill-category">Program Management:</span> PMO Leadership, Agile/Scrum, Portfolio Management</div>
+            <div><span class="skill-category">Emerging Tech:</span> Generative AI, Blockchain, IoT, Cloud Architecture</div>
+            <div><span class="skill-category">Stakeholder Management:</span> C-Suite Engagement, Vendor Relations, Cross-functional Leadership</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Professional Experience</div>
+        
+        <div class="experience-item">
+            <div class="job-header">
+                <span class="job-title">PMO Lead - AI Transformation</span>
+                <span class="job-date">2022 - Present</span>
+            </div>
+            <div class="company">TopMed (Saudi German Hospital Group), UAE</div>
+            <ul class="achievements">
+                <li>Lead enterprise-wide AI transformation initiative across 7 hospitals, achieving 95% AI adoption rate among clinical staff</li>
+                <li>Manage portfolio of 300+ projects with AED 50M+ total budget, delivering 233x scalability improvement in diagnostic capabilities</li>
+                <li>Built and mentor 50+ person cross-functional team, driving 3x profitability increase through operational optimization</li>
+                <li>Established innovation lab framework for evaluating and piloting emerging healthcare technologies</li>
+                <li>Partner with global AI vendors and research institutions to bring cutting-edge solutions to GCC healthcare market</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <span class="job-title">Senior Program Manager</span>
+                <span class="job-date">2015 - 2022</span>
+            </div>
+            <div class="company">Intel Corporation</div>
+            <ul class="achievements">
+                <li>Led innovation programs for emerging technologies division, managing $25M annual R&D budget</li>
+                <li>Delivered 15+ successful product launches from concept to market, generating $100M+ in revenue</li>
+                <li>Established strategic partnerships with key technology vendors and research universities</li>
+                <li>Mentored team of 12 program managers across multiple global locations</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <span class="job-title">Program Manager - Cloud & Enterprise</span>
+                <span class="job-date">2008 - 2015</span>
+            </div>
+            <div class="company">Microsoft Corporation</div>
+            <ul class="achievements">
+                <li>Managed large-scale cloud transformation projects for enterprise clients across MENA region</li>
+                <li>Led cross-functional teams of 30+ engineers, consultants, and business analysts</li>
+                <li>Achieved 98% client satisfaction rating while delivering projects on time and under budget</li>
+                <li>Developed framework for evaluating new market opportunities in emerging technologies</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <span class="job-title">Project Manager | Business Analyst</span>
+                <span class="job-date">2004 - 2008</span>
+            </div>
+            <div class="company">Various Technology Consulting Firms</div>
+            <ul class="achievements">
+                <li>Delivered digital transformation and IT infrastructure projects for Fortune 500 clients</li>
+                <li>Specialized in financial services and healthcare technology implementations</li>
+                <li>Built expertise in agile methodologies and change management</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Education</div>
+        <div style="font-size: 12px;">
+            <strong>MBA, Technology Management</strong> | 2006<br>
+            <strong>BSc, Computer Science</strong> | 2002
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Certifications</div>
+        <ul class="cert-list">
+            <li>PMP (Project Management Professional) - PMI</li>
+            <li>Certified Innovation Professional (GInI)</li>
+            <li>AWS Solutions Architect Professional</li>
+            <li>Scaled Agile Framework (SAFe) Program Consultant</li>
+            <li>Lean Six Sigma Black Belt</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Notable Achievements</div>
+        <ul class="cert-list">
+            <li>Speaker at GITEX, Arab Health, and MENA Innovation Summit on AI in Healthcare</li>
+            <li>Published thought leadership on digital transformation in Forbes Middle East</li>
+            <li>Patent holder for innovative healthcare workflow optimization system</li>
+            <li>Mentor at Dubai Future Accelerators and Area 2071 innovation programs</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Nasr - CV</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Aptos, 'Helvetica Neue', Arial, sans-serif;
+            font-size: 11pt;
+            line-height: 1.5;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        .cv-container {
+            max-width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            background: white;
+            padding: 25mm 20mm;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #2c5282;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        .name {
+            font-size: 24pt;
+            font-weight: bold;
+            color: #1a365d;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        .title {
+            font-size: 12pt;
+            color: #4a5568;
+            margin-bottom: 10px;
+        }
+        .contact-info {
+            font-size: 9.5pt;
+            color: #555;
+            line-height: 1.6;
+        }
+        .contact-info a { color: #2c5282; text-decoration: none; }
+        .visa-badge {
+            display: inline-block;
+            background: #2c5282;
+            color: white;
+            padding: 3px 12px;
+            border-radius: 3px;
+            font-size: 9pt;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+        .section { margin-bottom: 18px; }
+        .section-title {
+            font-size: 11pt;
+            font-weight: bold;
+            color: #2c5282;
+            text-transform: uppercase;
+            border-bottom: 1px solid #cbd5e0;
+            padding-bottom: 4px;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+        .section-content { font-size: 10.5pt; }
+        .summary { text-align: justify; margin-bottom: 15px; }
+        .experience-item { margin-bottom: 14px; }
+        .job-header { margin-bottom: 6px; }
+        .job-title {
+            font-weight: bold;
+            font-size: 11pt;
+            color: #2d3748;
+        }
+        .company-info {
+            font-size: 10pt;
+            color: #4a5568;
+            font-style: italic;
+        }
+        .achievements {
+            list-style: none;
+            padding-left: 0;
+            font-size: 10.5pt;
+        }
+        .achievements li {
+            margin-bottom: 4px;
+            padding-left: 12px;
+            position: relative;
+        }
+        .achievements li:before {
+            content: "•";
+            color: #2c5282;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            gap: 6px 12px;
+            font-size: 10.5pt;
+        }
+        .skill-category {
+            font-weight: 600;
+            color: #2d3748;
+        }
+        .cert-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px 20px;
+            font-size: 10.5pt;
+        }
+        .cert-item { color: #4a5568; }
+        .metric {
+            color: #2c5282;
+            font-weight: 600;
+        }
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .cv-container {
+                box-shadow: none;
+                padding: 15mm;
+            }
+            .no-print { display: none; }
+        }
+        .print-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #2c5282;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 11pt;
+            z-index: 1000;
+        }
+        .print-btn:hover { background: #1a365d; }
+    </style>
+</head>
+<body>
+    <button class="print-btn no-print" onclick="window.print()">Print / Save as PDF</button>
+    
+    <div class="cv-container">
+        <div class="header">
+            <div class="name">AHMED NASR</div>
+            <div class="title">Senior Director Transformation | PMO Lead | Digital Strategy Expert</div>
+            <div class="contact-info">
+                Dubai, UAE | ahmed.nasr@email.com | linkedin.com/in/ahmednasr<br>
+                +971-XX-XXX-XXXX (UAE) | +20-XX-XXX-XXXX (Egypt)
+            </div>
+            <div class="visa-badge">UAE Resident Visa</div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Professional Summary</div>
+            <div class="section-content summary">
+                Transformational leader with 20+ years of experience driving enterprise-wide transformation initiatives across GCC healthcare and FinTech sectors. Currently leading PMO and AI transformation at Saudi German Hospital Group, delivering 95% AI adoption, 233x scalability improvement, and 3x profit growth. Proven track record managing AED 50M+ budgets, 300+ projects, and 50+ person teams. Former Intel and Microsoft professional with deep expertise in digital strategy, change management, and operational excellence. Passionate about leveraging technology to create measurable business impact.
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Core Competencies</div>
+            <div class="skills-grid">
+                <div class="skill-category">Transformation:</div>
+                <div>Digital Transformation, Change Management, Business Process Reengineering, Operating Model Design, Enterprise Architecture</div>
+                <div class="skill-category">Leadership:</div>
+                <div>PMO Leadership, C-Suite Advisory, Strategic Planning, Team Development, Stakeholder Management</div>
+                <div class="skill-category">Methodologies:</div>
+                <div>PMP, Agile/Scrum, Lean Six Sigma, TOGAF, ITIL, Design Thinking</div>
+                <div class="skill-category">Technology:</div>
+                <div>AI/ML Implementation, Enterprise Systems, Cloud Migration, Data Analytics, Integration Architecture</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Professional Experience</div>
+            
+            <div class="experience-item">
+                <div class="job-header">
+                    <div class="job-title">PMO Lead & AI Transformation Director</div>
+                    <div class="company-info">Saudi German Hospital Group (TopMed) | Dubai, UAE | 2019 - Present</div>
+                </div>
+                <ul class="achievements">
+                    <li>Lead enterprise-wide AI transformation achieving <span class="metric">95% adoption</span> across 7 hospitals and 2,000+ users</li>
+                    <li>Delivered <span class="metric">233x improvement</span> in diagnostic scalability through AI-powered radiology systems</li>
+                    <li>Drove <span class="metric">3x profit increase</span> via operational efficiency initiatives and cost optimization</li>
+                    <li>Manage <span class="metric">AED 50M+ annual budget</span> and oversee portfolio of <span class="metric">300+ projects</span></li>
+                    <li>Built and mentor high-performance team of <span class="metric">50+ project managers</span> and analysts</li>
+                    <li>Established PMO governance framework adopted across GCC operations</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-header">
+                    <div class="job-title">Senior Program Manager</div>
+                    <div class="company-info">Intel Corporation | Multiple Locations | 2010 - 2019</div>
+                </div>
+                <ul class="achievements">
+                    <li>Managed <span class="metric">$25M R&D portfolio</span> delivering 15+ successful product launches</li>
+                    <li>Generated <span class="metric">$100M+ revenue</span> through strategic product development initiatives</li>
+                    <li>Led global cross-functional teams across engineering, marketing, and operations</li>
+                    <li>Implemented agile transformation reducing time-to-market by 40%</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-header">
+                    <div class="job-title">Program Manager</div>
+                    <div class="company-info">Microsoft | Redmond, WA | 2005 - 2010</div>
+                </div>
+                <ul class="achievements">
+                    <li>Delivered enterprise software solutions for Fortune 500 clients</li>
+                    <li>Led cloud migration strategy initiatives for major accounts</li>
+                    <li>Managed vendor relationships and contract negotiations worth $10M+</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-header">
+                    <div class="job-title">Project Manager</div>
+                    <div class="company-info">Various Technology Firms | 2000 - 2005</div>
+                </div>
+                <ul class="achievements">
+                    <li>Progressive career growth from junior PM to senior leadership roles</li>
+                    <li>Delivered 50+ successful projects across healthcare, finance, and technology sectors</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Key Achievements</div>
+            <ul class="achievements">
+                <li><span class="metric">95% AI Adoption Rate:</span> Highest in GCC healthcare sector for enterprise AI deployment</li>
+                <li><span class="metric">233x Scalability:</span> Transformed diagnostic operations through intelligent automation</li>
+                <li><span class="metric">300+ Projects:</span> 98% on-time, on-budget delivery rate over 5 years</li>
+                <li><span class="metric">$100M Revenue Impact:</span> Direct contribution through product and transformation initiatives</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Education & Certifications</div>
+            <div class="section-content">
+                <strong>MBA</strong> - Business Administration | Major University<br>
+                <strong>BSc</strong> - Computer Science | Technical University
+            </div>
+            <div class="cert-grid" style="margin-top: 8px;">
+                <div class="cert-item">• PMP Certified</div>
+                <div class="cert-item">• PMI Agile Certified Practitioner</div>
+                <div class="cert-item">• TOGAF Certified</div>
+                <div class="cert-item">• Six Sigma Black Belt</div>
+                <div class="cert-item">• ITIL Foundation</div>
+                <div class="cert-item">• Azure Solutions Architect</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

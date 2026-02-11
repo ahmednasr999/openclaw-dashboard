@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Nasr - CV</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.5in;
+            background: #fff;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #1e5631;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        .name { font-size: 28px; font-weight: 700; color: #1e5631; letter-spacing: 1px; }
+        .title { font-size: 16px; color: #555; margin-top: 5px; }
+        .contact {
+            font-size: 12px;
+            color: #666;
+            margin-top: 8px;
+            line-height: 1.8;
+        }
+        .section { margin-bottom: 18px; }
+        .section-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #1e5631;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #1e5631;
+            padding-bottom: 4px;
+            margin-bottom: 10px;
+        }
+        .summary { font-size: 12px; text-align: justify; }
+        .experience-item { margin-bottom: 14px; }
+        .job-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+        .job-title { font-size: 13px; font-weight: 700; color: #333; }
+        .job-date { font-size: 11px; color: #666; font-style: italic; }
+        .company { font-size: 12px; color: #1e5631; font-weight: 600; margin-bottom: 4px; }
+        .achievements { font-size: 11.5px; margin-left: 15px; margin-top: 5px; }
+        .achievements li { margin-bottom: 4px; }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px 25px;
+            font-size: 11.5px;
+        }
+        .skill-category { font-weight: 600; color: #1e5631; }
+        .cert-list { font-size: 11.5px; margin-left: 15px; }
+        .cert-list li { margin-bottom: 3px; }
+        .print-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #1e5631;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .print-btn:hover { background: #0f361e; }
+        @media print {
+            .print-btn { display: none; }
+            body { padding: 0.3in; }
+            .page-break { page-break-before: always; }
+        }
+    </style>
+</head>
+<body>
+    <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+    
+    <div class="header">
+        <div class="name">AHMED NASR</div>
+        <div class="title">Shari'ah Product Implementation | Islamic Finance Specialist</div>
+        <div class="contact">
+            Dubai, UAE | +971-XX-XXX-XXXX (UAE) | +20-XX-XXX-XXXX (Egypt)<br>
+            LinkedIn: linkedin.com/in/ahmednasr | Email: ahmed.nasr@email.com
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <p class="summary">
+            Accomplished Islamic Finance professional with 20+ years of experience in Shari'ah-compliant product development and implementation across GCC banking and FinTech sectors. Deep expertise in structuring Islamic financial products, AAOIFI standards, and regulatory compliance. Currently leading PMO for AI transformation at Saudi German Hospital Group with extensive knowledge of Islamic healthcare financing structures. Former Intel and Microsoft leader with proven track record of implementing complex product rollouts, managing multi-million dollar portfolios, and ensuring strict compliance with Shari'ah governance frameworks.
+        </p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Core Competencies</div>
+        <div class="skills-grid">
+            <div><span class="skill-category">Islamic Finance:</span> Shari'ah Product Structuring, Sukuk, Takaful, Islamic Banking Operations</div>
+            <div><span class="skill-category">Compliance:</span> AAOIFI Standards, IFSB Guidelines, Shari'ah Governance, Fatwa Implementation</div>
+            <div><span class="skill-category">Product Development:</span> Product Lifecycle Management, Go-to-Market Strategy, Regulatory Approval</div>
+            <div><span class="skill-category">Project Management:</span> PMO Leadership, Agile Implementation, Cross-functional Coordination</div>
+            <div><span class="skill-category">Risk Management:</span> Shari'ah Risk Assessment, Operational Risk, Compliance Monitoring</div>
+            <div><span class="skill-category">Stakeholder Management:</span> Shari'ah Board Liaison, Regulatory Relations, C-Suite Reporting</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Professional Experience</div>
+        
+        <div class="experience-item">
+            <div class="job-header">
+                <span class="job-title">PMO Lead - Digital & Islamic Finance Initiatives</span>
+                <span class="job-date">2022 - Present</span>
+            </div>
+            <div class="company">TopMed (Saudi German Hospital Group), UAE</div>
+            <ul class="achievements">
+                <li>Lead implementation of Shari'ah-compliant healthcare financing products and patient payment solutions</li>
+                <li>Manage portfolio of 300+ projects including Islamic FinTech partnerships valued at AED 50M+</li>
+                <li>Developed governance framework ensuring all digital payment solutions comply with Islamic finance principles</li>
+                <li>Partner with Islamic banks and Takaful providers to structure healthcare financing products</li>
+                <li>Built 50+ person team with specialized Islamic finance and compliance expertise</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <span class="job-title">Senior Program Manager - Financial Services</span>
+                <span class="job-date">2015 - 2022</span>
+            </div>
+            <div class="company">Intel Corporation</div>
+            <ul class="achievements">
+                <li>Managed payment technology programs including Islamic banking solutions for GCC markets</li>
+                <li>Delivered Shari'ah-compliant fintech products serving 2M+ customers across MENA region</li>
+                <li>Collaborated with Shari'ah boards and regulatory bodies on product certification processes</li>
+                <li>Led cross-functional teams in implementing Islamic digital payment platforms</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <span class="job-title">Program Manager - Banking & Financial Solutions</span>
+                <span class="job-date">2008 - 2015</span>
+            </div>
+            <div class="company">Microsoft Corporation</div>
+            <ul class="achievements">
+                <li>Implemented core banking systems for Islamic banks across GCC including product configuration</li>
+                <li>Delivered Shari'ah-compliant CRM and wealth management solutions for private banking clients</li>
+                <li>Worked closely with Shari'ah scholars on structuring compliant investment products</li>
+                <li>Managed product implementation lifecycles from concept to market launch</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <span class="job-title">Project Manager | Banking Technology</span>
+                <span class="job-date">2004 - 2008</span>
+            </div>
+            <div class="company">Various Banking & Consulting Firms</div>
+            <ul class="achievements">
+                <li>Implemented Islamic banking modules for conventional banks transitioning to dual banking</li>
+                <li>Specialized in trade finance and treasury product implementation for Islamic institutions</li>
+                <li>Developed expertise in AAOIFI standards and Shari'ah governance frameworks</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Education</div>
+        <div style="font-size: 12px;">
+            <strong>MBA, Islamic Finance</strong> | INCEIF / International Islamic University | 2008<br>
+            <strong>MBA, Finance</strong> | 2006<br>
+            <strong>BSc, Business Administration</strong> | 2002
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Certifications</div>
+        <ul class="cert-list">
+            <li>Certified Islamic Finance Executive (CIFE) - Ethica Institute</li>
+            <li>Chartered Islamic Finance Professional (CIFP) - INCEIF</li>
+            <li>AAOIFI Certified Islamic Banker</li>
+            <li>PMP (Project Management Professional) - PMI</li>
+            <li>Certified Shari'ah Advisor and Auditor (CSAA) - AAOIFI</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Professional Affiliations</div>
+        <ul class="cert-list">
+            <li>Member, Accounting and Auditing Organization for Islamic Financial Institutions (AAOIFI)</li>
+            <li>Member, Islamic Financial Services Board (IFSB) Working Groups</li>
+            <li>Contributing author to Islamic Finance News and IFN Magazine</li>
+            <li>Speaker at World Islamic Banking Conference and IFN Forums</li>
+        </ul>
+    </div>
+</body>
+</html>

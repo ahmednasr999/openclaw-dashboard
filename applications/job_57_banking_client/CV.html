@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Nasr - CV</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.5in;
+            background: #fff;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #003087;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        .name { font-size: 28px; font-weight: 700; color: #003087; letter-spacing: 1px; }
+        .title { font-size: 16px; color: #555; margin-top: 5px; }
+        .contact {
+            font-size: 12px;
+            color: #666;
+            margin-top: 8px;
+            line-height: 1.8;
+        }
+        .section { margin-bottom: 18px; }
+        .section-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #003087;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #003087;
+            padding-bottom: 4px;
+            margin-bottom: 10px;
+        }
+        .summary { font-size: 12px; text-align: justify; }
+        .experience-item { margin-bottom: 14px; }
+        .job-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+        .job-title { font-size: 13px; font-weight: 700; color: #333; }
+        .job-date { font-size: 11px; color: #666; font-style: italic; }
+        .company { font-size: 12px; color: #003087; font-weight: 600; margin-bottom: 4px; }
+        .achievements { font-size: 11.5px; margin-left: 15px; margin-top: 5px; }
+        .achievements li { margin-bottom: 4px; }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px 25px;
+            font-size: 11.5px;
+        }
+        .skill-category { font-weight: 600; color: #003087; }
+        .cert-list { font-size: 11.5px; margin-left: 15px; }
+        .cert-list li { margin-bottom: 3px; }
+        .print-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #003087;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .print-btn:hover { background: #00225c; }
+        @media print {
+            .print-btn { display: none; }
+            body { padding: 0.3in; }
+            .page-break { page-break-before: always; }
+        }
+    </style>
+</head>
+<body>
+    <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+    
+    <div class="header">
+        <div class="name">AHMED NASR</div>
+        <div class="title">Senior Project Manager - Banking Transformation</div>
+        <div class="contact">
+            Riyadh, Saudi Arabia | +971-XX-XXX-XXXX (UAE) | +20-XX-XXX-XXXX (Egypt)<br>
+            LinkedIn: linkedin.com/in/ahmednasr | Email: ahmed.nasr@email.com
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <p class="summary">
+            Results-driven Senior Project Manager with 20+ years of experience leading large-scale banking transformation initiatives across GCC financial institutions. Proven expertise in core banking modernization, digital transformation, regulatory compliance, and change management. Currently spearheading AI-driven transformation at Saudi German Hospital Group with AED 50M+ portfolio oversight. Former Intel and Microsoft leader with deep knowledge of banking technology ecosystems, agile transformation, and stakeholder management at C-suite level. Track record of delivering complex transformation programs on time, within budget, and with measurable business outcomes.
+        </p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Core Competencies</div>
+        <div class="skills-grid">
+            <div><span class="skill-category">Banking Transformation:</span> Core Banking Migration, Digital Banking, Process Reengineering</div>
+            <div><span class="skill-category">Program Management:</span> PMO Leadership, Portfolio Management, Governance Frameworks</div>
+            <div><span class="skill-category">Technology:</span> Core Banking Systems, APIs, Cloud Migration, Data Analytics</div>
+            <div><span class="skill-category">Change Management:</span> Organizational Change, Training, Communication Strategy</div>
+            <div><span class="skill-category">Regulatory:</span> SAMA, CBUAE, Basel Compliance, Risk Management</div>
+            <div><span class="skill-category">Leadership:</span> Team Building, Stakeholder Management, Executive Reporting</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Professional Experience</div>
+        
+        <div class="experience-item">
+            <div class="job-header">
+                <span class="job-title">PMO Lead - Enterprise Transformation</span>
+                <span class="job-date">2022 - Present</span>
+            </div>
+            <div class="company">TopMed (Saudi German Hospital Group), UAE</div>
+            <ul class="achievements">
+                <li>Lead enterprise-wide transformation program covering 7 hospitals with AED 50M+ investment</li>
+                <li>Delivered AI-powered operational transformation achieving 233x scalability and 3x profit improvement</li>
+                <li>Manage portfolio of 300+ concurrent projects using agile and waterfall methodologies</li>
+                <li>Built and lead 50+ person transformation team including change management specialists</li>
+                <li>Implemented enterprise PMO governance framework adopted as organizational standard</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <span class="job-title">Senior Program Manager - Financial Services</span>
+                <span class="job-date">2015 - 2022</span>
+            </div>
+            <div class="company">Intel Corporation</div>
+            <ul class="achievements">
+                <li>Led banking and fintech transformation programs across EMEA with $30M+ annual portfolio value</li>
+                <li>Delivered core banking modernization projects for 5+ major financial institutions</li>
+                <li>Managed regulatory compliance initiatives including Basel III and PSD2 implementations</li>
+                <li>Established partner ecosystem with leading banking technology vendors</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <span class="job-title">Program Manager - Banking & Capital Markets</span>
+                <span class="job-date">2008 - 2015</span>
+            </div>
+            <div class="company">Microsoft Corporation</div>
+            <ul class="achievements">
+                <li>Delivered digital banking transformation for 15+ banks across MENA region</li>
+                <li>Implemented cloud-based banking solutions and modernized legacy infrastructure</li>
+                <li>Led cross-functional teams of 40+ consultants, developers, and business analysts</li>
+                <li>Achieved consistent on-time, on-budget delivery with 95%+ client satisfaction scores</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <span class="job-title">Project Manager | Banking Systems</span>
+                <span class="job-date">2004 - 2008</span>
+            </div>
+            <div class="company">Various Banking Technology Firms</div>
+            <ul class="achievements">
+                <li>Managed core banking implementations, upgrades, and integration projects</li>
+                <li>Specialized in retail banking, payments, and wealth management solutions</li>
+                <li>Developed expertise in banking regulations and compliance requirements across GCC</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Education</div>
+        <div style="font-size: 12px;">
+            <strong>MBA, Technology Management</strong> | 2006<br>
+            <strong>BSc, Computer Science</strong> | 2002
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Certifications</div>
+        <ul class="cert-list">
+            <li>PMP (Project Management Professional) - PMI</li>
+            <li>PMI-ACP (Agile Certified Practitioner)</li>
+            <li>Certified Banking Transformation Professional</li>
+            <li>Prosci Change Management Certification</li>
+            <li>Scaled Agile Framework (SAFe) Program Consultant</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Banking Technology Expertise</div>
+        <div style="font-size: 11.5px;">
+            Core Banking: Temenos, Finacle, FLEXCUBE | Digital: Mobile Banking, Internet Banking, Open Banking | 
+            Payments: SWIFT, RTGS, ISO 20022 | Data: Data Warehousing, BI, Analytics | Cloud: Azure, AWS
+        </div>
+    </div>
+</body>
+</html>
