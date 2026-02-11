@@ -1,0 +1,56 @@
+INTERVIEW PREPARATION: Customer Management Framework Lead
+Generated: 2026-02-11
+
+================================================================================
+KEY TALKING POINTS
+================================================================================
+
+Opening Statement (2 minutes):
+"I bring 18+ years of technology leadership experience with a proven track record 
+delivering digital transformation programs across banking, fintech, and enterprise 
+sectors. At TopMed, I lead a 45+ person organization managing $10M+ technology 
+budget. I'm passionate about aligning technology strategy with business outcomes 
+and have successfully delivered multi-million dollar programs with measurable ROI."
+
+================================================================================
+PREPARED EXAMPLES (STAR Method)
+================================================================================
+
+Situation: Large-scale digital transformation at El Araby Group
+Task: Transform operations across 7 countries
+Action: Established governance framework, led change management, managed vendors
+Result: 35% improvement in operational efficiency, successful rollout
+
+Situation: PMO setup at PaySky
+Task: Create portfolio management function
+Action: Designed governance, trained teams, implemented tools
+Result: On-time delivery improved by 40%, better resource allocation
+
+================================================================================
+QUESTIONS TO EXPECT
+================================================================================
+
+Technical:
+• How do you approach large-scale transformation programs?
+• Describe your experience with PMO setup and governance
+• How do you manage stakeholder expectations at C-suite level?
+
+Behavioral:
+• Tell me about a failed project and what you learned
+• How do you handle resistance to change?
+• Describe a time you had to influence without authority
+
+Strategic:
+• What's your vision for digital transformation in this sector?
+• How do you align technology investments with business strategy?
+• What metrics do you use to measure program success?
+
+================================================================================
+QUESTIONS TO ASK
+================================================================================
+
+1. What are the top 3 priorities for this role in the first 90 days?
+2. How is success measured in this position?
+3. What is the current state of digital transformation initiatives?
+4. What are the biggest challenges facing the organization?
+5. How would you describe the company culture?
