@@ -1,0 +1,26 @@
+=== INTERVIEW PREPARATION ===
+
+Role: role
+Generated: 2/11/2026
+
+LIKELY INTERVIEW QUESTIONS:
+
+1. Tell me about your experience with digital transformation.
+   → Focus on TopMed AI initiative (95% adoption, 50M AED budget)
+
+2. How do you handle stakeholder management?
+   → Talabat story: aligned 5 departments for 233x growth
+
+3. Describe a challenging project and how you delivered it.
+   → PaySky AI platform: 25-person team, 3 countries, 40% efficiency gain
+
+4. What is your approach to AI implementation?
+   → Start with pilot, measure ROI, scale with change management
+
+5. How do you manage budgets over 50M AED?
+   → Monthly forecasting, weekly reviews, contingency planning
+
+QUESTIONS TO ASK THEM:
+- What does success look like in this role after 6 months?
+- How is the team structured and what are the key challenges?
+- What AI/digital initiatives are currently underway?

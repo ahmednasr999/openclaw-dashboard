@@ -1,0 +1,21 @@
+=== LINKEDIN OUTREACH MESSAGE ===
+
+Template for company hiring manager:
+
+Subject: company - role
+
+Hi [Name],
+
+I noticed company is hiring for a role role. With 20+ years leading digital transformation and AI initiatives (most recently achieving 95% AI adoption at TopMed), I'm excited about the opportunity to contribute to your team.
+
+I'd love to connect and learn more about your priorities for this role.
+
+Best,
+Ahmed Nasr
+
+---
+
+CONNECTION NOTE:
+Add when sending connection request:
+
+"Hi [Name], I'm a PMO Lead with 20+ years in digital transformation, currently exploring opportunities in [industry]. Would love to connect!"
