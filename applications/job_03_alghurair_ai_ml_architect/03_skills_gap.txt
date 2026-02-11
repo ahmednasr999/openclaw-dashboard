@@ -1,0 +1,35 @@
+Al Ghurair - SKILLS ALIGNMENT ANALYSIS
+=======================================
+
+REQUIRED SKILLS vs. AHMED'S EXPERIENCE:
+---------------------------------------
+
+○ AI/ML Technical Depth - MODERATE GAP
+  Current: Strategic technology leader with ML project oversight
+  Gap: Hands-on ML model development and deployment experience
+  Mitigation: Strong foundation in data analytics and technology architecture
+
+✓ AI Strategy & Vision - STRONG MATCH
+  Evidence: CTO experience setting technology direction
+  Evidence: Product strategy with AI-enabled features
+
+✓ Business Translation - EXCELLENT MATCH
+  Evidence: Multiple roles bridging business and technology
+  Evidence: Product management background
+
+✓ Team Leadership - EXCELLENT MATCH
+  Evidence: Led 45+ person organizations
+  Evidence: Built teams from ground up
+
+✓ Production System Experience - STRONG MATCH
+  Evidence: Delivered 300+ enterprise projects
+  Evidence: Scalable platform architecture experience
+
+○ MLOps & Model Governance - DEVELOPMENT AREA
+  Current: DevOps and CI/CD experience
+  Gap: Specific ML operations and model governance
+  Mitigation: Transferable infrastructure and governance expertise
+
+RECOMMENDATION:
+---------------
+MODERATE FIT - Position as AI/ML leader who can build the practice, hire deep technical talent, and drive business value. Emphasize strategic vision, production experience, and team building over hands-on model development.

@@ -1,0 +1,45 @@
+RAKBANK - INTERVIEW PREPARATION
+================================
+
+PREDICTED INTERVIEW QUESTIONS:
+------------------------------
+
+1. "How would you approach harmonizing onboarding experiences across our diverse channels?"
+   → Highlight El Araby multi-channel experience and PaySky digital journey design
+
+2. "Tell us about a time you reduced customer pain points in an onboarding journey."
+   → Use TopMed 35% completion improvement example with specific metrics
+
+3. "How do you balance compliance requirements with customer experience?"
+   → Discuss PaySky 99.9% fraud prevention while maintaining seamless UX
+
+4. "What experience do you have with KYC/AML in a banking context?"
+   → Detail digital KYC frameworks, biometric integration, regulatory adherence
+
+5. "How would you enable and train frontline sales teams?"
+   → Share 30% ramp-up reduction through structured frameworks
+
+6. "Describe your experience with digital partnerships and alternate channels."
+   → TopMed 40% acquisition from digital partnerships
+
+STAKEHOLDER MANAGEMENT SCENARIOS:
+----------------------------------
+- Handling resistance from branch managers to process changes
+- Aligning Risk/Compliance with business objectives
+- Managing technology delivery expectations
+- Working with HR/L&D on training rollout
+
+QUESTIONS TO ASK:
+-----------------
+1. What are the biggest pain points in current onboarding journeys?
+2. Which channel is prioritized for expansion?
+3. How is success measured for this role in first 6 months?
+4. What digital identity solutions are currently in place?
+5. What is the current state of kiosk/LAM channels?
+
+RAKBANK-SPECIFIC TALKING POINTS:
+--------------------------------
+- RAKBANK's innovation reputation in digital banking
+- Focus on SME lending and retail growth
+- Recent transformation initiatives
+- Competitive positioning vs Emirates NBD, ADCB

@@ -1,0 +1,56 @@
+JEX - KEYWORD OPTIMIZATION
+===========================
+
+PRIMARY KEYWORDS (Must Include):
+--------------------------------
+- Group IT Strategy
+- Enterprise Architecture
+- IT Governance
+- Digital Transformation
+- Cybersecurity
+- Infrastructure Management
+- Multi-Entity IT
+- Portfolio Companies
+- IT Budget Management
+- Vendor Management
+- Business Continuity
+- Disaster Recovery
+
+SECONDARY KEYWORDS:
+-------------------
+- Private Equity IT
+- Investment Holding
+- IT Consolidation
+- Standardization
+- Cloud Migration
+- Data Centers
+- Network Security
+- IT Operations
+- Service Delivery
+- SLA Management
+- ITIL Framework
+- COBIT Governance
+
+TECHNICAL KEYWORDS:
+-------------------
+- Hybrid Cloud
+- Multi-Cloud Strategy
+- Zero Trust Security
+- SD-WAN
+- Data Governance
+- ERP Systems
+- Business Intelligence
+- Enterprise Integration
+
+ACTION VERBS:
+-------------
+- Architected
+- Consolidated
+- Standardized
+- Transformed
+- Secured
+- Optimized
+- Negotiated
+- Delivered
+- Enabled
+- Scaled

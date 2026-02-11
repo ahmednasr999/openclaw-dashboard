@@ -1,0 +1,39 @@
+JEX - INTERVIEW PREPARATION
+============================
+
+PREDICTED INTERVIEW QUESTIONS:
+------------------------------
+
+1. "How would you approach standardizing IT across diverse portfolio companies while maintaining their autonomy?"
+   → Highlight El Araby 7-country experience - standardized core systems while respecting local needs
+
+2. "What experience do you have managing IT budgets across multiple entities?"
+   → Discuss vendor negotiation, ROI-based investments, cost optimization achievements
+
+3. "How do you balance cybersecurity requirements with business agility?"
+   → PaySky example: 99.9% fraud prevention while maintaining seamless UX
+
+4. "Describe your approach to IT governance in a multi-business environment."
+   → PMP frameworks, COBIT principles, risk-based governance
+
+5. "What role should IT play in enabling private equity value creation?"
+   → Digital transformation as value driver, operational efficiency, data insights
+
+6. "How would you build an IT organization from scratch in this environment?"
+   → Team building experience (45+ people), competency frameworks, hiring strategy
+
+PRIVATE EQUITY SPECIFIC SCENARIOS:
+----------------------------------
+- Managing multiple ERP implementations
+- Integrating acquired companies
+- Due diligence support for new acquisitions
+- EBITDA impact of IT decisions
+- Exit readiness and IT documentation
+
+QUESTIONS TO ASK:
+-----------------
+1. How many portfolio companies are in the group?
+2. What is the current state of IT across these entities?
+3. Is there a preference for centralization vs. federated IT?
+4. What are the strategic priorities for IT in the next 3 years?
+5. How does the investment horizon affect IT planning?

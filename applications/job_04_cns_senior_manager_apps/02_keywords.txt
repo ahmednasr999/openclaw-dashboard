@@ -1,0 +1,54 @@
+CNS - KEYWORD OPTIMIZATION
+===========================
+
+PRIMARY KEYWORDS (Must Include):
+--------------------------------
+- Application Management
+- Software Delivery
+- SDLC
+- Client Relationship Management
+- Project Delivery
+- SLA Management
+- Solution Architecture
+- ERP Systems
+- Team Leadership
+- Quality Assurance
+
+SECONDARY KEYWORDS:
+-------------------
+- Agile Methodology
+- Scrum
+- Waterfall
+- Custom Development
+- Application Support
+- Vendor Management
+- Technical Consulting
+- System Integration
+- Business Analysis
+- User Acceptance Testing
+
+TECHNICAL KEYWORDS:
+-------------------
+- .NET
+- Java
+- SQL
+- Oracle
+- SAP
+- Microsoft Dynamics
+- CRM
+- Cloud Applications
+- API Integration
+- Microservices
+
+ACTION VERBS:
+-------------
+- Delivered
+- Managed
+- Architected
+- Led
+- Implemented
+- Optimized
+- Negotiated
+- Mentored
+- Streamlined
+- Achieved

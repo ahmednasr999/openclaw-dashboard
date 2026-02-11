@@ -1,0 +1,34 @@
+CNS - SKILLS ALIGNMENT ANALYSIS
+================================
+
+REQUIRED SKILLS vs. AHMED'S EXPERIENCE:
+---------------------------------------
+
+✓ Application Delivery - STRONG MATCH
+  Evidence: 300+ enterprise projects delivered at EMP
+  Evidence: Product delivery experience across multiple organizations
+
+✓ Client Relationship Management - EXCELLENT MATCH
+  Evidence: VP-level client engagement at PaySky
+  Evidence: Stakeholder management across C-suite
+
+✓ Team Leadership - EXCELLENT MATCH
+  Evidence: Led 45+ person teams
+  Evidence: Multiple team building successes
+
+✓ Solution Architecture - STRONG MATCH
+  Evidence: Solutions architect at Intel/Microsoft
+  Evidence: Enterprise architecture experience
+
+✓ SDLC/Project Management - EXCELLENT MATCH
+  Evidence: PMP certification
+  Evidence: Multiple methodologies experience
+
+○ ERP Systems - MODERATE MATCH
+  Current: Integration experience with ERP systems
+  Gap: Deep ERP implementation expertise
+  Mitigation: Enterprise integration background
+
+RECOMMENDATION:
+---------------
+STRONG FIT - Emphasize delivery track record, client management expertise, and team leadership. Position as proven delivery leader who can scale CNS's application practice.

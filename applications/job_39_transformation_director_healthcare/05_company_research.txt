@@ -1,13 +1,14 @@
-COMPANY RESEARCH: Healthcare Network
-Generated: 2026-02-11
+Healthcare Organization - COMPANY RESEARCH
+==================================================
+
+COMPANY: Healthcare Organization
+INDUSTRY: Healthcare
+FOCUS: healthcare transformation, digital health, operational change
 
 RESEARCH TASKS:
-□ Website: Mission, values, products, leadership
-□ LinkedIn: Company updates, employee profiles
-□ News: Recent coverage, industry trends
-□ Connections: Mutual contacts for referrals
-
-TALKING POINTS:
-• Research company's recent initiatives
-• Prepare industry-specific observations
-• Align experience with company challenges
+---------------
+1. Company website and LinkedIn
+2. Recent news and press releases
+3. Leadership team profiles
+4. Industry position and competitors
+5. Strategic priorities

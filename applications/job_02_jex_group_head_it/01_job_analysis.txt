@@ -1,39 +1,47 @@
-Group Head of IT - JOB ANALYSIS
-=================================
+JEX - Group Head of Information Technology
+=============================================
 
+JOB ANALYSIS
+============
+
+Position Overview:
+------------------
 Position: Group Head of Information Technology
 Source: Jex Recruitment
 Location: Dubai, UAE
 Level: Director/VP Level
 Industry: Private Equity / Multi-Business Group
 
-KEY RESPONSIBILITIES (Inferred):
-================================
-- Develop and execute group-wide IT strategy aligned with business objectives
-- Lead IT transformation initiatives across portfolio companies
-- Manage enterprise IT infrastructure and operations
-- Oversee cybersecurity and risk management frameworks
-- Drive digital innovation and emerging technology adoption
-- Build and lead high-performance IT organization
-- Manage technology budget and vendor relationships
-- Ensure business continuity and disaster recovery capabilities
-- Establish IT governance and compliance frameworks
+Key Responsibilities:
+---------------------
+1. Develop and execute group-wide IT strategy aligned with business objectives
+2. Lead IT transformation initiatives across portfolio companies
+3. Manage enterprise IT infrastructure and operations
+4. Oversee cybersecurity and risk management frameworks
+5. Drive digital innovation and emerging technology adoption
+6. Build and lead high-performance IT organization
+7. Manage technology budget and vendor relationships
+8. Ensure business continuity and disaster recovery capabilities
+9. Establish IT governance and compliance frameworks
+10. Enable data-driven decision making across the group
 
-REQUIRED QUALIFICATIONS:
-========================
+Required Qualifications:
+------------------------
 - 15+ years IT experience with 8+ years in leadership roles
 - Proven track record in multi-entity/group IT management
 - Strong background in infrastructure, security, and digital transformation
 - Experience in private equity or investment holding environment (preferred)
 - Strategic mindset with hands-on technical capability
 - Excellent stakeholder management and communication skills
+- Financial acumen for ROI-based technology investments
+- Regional experience (UAE/GCC) and cultural awareness
 
-COMPANY CONTEXT:
-================
-Jex Recruitment is a boutique executive search firm placing senior leaders in private equity backed companies. The client is likely a UAE-based investment group or holding company with multiple business verticals requiring centralized IT leadership.
+Company Context:
+----------------
+Jex Recruitment is a boutique executive search firm placing senior leaders in private equity backed companies. The client is a UAE-based investment group or holding company with multiple business verticals requiring centralized IT leadership.
 
-KEY SUCCESS FACTORS:
-====================
+Key Success Factors:
+--------------------
 1. Ability to balance standardization with business unit autonomy
 2. Experience managing technology across diverse industries
 3. Financial acumen for ROI-based technology investments

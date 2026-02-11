@@ -1,20 +1,42 @@
-JEX Group - Company Research
-=============================
+JEX - COMPANY RESEARCH
+=======================
 
-Jex Recruitment is a boutique executive search firm specializing in C-level and 
-senior leadership placements, particularly in private equity-backed companies and 
-investment holding groups across the Middle East.
+COMPANY OVERVIEW:
+-----------------
+Name: Jex Recruitment (Search Firm)
+Client: Private Equity backed Investment Group
+Location: Dubai, UAE
+Industry: Multi-sector Investment Holding
 
-CLIENT CONTEXT (Typical):
----------------------------
-- UAE-based investment group or holding company
-- Multiple business verticals/portfolio companies
-- Need for centralized IT leadership
-- Likely private equity or family office backed
+TYPICAL CLIENT PROFILE:
+-----------------------
+- UAE-based investment group
+- Multiple portfolio companies (likely 3-10 entities)
+- Diverse sectors: Real estate, trading, services, industrials
+- Private equity or family office backing
+- Growth through acquisition strategy
 
-APPROACH STRATEGY:
+IT CHALLENGES IN THIS ENVIRONMENT:
+----------------------------------
+- Legacy systems across acquired companies
+- Need for standardization vs. autonomy balance
+- Limited IT budgets at individual entities
+- Skills gaps in portfolio company IT teams
+- Cybersecurity vulnerabilities
+- Data silos and integration needs
+
+KEY PRIORITIES FOR GROUP CIO:
+------------------------------
+1. Assessment and consolidation of IT spend
+2. Cybersecurity posture improvement
+3. Cloud migration strategy
+4. Data and analytics capabilities
+5. IT talent development
+6. Governance framework establishment
+
+RESEARCH APPROACH:
 ------------------
-- Emphasize multi-entity IT governance experience
-- Highlight budget management and ROI focus
-- Demonstrate private equity/holding company understanding
-- Show cultural fit for investment environment
+- Request client name during recruiter conversation
+- Research typical UAE investment groups (Aldar, Manazel, etc.)
+- Understand private equity IT expectations
+- Prepare flexible responses for different scenarios

@@ -1,33 +1,42 @@
-CNS Middle East - COMPANY RESEARCH
-====================================
+CNS - COMPANY RESEARCH
+=======================
 
 COMPANY OVERVIEW:
-=================
-- Full Name: Computer Network Systems Middle East
-- Industry: IT Services & Software Development
-- Location: Dubai, UAE (multiple GCC offices)
-- Established: 1990s
-- Website: cns-me.com
+-----------------
+Name: CNS Middle East (Computer Network Systems)
+Location: Dubai, UAE
+Industry: IT Services
+Focus: Software development, systems integration, IT consulting
 
 SERVICES:
-=========
-- Custom Software Development
-- ERP Implementation & Support
-- IT Consulting
-- Systems Integration
-- Managed Services
-- Digital Transformation
+---------
+- Custom application development
+- ERP implementation and support
+- Systems integration
+- IT consulting
+- Managed services
 
-CLIENTS:
-========
-- Government entities
-- Large enterprises
-- Healthcare organizations
-- Education sector
+CLIENT BASE:
+------------
+- Enterprise clients
+- Government sector
+- Regional businesses
 
-ALIGNMENT:
-==========
-✓ Application management expertise
-✓ Regional experience
-✓ Client delivery background
-✓ Enterprise systems knowledge
+DIFFERENTIATORS:
+----------------
+- Established UAE presence
+- Local market expertise
+- End-to-end service capability
+
+GROWTH AREAS:
+-------------
+- Digital transformation services
+- Cloud application migration
+- Modernization projects
+
+RESEARCH APPROACH:
+------------------
+- cns-me.com website
+- LinkedIn company page
+- Client testimonials
+- Industry presence in UAE

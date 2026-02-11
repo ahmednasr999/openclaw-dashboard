@@ -1,31 +1,53 @@
-CNS Middle East - Senior Manager Applications
-===============================================
+CNS Middle East - Senior Manager - Applications
+================================================
 
+JOB ANALYSIS
+============
+
+Position Overview:
+------------------
 Position: Senior Manager - Applications
 Company: CNS Middle East (Computer Network Systems)
 Location: Dubai, UAE
 Industry: IT Services / Software Development
+Level: Mid-Senior
 
-COMPANY PROFILE:
-================
-- Established IT solutions provider in UAE
-- Services: Software development, IT consulting, systems integration
-- Client base: Enterprise and government sectors
-- Focus: Digital transformation and application modernization
+Key Responsibilities:
+---------------------
+1. Lead application delivery and support functions
+2. Manage client relationships and project delivery
+3. Oversee software development lifecycle (SDLC)
+4. Ensure quality standards and SLA compliance
+5. Drive team performance and professional development
+6. Support pre-sales and solution architecture
+7. Manage application portfolio and roadmap
+8. Ensure on-time, on-budget project delivery
+9. Drive continuous improvement in delivery processes
+10. Collaborate with cross-functional teams
 
-ROLE REQUIREMENTS:
-==================
-- Lead application delivery and support functions
-- Manage client relationships and project delivery
-- Oversee software development lifecycle
-- Ensure quality standards and SLA compliance
-- Drive team performance and professional development
-- Support pre-sales and solution architecture
+Required Qualifications:
+------------------------
+- 12+ years in IT with 5+ years in application management
+- Strong background in software development and delivery
+- Experience with ERP and enterprise systems
+- Client-facing delivery experience
+- Team leadership and people management skills
+- Knowledge of SDLC methodologies (Agile, Waterfall)
+- UAE/GCC regional experience preferred
 
-CANDIDATE FIT:
-==============
-✓ Application management experience across multiple organizations
-✓ Client-facing delivery background
-✓ ERP and enterprise systems expertise
-✓ Team leadership track record
-✓ Regional UAE experience
+Company Context:
+----------------
+CNS Middle East is an established IT solutions provider in UAE with focus on:
+- Software development and custom applications
+- IT consulting and advisory services
+- Systems integration
+- Enterprise and government sector clients
+- Digital transformation and application modernization
+
+Key Success Factors:
+--------------------
+1. Client satisfaction and relationship management
+2. On-time delivery of complex projects
+3. Team development and retention
+4. Quality assurance and testing rigor
+5. Technical solution architecture capability

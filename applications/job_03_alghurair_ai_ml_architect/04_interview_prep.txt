@@ -1,0 +1,49 @@
+Al Ghurair - INTERVIEW PREPARATION
+===================================
+
+PREDICTED INTERVIEW QUESTIONS:
+------------------------------
+
+1. "What AI/ML use cases do you see as highest value for our diverse business portfolio?"
+   → Manufacturing: Predictive maintenance, quality control
+   → Real Estate: Property valuation, demand forecasting
+   → Education: Personalized learning, student analytics
+   → Automotive: Customer segmentation, predictive service
+
+2. "How would you build an AI Center of Excellence from scratch?"
+   → Hiring strategy: Data scientists, ML engineers, domain experts
+   → Governance: Model lifecycle, ethics framework, approval processes
+   → Infrastructure: Cloud platforms, MLOps tooling, data pipelines
+   → Business engagement: Use case prioritization, value measurement
+
+3. "Describe your experience productionizing ML models."
+   → Be honest about hands-on limitations, emphasize team leadership
+   → Discuss platform architecture and scalable infrastructure
+   → Highlight project delivery and business outcomes
+
+4. "How do you balance AI innovation with responsible AI practices?"
+   → Ethics frameworks, bias detection, model explainability
+   → Governance and oversight mechanisms
+   → Regulatory compliance considerations
+
+5. "What is your approach to building and leading data science teams?"
+   → Talent acquisition in competitive market
+   → Career development and mentoring
+   → Collaboration models with business units
+
+AI USE CASE PREPARATION:
+------------------------
+- Predictive maintenance for manufacturing
+- Customer churn prediction across businesses
+- Demand forecasting and inventory optimization
+- Fraud detection in financial services
+- Document processing automation
+- Customer segmentation and personalization
+
+QUESTIONS TO ASK:
+-----------------
+1. What is the current state of data infrastructure across the group?
+2. Which business unit is most ready for AI adoption?
+3. Is there appetite for building internal capabilities vs. partnering?
+4. What budget is allocated for AI/ML initiatives?
+5. How is success measured for this role?

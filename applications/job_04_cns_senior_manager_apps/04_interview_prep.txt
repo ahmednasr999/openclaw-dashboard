@@ -1,0 +1,39 @@
+CNS - INTERVIEW PREPARATION
+============================
+
+PREDICTED INTERVIEW QUESTIONS:
+------------------------------
+
+1. "How do you ensure on-time delivery of complex application projects?"
+   → Discuss PMP methodologies, risk management, resource planning
+   → Use specific examples with metrics
+
+2. "Describe your experience managing client expectations."
+   → Stakeholder communication, expectation setting, issue escalation
+   → PaySky/TopMed client engagement examples
+
+3. "How do you build and develop high-performing delivery teams?"
+   → Team structure, competency development, retention strategies
+   → 45+ person team leadership experience
+
+4. "What is your approach to solution architecture?"
+   → Intel/Microsoft solutions architecture background
+   → Scalable design principles
+
+5. "How do you handle scope changes during project delivery?"
+   → Change control processes, impact assessment, negotiation
+
+CLIENT SCENARIOS:
+-----------------
+- Managing difficult client conversations
+- Handling delivery delays
+- Scope creep management
+- Resource constraint challenges
+
+QUESTIONS TO ASK:
+-----------------
+1. What is the current application portfolio at CNS?
+2. What are the biggest delivery challenges?
+3. How is the team structured currently?
+4. What growth plans exist for the applications practice?
+5. What technologies are primary focus areas?

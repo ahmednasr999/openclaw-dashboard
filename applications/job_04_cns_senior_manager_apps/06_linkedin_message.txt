@@ -1,0 +1,31 @@
+CNS - LINKEDIN CONNECTION MESSAGE
+==================================
+
+CONNECTION REQUEST MESSAGE (300 characters max):
+-----------------------------------------------
+
+Subject: Senior Manager Applications - Delivery Excellence
+
+Message:
+--------
+Dear [Name],
+
+I'm reaching out regarding the Senior Manager Applications opportunity at CNS. With 18+ years delivering 300+ enterprise projects and building high-performance teams, I've consistently achieved on-time delivery while exceeding client expectations.
+
+My experience in application delivery and client relationship management could strengthen CNS's practice.
+
+Best regards,
+Ahmed Nasr
++971 50 281 4490
+ahmednasr999@gmail.com
+
+FOLLOW-UP MESSAGE (if connected):
+---------------------------------
+Dear [Name],
+
+Thank you for connecting. I'd welcome the opportunity to discuss how my background in application delivery, team leadership, and client management aligns with CNS's growth objectives.
+
+Would you be available for a brief call to explore the Senior Manager Applications role?
+
+Best regards,
+Ahmed

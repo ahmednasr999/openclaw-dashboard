@@ -1,0 +1,40 @@
+Al Ghurair - LINKEDIN CONNECTION MESSAGE
+=========================================
+
+CONNECTION REQUEST MESSAGE (300 characters max):
+-----------------------------------------------
+
+Subject: Senior Manager AI/ML - Enterprise AI Strategy
+
+Message:
+--------
+Dear [Name],
+
+I'm reaching out regarding the AI/ML leadership opportunity at Al Ghurair. With 18+ years driving technology transformation and building high-performance teams across diverse industries, I'm excited about establishing an AI Center of Excellence for your conglomerate.
+
+My experience in strategic AI implementation and cross-functional leadership could accelerate Al Ghurair's digital transformation.
+
+Best regards,
+Ahmed Nasr
++971 50 281 4490
+ahmednasr999@gmail.com
+
+FOLLOW-UP MESSAGE (if connected):
+---------------------------------
+Dear [Name],
+
+Thank you for connecting. I'm particularly interested in Al Ghurair's AI strategy across your diverse portfolio - from manufacturing optimization to real estate analytics.
+
+With my background in technology leadership and digital transformation, I'd welcome the opportunity to discuss how an AI Center of Excellence could drive value across Al Ghurair's business units.
+
+Would you be open to a conversation about the Senior Manager AI/ML role?
+
+Best regards,
+Ahmed
+
+NOTES:
+------
+- Target: HR leadership, Chief Digital Officer, or division heads
+- Research specific AI initiatives already underway
+- Position as practice builder rather than hands-on data scientist
+- Emphasize business value creation
