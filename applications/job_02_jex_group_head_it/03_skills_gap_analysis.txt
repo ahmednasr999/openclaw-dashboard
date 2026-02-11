@@ -1,0 +1,49 @@
+Group Head of IT - SKILLS GAP ANALYSIS
+========================================
+
+✅ STRONG MATCHES:
+==================
+1. Multi-Entity IT Management
+   - Led IT at El Araby Group (7 countries, 15,000+ employees)
+   - Currently CTO at TopMed (group with multiple entities)
+   - Gap: NONE - Direct experience
+
+2. IT Strategy & Architecture
+   - Enterprise architecture experience across all roles
+   - Cloud-first strategy implementation
+   - Gap: NONE - Core competency
+
+3. Budget & Vendor Management
+   - Managed $8M-$12M IT budgets
+   - Negotiated $5M+ vendor contracts
+   - Gap: NONE - Proven track record
+
+4. Team Leadership at Scale
+   - Led 85+ person IT organization
+   - Built teams from scratch
+   - Gap: NONE - Strong experience
+
+5. Cybersecurity & Compliance
+   - ISO 27001 certification achieved
+   - PCI DSS Level 1 compliance
+   - CISSP certified
+   - Gap: NONE - Well qualified
+
+⚠️ AREAS TO EMPHASIZE:
+======================
+1. Private Equity Environment
+   - Limited explicit PE experience
+   - BUT: Worked in investment/VC backed companies
+   - Strategy: Highlight investor reporting and ROI focus
+
+2. Portfolio Company Model
+   - Experience with group structure
+   - Emphasize balancing standardization vs. autonomy
+   - Strategy: Prepare examples of governance frameworks
+
+🎯 INTERVIEW PREPARATION:
+=========================
+1. Prepare case study on standardizing IT across multiple entities
+2. Develop framework for IT investment prioritization
+3. Research common PE portfolio company challenges
+4. Prepare cybersecurity incident response scenario

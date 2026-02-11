@@ -1,0 +1,46 @@
+CNS Applications - KEYWORDS
+=============================
+
+APPLICATION MANAGEMENT:
+- Application Lifecycle Management
+- ALM
+- ERP
+- CRM
+- Enterprise Applications
+- Custom Development
+- Support & Maintenance
+- SLA Management
+- Vendor Management
+- License Management
+
+DELIVERY:
+- SDLC
+- Agile
+- Scrum
+- Waterfall
+- Project Delivery
+- Change Management
+- Release Management
+- Quality Assurance
+- Testing
+- Deployment
+
+TECHNICAL:
+- SAP
+- Oracle
+- Microsoft Dynamics
+- .NET
+- Java
+- SQL
+- APIs
+- Integration
+- Cloud Applications
+- SaaS
+
+LEADERSHIP:
+- Team Management
+- Client Relationship
+- Stakeholder Management
+- Vendor Management
+- Budget Management
+- Resource Planning

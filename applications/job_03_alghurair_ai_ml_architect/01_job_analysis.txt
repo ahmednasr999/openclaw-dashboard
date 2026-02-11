@@ -1,0 +1,37 @@
+Al Ghurair - AI/ML Architect JOB ANALYSIS
+===========================================
+
+Position: Senior Manager - Artificial Intelligence & Machine Learning
+Company: Al Ghurair
+Location: United Arab Emirates
+Industry: Conglomerate (Holding Company)
+Level: Mid-Senior
+
+COMPANY CONTEXT:
+================
+Al Ghurair is one of the largest family-owned conglomerates in the UAE with diversified interests including:
+- Manufacturing and Industry
+- Real Estate
+- Investments
+- Education
+- Automotive
+
+KEY RESPONSIBILITIES (Inferred):
+================================
+- Develop and implement AI/ML strategy across Al Ghurair group companies
+- Architect scalable machine learning solutions for business problems
+- Lead AI Center of Excellence and build data science capabilities
+- Drive data-driven decision making across the organization
+- Implement MLOps practices and model governance
+- Collaborate with business units to identify AI opportunities
+- Manage relationships with technology vendors and partners
+- Ensure ethical AI practices and compliance
+
+REQUIREMENTS:
+=============
+- 10+ years technology experience with 5+ years in AI/ML
+- Proven track record delivering AI solutions to production
+- Strong software engineering and architecture background
+- Experience with cloud ML platforms (AWS, Azure, GCP)
+- Business acumen to translate problems into AI solutions
+- Leadership skills to build and mentor data science teams

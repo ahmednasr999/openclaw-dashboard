@@ -1,0 +1,33 @@
+AI/ML Architect - APPLICATION STRATEGY
+========================================
+
+APPROACH:
+=========
+Primary: LinkedIn application
+Secondary: Direct outreach to Al Ghurair HR
+Research: Identify hiring manager via LinkedIn
+
+MESSAGING:
+==========
+Hook: "Delivering measurable AI outcomes across manufacturing, finance, and healthcare - from fraud detection to predictive maintenance"
+
+Key Points:
+1. Production ML experience with measurable ROI
+2. Cross-industry AI applications
+3. Team building and Center of Excellence creation
+4. MLOps and scalable architecture expertise
+5. Regional UAE market knowledge
+
+PORTFOLIO TO HIGHLIGHT:
+=======================
+- Fraud detection case study
+- Predictive maintenance example
+- Credit scoring engine
+- Computer vision quality control
+- Demand forecasting results
+
+FOLLOW-UP:
+==========
+Week 1: Submit application
+Week 2: Connect with Al Ghurair technology leaders
+Week 3: Share relevant AI thought leadership content

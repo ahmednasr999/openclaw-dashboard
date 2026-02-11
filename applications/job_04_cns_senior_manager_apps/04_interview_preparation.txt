@@ -1,0 +1,34 @@
+CNS Applications - INTERVIEW PREP
+===================================
+
+LIKELY QUESTIONS:
+=================
+
+Q1: "How do you manage a portfolio of applications with varying criticality?"
+A: Framework:
+   - Application tiering (critical, important, standard)
+   - Different SLA levels per tier
+   - Resource allocation based on criticality
+   - Risk assessment and mitigation
+
+Q2: "Tell us about your ERP implementation experience."
+A: El Araby Oracle upgrade:
+   - Scope: 15 business units, 7 countries
+   - Challenge: Zero downtime requirement
+   - Solution: Phased rollout with parallel running
+   - Result: On-time, under budget, no disruption
+
+Q3: "How do you handle vendor performance issues?"
+A: Approach:
+   - Clear SLA definitions upfront
+   - Regular performance reviews
+   - Escalation procedures
+   - Contract leverage
+   - Alternative vendor identification
+
+CLIENT MANAGEMENT FOCUS:
+========================
+- Understand CNS's client base
+- Prepare examples of managing difficult client situations
+- Demonstrate commercial awareness
+- Show solution-oriented mindset

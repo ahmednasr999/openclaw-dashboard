@@ -1,0 +1,83 @@
+RAKBANK VP Frontline Experience - INTERVIEW PREPARATION
+========================================================
+
+LIKELY INTERVIEW QUESTIONS & ANSWER FRAMEWORKS:
+===============================================
+
+1. "Tell us about your experience with customer onboarding transformation."
+   ---------------------------------------------------------------------------
+   Framework: STAR Method
+   - Situation: PaySky's fragmented onboarding causing 40% drop-off
+   - Task: Transform end-to-end onboarding across all channels
+   - Action: Implemented digital KYC, unified process, trained teams
+   - Result: 50% improvement in NPS, reduced TAT from 5 days to 24 hours
+
+2. "How do you approach eliminating customer pain points?"
+   ---------------------------------------------------------
+   Framework: Process + Example
+   - Start with customer journey mapping and data analysis
+   - Identify friction points through analytics and feedback
+   - Prioritize based on impact vs. effort
+   - Implement quick wins while building long-term solutions
+   - Example: At El Araby, reduced cart abandonment by 25%
+
+3. "Describe your experience with KYC/AML in a banking context."
+   -------------------------------------------------------------
+   Framework: Knowledge + Application
+   - Understanding of regulatory requirements (CBUAE guidelines)
+   - Implementation of eKYC and digital identity solutions
+   - Balance between compliance and customer experience
+   - Experience at PaySky with merchant onboarding compliance
+
+4. "How do you manage stakeholders across Risk, Compliance, and Technology?"
+   --------------------------------------------------------------------------
+   Framework: Collaboration Approach
+   - Establish shared goals and metrics upfront
+   - Regular cross-functional workshops
+   - Data-driven discussions (not opinions)
+   - Escalation paths and governance structure
+   - Example: Successfully launched product requiring alignment of 5 departments
+
+5. "What's your approach to channel performance optimization?"
+   ------------------------------------------------------------
+   Framework: Data-Driven Methodology
+   - Define clear KPIs for each channel
+   - Implement real-time dashboards
+   - A/B testing for journey improvements
+   - Regular performance reviews and optimization cycles
+   - Resource allocation based on ROI
+
+CASE STUDY PREPARATION:
+=======================
+
+Scenario: RAKBANK wants to increase digital onboarding from 30% to 60%
+-----------------------------------------------------------------------
+Your Approach:
+1. Current State Analysis
+   - Audit existing digital journey
+   - Identify drop-off points
+   - Review competitor offerings
+
+2. Quick Wins (0-3 months)
+   - Simplify form fields
+   - Add progress indicators
+   - Enable save-and-resume
+
+3. Medium Term (3-6 months)
+   - Implement biometric verification
+   - Integrate with UAE Pass
+   - Launch assisted digital in branches
+
+4. Long Term (6-12 months)
+   - AI-powered document verification
+   - Predictive approval system
+   - Omnichannel journey completion
+
+QUESTIONS TO ASK THE INTERVIEWER:
+=================================
+
+1. What are the current biggest pain points in the onboarding journey?
+2. How is success measured for this role in the first 6 months?
+3. What digital capabilities exist today vs. roadmap?
+4. How is the relationship between Retail and Technology teams?
+5. What are the top 3 priorities for the first 90 days?

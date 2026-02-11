@@ -1,0 +1,48 @@
+AI/ML Architect - KEYWORDS
+============================
+
+PRIMARY:
+- Artificial Intelligence
+- Machine Learning
+- Deep Learning
+- MLOps
+- Neural Networks
+- Predictive Analytics
+- Data Science
+- Python
+- TensorFlow
+- PyTorch
+- Cloud ML
+- Model Deployment
+- Feature Engineering
+- NLP
+- Computer Vision
+
+SECONDARY:
+- Big Data
+- Spark
+- Kafka
+- Kubernetes
+- Docker
+- Microservices
+- API Development
+- Data Pipeline
+- ETL
+- Data Warehouse
+- Business Intelligence
+- A/B Testing
+- Model Monitoring
+- Ethics in AI
+- Explainable AI
+
+CONCEPTS:
+- Supervised Learning
+- Unsupervised Learning
+- Reinforcement Learning
+- Time Series Analysis
+- Classification
+- Regression
+- Clustering
+- Dimensionality Reduction
+- Ensemble Methods
+- Transfer Learning

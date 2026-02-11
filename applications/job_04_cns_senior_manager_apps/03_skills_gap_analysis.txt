@@ -1,0 +1,41 @@
+CNS Applications - GAP ANALYSIS
+=================================
+
+MATCH ANALYSIS:
+===============
+
+✅ STRONG:
+----------
+1. Application Portfolio Management
+   - 25+ applications at TopMed
+   - Multi-country ERP at El Araby
+   - Gap: NONE
+
+2. Vendor Management
+   - 12+ vendor relationships
+   - Contract negotiations
+   - Gap: NONE
+
+3. Team Leadership
+   - Teams of 18+ professionals
+   - Multi-location management
+   - Gap: NONE
+
+4. ERP Experience
+   - Oracle ERP upgrade
+   - Multi-module implementation
+   - Gap: NONE
+
+⚠️ CONSIDERATIONS:
+==================
+1. IT Services Company Context
+   - Client delivery vs internal IT
+   - Strategy: Emphasize consulting background at Revamp
+
+2. Pre-sales Support
+   - Solution architecture experience
+   - Strategy: Highlight Microsoft/Revamp client-facing work
+
+OVERALL FIT: EXCELLENT
+======================
+Strong alignment with application management requirements

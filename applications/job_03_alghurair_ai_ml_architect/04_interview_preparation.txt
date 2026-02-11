@@ -1,0 +1,48 @@
+AI/ML Architect - INTERVIEW PREP
+==================================
+
+TECHNICAL QUESTIONS:
+====================
+
+Q1: "Walk us through an ML solution you architected end-to-end."
+A: Fraud detection at PaySky:
+   - Problem: High fraud losses
+   - Solution: Real-time ML pipeline
+   - Architecture: Kafka → Spark → Model API → Decision
+   - Models: XGBoost ensemble with feature engineering
+   - Results: 65% fraud reduction, <100ms latency
+
+Q2: "How do you approach model deployment and monitoring?"
+A: MLOps Framework:
+   - CI/CD for ML models
+   - A/B testing infrastructure
+   - Drift detection
+   - Automated retraining triggers
+   - Model registry and versioning
+
+Q3: "Explain a complex algorithm to a non-technical stakeholder."
+A: Practice elevator pitches for:
+   - Random Forest
+   - Neural Networks
+   - Reinforcement Learning
+   - Focus on business application, not math
+
+BUSINESS QUESTIONS:
+===================
+
+Q4: "How would you identify AI opportunities at Al Ghurair?"
+A: Framework:
+   - Business process mapping
+   - Data availability assessment
+   - ROI estimation
+   - Feasibility analysis
+   - Quick win identification
+
+CASE STUDY:
+===========
+Design AI solution for manufacturing quality control
+- Data requirements
+- Model selection
+- Integration approach
+- Success metrics
+- Risk mitigation

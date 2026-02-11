@@ -1,0 +1,74 @@
+RAKBANK VP Frontline Experience - SKILLS GAP ANALYSIS
+======================================================
+
+REQUIRED SKILLS vs. CANDIDATE PROFILE
+=====================================
+
+✅ STRONG MATCH AREAS:
+---------------------
+
+1. Customer Experience & Journey Design
+   Required: Customer experience design, journey mapping
+   Candidate: Extensive experience at PaySky and TopMed
+   Gap: None - Direct experience with onboarding journey optimization
+
+2. Digital Transformation Leadership
+   Required: Strategic thinker, transformation capabilities
+   Candidate: Led digital transformation at El Araby (7 countries)
+   Gap: None - Strong track record in digital transformation
+
+3. Stakeholder Management
+   Required: Influencing skills across multiple departments
+   Candidate: CTO experience requiring extensive stakeholder engagement
+   Gap: None - Proven cross-functional leadership
+
+4. Data-Driven Decision Making
+   Required: Analytics-driven optimization
+   Candidate: Implemented performance tracking and dashboards
+   Gap: None - Strong analytical approach
+
+5. Team Leadership
+   Required: Build and mentor high-performing teams
+   Candidate: Built 45+ person team at TopMed
+   Gap: None - Extensive leadership experience
+
+6. Programme Management
+   Required: Governance and change management
+   Candidate: PMP certified, led multi-million dollar programs
+   Gap: None - Formal certification and practical experience
+
+⚠️ AREAS TO EMPHASIZE/ADDRESS:
+------------------------------
+
+1. Banking-Specific KYC/AML Expertise
+   Required: Strong expertise in KYC/AML, CDD, digital identity
+   Candidate: Fintech experience with regulatory compliance
+   Strategy: Highlight fintech compliance experience and eKYC implementations
+   Interview Prep: Study UAE Central Bank KYC requirements
+
+2. Retail Banking Channel Experience
+   Required: Branches, elite banking, direct sales channels
+   Candidate: More digital-native background
+   Strategy: Emphasize omnichannel experience at El Araby (retail + digital)
+   Interview Prep: Research RAKBANK branch network and channel strategy
+
+3. Local Area Marketing (LAM)
+   Required: LAM initiatives for alternate channels
+   Candidate: Limited explicit LAM experience
+   Strategy: Connect to partner channel and field sales experience
+   Interview Prep: Research successful LAM campaigns in UAE banking
+
+4. Kiosk-Led Acquisition
+   Required: Kiosk strategy and management
+   Candidate: Digital onboarding experience
+   Strategy: Frame as part of multi-channel acquisition strategy
+   Interview Prep: Study kiosk implementations in UAE retail banking
+
+🎯 INTERVIEW PREPARATION PRIORITIES:
+------------------------------------
+
+1. Deep dive into UAE banking regulations (CBUAE guidelines)
+2. Prepare case studies on onboarding optimization with metrics
+3. Research RAKBANK's current digital capabilities
+4. Understand competitive landscape (ADCB, Emirates NBD digital onboarding)
+5. Prepare channel performance improvement examples
