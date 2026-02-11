@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Tailor - Job Processor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            width: 100%;
+            max-width: 700px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            color: rgba(255, 255, 255, 0.6);
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 0.95rem;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            color: #fff;
+            margin-bottom: 8px;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .label-hint {
+            color: rgba(255, 255, 255, 0.5);
+            font-weight: 400;
+            font-size: 0.85rem;
+            margin-left: 5px;
+        }
+
+        input[type="url"],
+        textarea {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            background: rgba(0, 0, 0, 0.2);
+            color: #fff;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        input[type="url"]:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #e94560;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        input[type="url"]::placeholder,
+        textarea::placeholder {
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        textarea {
+            min-height: 300px;
+            resize: vertical;
+            font-family: inherit;
+            line-height: 1.6;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 18px;
+            background: linear-gradient(135deg, #e94560 0%, #ff6b6b 100%);
+            border: none;
+            border-radius: 12px;
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(233, 69, 96, 0.4);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+
+        .submit-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .status {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            display: none;
+        }
+
+        .status.processing {
+            display: block;
+            background: rgba(233, 69, 96, 0.2);
+            color: #fff;
+            border: 1px solid rgba(233, 69, 96, 0.3);
+        }
+
+        .status.success {
+            display: block;
+            background: rgba(46, 213, 115, 0.2);
+            color: #2ed573;
+            border: 1px solid rgba(46, 213, 115, 0.3);
+        }
+
+        .status.error {
+            display: block;
+            background: rgba(255, 71, 87, 0.2);
+            color: #ff4757;
+            border: 1px solid rgba(255, 71, 87, 0.3);
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo span {
+            font-size: 3rem;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            textarea {
+                min-height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <span>🦞</span>
+        </div>
+        
+        <h1>CV Tailor</h1>
+        <p class="subtitle">Paste job details to generate a tailored CV + full analysis</p>
+        
+        <div class="features">
+            <div class="feature">⚡ ATS Scoring</div>
+            <div class="feature">🎯 Keyword Matching</div>
+            <div class="feature">📄 Tailored CV</div>
+            <div class="feature">💬 Interview Prep</div>
+        </div>
+        
+        <form id="jobForm">
+            <div class="form-group">
+                <label for="jobUrl">
+                    Job URL
+                    <span class="label-hint">(LinkedIn posting link)</span>
+                </label>
+                <input 
+                    type="url" 
+                    id="jobUrl" 
+                    name="jobUrl" 
+                    placeholder="https://www.linkedin.com/jobs/view/1234567890/"
+                    required
+                >
+            </div>
+            
+            <div class="form-group">
+                <label for="jobDescription">
+                    Job Description
+                    <span class="label-hint">(Copy & paste full JD text)</span>
+                </label>
+                <textarea 
+                    id="jobDescription" 
+                    name="jobDescription" 
+                    placeholder="Paste the complete job description here...&#10;&#10;Include:&#10;- Job title and responsibilities&#10;- Required skills and qualifications&#10;- Experience requirements&#10;- Company overview"
+                    required
+                ></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn" id="submitBtn">
+                🚀 Generate Tailored CV
+            </button>
+        </form>
+        
+        <div id="status" class="status"></div>
+    </div>
+
+    <script>
+        document.getElementById('jobForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const jobUrl = document.getElementById('jobUrl').value.trim();
+            const jobDescription = document.getElementById('jobDescription').value.trim();
+            const submitBtn = document.getElementById('submitBtn');
+            const status = document.getElementById('status');
+            
+            // Validate LinkedIn URL
+            if (!jobUrl.includes('linkedin.com/jobs/view/')) {
+                status.className = 'status error';
+                status.textContent = '⚠️ Please enter a valid LinkedIn job URL (format: linkedin.com/jobs/view/XXXX/)';
+                return;
+            }
+            
+            // Disable button and show processing
+            submitBtn.disabled = true;
+            submitBtn.textContent = '⏳ Processing...';
+            status.className = 'status processing';
+            status.textContent = '🔍 Analyzing job description and generating tailored CV...';
+            
+            try {
+                // Send to backend
+                const response = await fetch('/api/process-job', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        jobUrl: jobUrl,
+                        jobDescription: jobDescription,
+                        timestamp: new Date().toISOString()
+                    })
+                });
+                
+                if (response.ok) {
+                    const result = await response.json();
+                    status.className = 'status success';
+                    status.innerHTML = `
+                        ✅ <strong>CV Generated Successfully!</strong><br>
+                        <a href="${result.cvUrl}" target="_blank" style="color: #2ed573;">View Your Tailored CV</a><br>
+                        <small>Files saved to: ${result.folder}</small>
+                    `;
+                    submitBtn.textContent = '✓ Complete';
+                } else {
+                    throw new Error('Processing failed');
+                }
+            } catch (error) {
+                status.className = 'status error';
+                status.textContent = '❌ Error processing job. Please try again.';
+                submitBtn.disabled = false;
+                submitBtn.textContent = '🚀 Generate Tailored CV';
+            }
+        });
+    </script>
+</body>
+</html>
