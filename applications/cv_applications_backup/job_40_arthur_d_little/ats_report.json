@@ -1,0 +1,50 @@
+{
+  "job_id": "job-040",
+  "job_title": "Arthur D. Little seeks Manager",
+  "company": "Arthur D. Little",
+  "location": "Dubai, UAE",
+  "category": "Strategy",
+  "priority": "medium",
+  "ats_score": 86,
+  "total_keywords": 7,
+  "found_keywords": [
+    "digital transformation",
+    "ai",
+    "financial services",
+    "uae",
+    "dubai",
+    "mba"
+  ],
+  "missing_keywords": [
+    "7+ years"
+  ],
+  "recommendations": [],
+  "parsed_jd": {
+    "job_title": "Arthur D. Little seeks Manager",
+    "company": "Arthur D. Little",
+    "location": "Dubai, UAE",
+    "salary": null,
+    "employment_type": null,
+    "requirements": [
+      "• 7+ years experience",
+      "Strategy consulting",
+      "Financial services",
+      "Digital transformation",
+      "MBA preferred"
+    ],
+    "responsibilities": [],
+    "qualifications": [
+      "MBA preferred"
+    ],
+    "skills": [
+      "digital transformation"
+    ],
+    "experience_years": "7+",
+    "source": "job-040",
+    "parsed_at": "2026-02-11T09:10:57.953Z",
+    "raw_text": "Manager - Financial Services\n\nArthur D. Little seeks Manager for financial services.\n\nLocation: Dubai, UAE\n\nRequirements:\n• 7+ years experience\n• Strategy consulting\n• Financial services\n• Digital transformation\n• MBA preferred",
+    "category": "Strategy",
+    "priority": "medium"
+  },
+  "processed_at": "2026-02-11T09:10:57.953Z"
+}

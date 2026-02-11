@@ -1,0 +1,53 @@
+{
+  "job_id": "job-035",
+  "job_title": "Project Manager",
+  "company": "Ahli Bank",
+  "location": "Doha, Qatar",
+  "category": "PM",
+  "priority": "low",
+  "ats_score": 80,
+  "total_keywords": 5,
+  "found_keywords": [
+    "project management",
+    "pmp",
+    "stakeholder management",
+    "banking"
+  ],
+  "missing_keywords": [
+    "6+ years"
+  ],
+  "recommendations": [],
+  "parsed_jd": {
+    "job_title": "Project Manager",
+    "company": "Ahli Bank",
+    "location": "Doha, Qatar",
+    "salary": null,
+    "employment_type": null,
+    "requirements": [
+      "• 6+ years project management",
+      "Banking experience",
+      "PMP certification",
+      "Stakeholder management"
+    ],
+    "responsibilities": [
+      "6+ years project management",
+      "Stakeholder management"
+    ],
+    "qualifications": [
+      "certification • Stakeholder management"
+    ],
+    "skills": [
+      "project management",
+      "stakeholder management",
+      "banking",
+      "pmp"
+    ],
+    "experience_years": null,
+    "source": "job-035",
+    "parsed_at": "2026-02-11T09:10:57.947Z",
+    "raw_text": "Project Manager\n\nManage various bank projects and initiatives.\n\nLocation: Doha, Qatar\n\nRequirements:\n• 6+ years project management\n• Banking experience\n• PMP certification\n• Stakeholder management",
+    "category": "PM",
+    "priority": "low"
+  },
+  "processed_at": "2026-02-11T09:10:57.947Z"
+}

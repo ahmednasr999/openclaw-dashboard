@@ -1,0 +1,50 @@
+{
+  "job_id": "job-046",
+  "job_title": "BearingPoint seeks Manager",
+  "company": "BearingPoint",
+  "location": "Dubai, UAE",
+  "category": "Strategy",
+  "priority": "medium",
+  "ats_score": 86,
+  "total_keywords": 7,
+  "found_keywords": [
+    "digital transformation",
+    "ai",
+    "financial services",
+    "uae",
+    "dubai",
+    "mba"
+  ],
+  "missing_keywords": [
+    "7+ years"
+  ],
+  "recommendations": [],
+  "parsed_jd": {
+    "job_title": "BearingPoint seeks Manager",
+    "company": "BearingPoint",
+    "location": "Dubai, UAE",
+    "salary": null,
+    "employment_type": null,
+    "requirements": [
+      "• 7+ years experience",
+      "Consulting background",
+      "Financial services",
+      "Digital transformation",
+      "MBA preferred"
+    ],
+    "responsibilities": [],
+    "qualifications": [
+      "MBA preferred"
+    ],
+    "skills": [
+      "digital transformation"
+    ],
+    "experience_years": "7+",
+    "source": "job-046",
+    "parsed_at": "2026-02-11T09:10:57.960Z",
+    "raw_text": "Manager - Financial Services\n\nBearingPoint seeks Manager for financial services.\n\nLocation: Dubai, UAE\n\nRequirements:\n• 7+ years experience\n• Consulting background\n• Financial services\n• Digital transformation\n• MBA preferred",
+    "category": "Strategy",
+    "priority": "medium"
+  },
+  "processed_at": "2026-02-11T09:10:57.960Z"
+}

@@ -1,0 +1,69 @@
+{
+  "job_id": "job-001",
+  "job_title": "Senior Project Manager",
+  "company": "TechGlobal Solutions",
+  "location": "Dubai, UAE",
+  "category": "PM",
+  "priority": "high",
+  "ats_score": 93,
+  "total_keywords": 15,
+  "found_keywords": [
+    "project management",
+    "pmp",
+    "agile",
+    "jira",
+    "stakeholder management",
+    "digital transformation",
+    "ai",
+    "cloud",
+    "banking",
+    "financial services",
+    "uae",
+    "dubai",
+    "bachelor",
+    "mba"
+  ],
+  "missing_keywords": [
+    "8+ years"
+  ],
+  "recommendations": [],
+  "parsed_jd": {
+    "job_title": "Senior Project Manager",
+    "company": "TechGlobal Solutions",
+    "location": "Dubai, UAE",
+    "salary": "$130,000 - $160,000",
+    "employment_type": null,
+    "requirements": [
+      "• 8+ years project management experience",
+      "PMP certification required",
+      "Bachelor's degree required, MBA preferred",
+      "Experience with banking/financial services",
+      "Strong agile and stakeholder management skills",
+      "Experience with Jira and cloud technologies"
+    ],
+    "responsibilities": [
+      "8+ years project management experience",
+      "Strong agile and stakeholder management skills"
+    ],
+    "qualifications": [
+      "required, MBA preferred"
+    ],
+    "skills": [
+      "project management",
+      "agile",
+      "stakeholder management",
+      "jira",
+      "cloud",
+      "digital transformation",
+      "banking",
+      "pmp"
+    ],
+    "experience_years": null,
+    "source": "job-001",
+    "parsed_at": "2026-02-11T09:10:57.803Z",
+    "raw_text": "Senior Project Manager - Digital Transformation\n\nTechGlobal Solutions is seeking an experienced Senior Project Manager to lead digital transformation initiatives.\n\nLocation: Dubai, UAE\nSalary: $130,000 - $160,000\n\nRequirements:\n• 8+ years project management experience\n• PMP certification required\n• Bachelor's degree required, MBA preferred\n• Experience with banking/financial services\n• Strong agile and stakeholder management skills\n• Experience with Jira and cloud technologies",
+    "category": "PM",
+    "priority": "high"
+  },
+  "processed_at": "2026-02-11T09:10:57.883Z"
+}

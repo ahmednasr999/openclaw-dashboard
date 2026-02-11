@@ -1,0 +1,54 @@
+{
+  "job_id": "job-041",
+  "job_title": null,
+  "company": "MENA Fintech",
+  "location": "Dubai, UAE",
+  "category": "Digital Transformation",
+  "priority": "high",
+  "ats_score": 86,
+  "total_keywords": 7,
+  "found_keywords": [
+    "agile",
+    "ai",
+    "banking",
+    "uae",
+    "dubai",
+    "10+ years"
+  ],
+  "missing_keywords": [
+    "fintech"
+  ],
+  "recommendations": [
+    "Add banking/finance: fintech"
+  ],
+  "parsed_jd": {
+    "job_title": null,
+    "company": "MENA Fintech",
+    "location": "Dubai, UAE",
+    "salary": null,
+    "employment_type": null,
+    "requirements": [
+      "• 10+ years product management",
+      "Digital banking",
+      "Agile delivery",
+      "Fintech experience",
+      "Startup mindset"
+    ],
+    "responsibilities": [
+      "10+ years product management"
+    ],
+    "qualifications": [],
+    "skills": [
+      "agile",
+      "banking",
+      "fintech"
+    ],
+    "experience_years": null,
+    "source": "job-041",
+    "parsed_at": "2026-02-11T09:10:57.954Z",
+    "raw_text": "Head of Product - Digital Banking\n\nLead digital banking product development for fintech.\n\nLocation: Dubai, UAE\n\nRequirements:\n• 10+ years product management\n• Digital banking\n• Agile delivery\n• Fintech experience\n• Startup mindset",
+    "category": "Digital Transformation",
+    "priority": "high"
+  },
+  "processed_at": "2026-02-11T09:10:57.954Z"
+}

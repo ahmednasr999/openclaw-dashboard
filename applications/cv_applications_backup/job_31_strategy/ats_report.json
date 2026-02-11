@@ -1,0 +1,50 @@
+{
+  "job_id": "job-031",
+  "job_title": "Strategy& seeks Director",
+  "company": "Strategy&",
+  "location": "Dubai, UAE",
+  "category": "Strategy",
+  "priority": "high",
+  "ats_score": 86,
+  "total_keywords": 7,
+  "found_keywords": [
+    "digital transformation",
+    "ai",
+    "financial services",
+    "uae",
+    "dubai",
+    "mba"
+  ],
+  "missing_keywords": [
+    "12+ years"
+  ],
+  "recommendations": [],
+  "parsed_jd": {
+    "job_title": "Strategy& seeks Director",
+    "company": "Strategy&",
+    "location": "Dubai, UAE",
+    "salary": null,
+    "employment_type": null,
+    "requirements": [
+      "• 12+ years experience",
+      "Strategy consulting",
+      "Financial services expert",
+      "Digital transformation",
+      "MBA from top tier"
+    ],
+    "responsibilities": [],
+    "qualifications": [
+      "MBA from top tier"
+    ],
+    "skills": [
+      "digital transformation"
+    ],
+    "experience_years": "12+",
+    "source": "job-031",
+    "parsed_at": "2026-02-11T09:10:57.942Z",
+    "raw_text": "Director - Financial Services\n\nStrategy& seeks Director for financial services practice.\n\nLocation: Dubai, UAE\n\nRequirements:\n• 12+ years experience\n• Strategy consulting\n• Financial services expert\n• Digital transformation\n• MBA from top tier",
+    "category": "Strategy",
+    "priority": "high"
+  },
+  "processed_at": "2026-02-11T09:10:57.942Z"
+}

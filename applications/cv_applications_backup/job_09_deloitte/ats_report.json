@@ -1,0 +1,50 @@
+{
+  "job_id": "job-009",
+  "job_title": "Deloitte Consulting seeks Technology Strategy Manager",
+  "company": "Deloitte",
+  "location": "Dubai, UAE",
+  "category": "Strategy",
+  "priority": "medium",
+  "ats_score": 88,
+  "total_keywords": 8,
+  "found_keywords": [
+    "pmp",
+    "digital transformation",
+    "ai",
+    "financial services",
+    "gcc",
+    "uae",
+    "dubai"
+  ],
+  "missing_keywords": [
+    "7+ years"
+  ],
+  "recommendations": [],
+  "parsed_jd": {
+    "job_title": "Deloitte Consulting seeks Technology Strategy Manager",
+    "company": "Deloitte",
+    "location": "Dubai, UAE",
+    "salary": null,
+    "employment_type": null,
+    "requirements": [
+      "• 7+ years consulting or industry",
+      "Technology strategy experience",
+      "Digital transformation delivery",
+      "Financial services clients",
+      "PMP or equivalent certification"
+    ],
+    "responsibilities": [],
+    "qualifications": [],
+    "skills": [
+      "digital transformation",
+      "pmp"
+    ],
+    "experience_years": null,
+    "source": "job-009",
+    "parsed_at": "2026-02-11T09:10:57.906Z",
+    "raw_text": "Manager - Technology Strategy\n\nDeloitte Consulting seeks Technology Strategy Manager for GCC clients.\n\nLocation: Dubai, UAE\n\nRequirements:\n• 7+ years consulting or industry\n• Technology strategy experience\n• Digital transformation delivery\n• Financial services clients\n• PMP or equivalent certification",
+    "category": "Strategy",
+    "priority": "medium"
+  },
+  "processed_at": "2026-02-11T09:10:57.907Z"
+}

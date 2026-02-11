@@ -1,0 +1,47 @@
+{
+  "job_id": "job-036",
+  "job_title": "Senior Manager",
+  "company": "Monitor Deloitte",
+  "location": "Dubai, UAE",
+  "category": "Strategy",
+  "priority": "high",
+  "ats_score": 83,
+  "total_keywords": 6,
+  "found_keywords": [
+    "ai",
+    "financial services",
+    "uae",
+    "dubai",
+    "mba"
+  ],
+  "missing_keywords": [
+    "8+ years"
+  ],
+  "recommendations": [],
+  "parsed_jd": {
+    "job_title": "Senior Manager",
+    "company": "Monitor Deloitte",
+    "location": "Dubai, UAE",
+    "salary": null,
+    "employment_type": null,
+    "requirements": [
+      "• 8+ years experience",
+      "Strategy consulting",
+      "Financial services",
+      "Digital strategy",
+      "MBA preferred"
+    ],
+    "responsibilities": [],
+    "qualifications": [
+      "MBA preferred"
+    ],
+    "skills": [],
+    "experience_years": "8+",
+    "source": "job-036",
+    "parsed_at": "2026-02-11T09:10:57.948Z",
+    "raw_text": "Senior Manager - Strategy\n\nMonitor Deloitte seeks Senior Manager for strategy engagements.\n\nLocation: Dubai, UAE\n\nRequirements:\n• 8+ years experience\n• Strategy consulting\n• Financial services\n• Digital strategy\n• MBA preferred",
+    "category": "Strategy",
+    "priority": "high"
+  },
+  "processed_at": "2026-02-11T09:10:57.948Z"
+}

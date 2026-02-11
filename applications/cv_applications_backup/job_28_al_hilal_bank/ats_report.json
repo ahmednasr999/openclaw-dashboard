@@ -1,0 +1,58 @@
+{
+  "job_id": "job-028",
+  "job_title": "IT Program Manager",
+  "company": "Al Hilal Bank",
+  "location": "Abu Dhabi, UAE",
+  "category": "PM",
+  "priority": "medium",
+  "ats_score": 75,
+  "total_keywords": 8,
+  "found_keywords": [
+    "program management",
+    "pmp",
+    "budget management",
+    "banking",
+    "budget",
+    "uae"
+  ],
+  "missing_keywords": [
+    "vendor management",
+    "9+ years"
+  ],
+  "recommendations": [
+    "Add PM keywords: vendor management"
+  ],
+  "parsed_jd": {
+    "job_title": "IT Program Manager",
+    "company": "Al Hilal Bank",
+    "location": "Abu Dhabi, UAE",
+    "salary": null,
+    "employment_type": null,
+    "requirements": [
+      "• 9+ years program management",
+      "Banking IT systems",
+      "PMP certification",
+      "Vendor management",
+      "Budget management"
+    ],
+    "responsibilities": [
+      "9+ years program management"
+    ],
+    "qualifications": [
+      "certification • Vendor management"
+    ],
+    "skills": [
+      "budget management",
+      "vendor management",
+      "banking",
+      "pmp"
+    ],
+    "experience_years": null,
+    "source": "job-028",
+    "parsed_at": "2026-02-11T09:10:57.938Z",
+    "raw_text": "IT Program Manager\n\nManage IT program delivery for the bank.\n\nLocation: Abu Dhabi, UAE\n\nRequirements:\n• 9+ years program management\n• Banking IT systems\n• PMP certification\n• Vendor management\n• Budget management",
+    "category": "PM",
+    "priority": "medium"
+  },
+  "processed_at": "2026-02-11T09:10:57.938Z"
+}

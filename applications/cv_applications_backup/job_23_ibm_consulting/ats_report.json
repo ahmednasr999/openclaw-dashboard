@@ -1,0 +1,48 @@
+{
+  "job_id": "job-023",
+  "job_title": null,
+  "company": "IBM Consulting",
+  "location": "Dubai, UAE",
+  "category": "Digital Transformation",
+  "priority": "medium",
+  "ats_score": 100,
+  "total_keywords": 7,
+  "found_keywords": [
+    "digital transformation",
+    "ai",
+    "cloud",
+    "financial services",
+    "uae",
+    "dubai",
+    "10+ years"
+  ],
+  "missing_keywords": [],
+  "recommendations": [],
+  "parsed_jd": {
+    "job_title": null,
+    "company": "IBM Consulting",
+    "location": "Dubai, UAE",
+    "salary": null,
+    "employment_type": null,
+    "requirements": [
+      "• 10+ years experience",
+      "Consulting background",
+      "Financial services",
+      "Digital transformation",
+      "Cloud technologies"
+    ],
+    "responsibilities": [],
+    "qualifications": [],
+    "skills": [
+      "cloud",
+      "digital transformation"
+    ],
+    "experience_years": "10+",
+    "source": "job-023",
+    "parsed_at": "2026-02-11T09:10:57.928Z",
+    "raw_text": "Associate Partner - Financial Services\n\nIBM Consulting seeks Associate Partner for financial services clients.\n\nLocation: Dubai, UAE\n\nRequirements:\n• 10+ years experience\n• Consulting background\n• Financial services\n• Digital transformation\n• Cloud technologies",
+    "category": "Digital Transformation",
+    "priority": "medium"
+  },
+  "processed_at": "2026-02-11T09:10:57.929Z"
+}

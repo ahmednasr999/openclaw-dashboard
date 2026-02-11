@@ -1,0 +1,54 @@
+{
+  "job_id": "job-022",
+  "job_title": "Senior Project Manager",
+  "company": "Sharjah Islamic Bank",
+  "location": "Sharjah, UAE",
+  "category": "PM",
+  "priority": "medium",
+  "ats_score": 83,
+  "total_keywords": 6,
+  "found_keywords": [
+    "project management",
+    "pmp",
+    "team leadership",
+    "banking",
+    "uae"
+  ],
+  "missing_keywords": [
+    "8+ years"
+  ],
+  "recommendations": [],
+  "parsed_jd": {
+    "job_title": "Senior Project Manager",
+    "company": "Sharjah Islamic Bank",
+    "location": "Sharjah, UAE",
+    "salary": null,
+    "employment_type": null,
+    "requirements": [
+      "• 8+ years project management",
+      "Banking experience",
+      "Islamic finance knowledge",
+      "PMP certification",
+      "Team leadership"
+    ],
+    "responsibilities": [
+      "8+ years project management"
+    ],
+    "qualifications": [
+      "certification • Team leadership"
+    ],
+    "skills": [
+      "project management",
+      "leadership",
+      "banking",
+      "pmp"
+    ],
+    "experience_years": null,
+    "source": "job-022",
+    "parsed_at": "2026-02-11T09:10:57.926Z",
+    "raw_text": "Senior Project Manager\n\nLead technology and transformation projects for the bank.\n\nLocation: Sharjah, UAE\n\nRequirements:\n• 8+ years project management\n• Banking experience\n• Islamic finance knowledge\n• PMP certification\n• Team leadership",
+    "category": "PM",
+    "priority": "medium"
+  },
+  "processed_at": "2026-02-11T09:10:57.927Z"
+}
