@@ -1,0 +1,64 @@
+{
+  "job_id": "job-004",
+  "job_title": "• Strong lead",
+  "company": "Emirates Digital Bank",
+  "location": "Dubai, UAE",
+  "category": "Digital Transformation",
+  "priority": "high",
+  "ats_score": 82,
+  "total_keywords": 11,
+  "found_keywords": [
+    "pmp",
+    "digital transformation",
+    "ai",
+    "banking",
+    "financial services",
+    "core banking",
+    "uae",
+    "dubai",
+    "mba"
+  ],
+  "missing_keywords": [
+    "change management",
+    "12+ years"
+  ],
+  "recommendations": [
+    "Add PM keywords: change management"
+  ],
+  "parsed_jd": {
+    "job_title": "• Strong lead",
+    "company": "Emirates Digital Bank",
+    "location": "Dubai, UAE",
+    "salary": "$180,000 - $220,000",
+    "employment_type": null,
+    "requirements": [
+      "• 12+ years experience in digital transformation",
+      "Banking/financial services background",
+      "MBA or equivalent",
+      "Experience with core banking modernization",
+      "Strong leadership and change management skills",
+      "PMP certification preferred"
+    ],
+    "responsibilities": [
+      "Strong leadership and change management skills"
+    ],
+    "qualifications": [
+      "MBA or equivalent",
+      "certification preferred"
+    ],
+    "skills": [
+      "leadership",
+      "change management",
+      "digital transformation",
+      "banking",
+      "pmp"
+    ],
+    "experience_years": "12+",
+    "source": "job-004",
+    "parsed_at": "2026-02-11T09:10:57.893Z",
+    "raw_text": "Head of Digital Transformation\n\nLead enterprise-wide digital transformation initiatives for our growing digital bank.\n\nLocation: Dubai, UAE\nSalary: $180,000 - $220,000\n\nRequirements:\n• 12+ years experience in digital transformation\n• Banking/financial services background\n• MBA or equivalent\n• Experience with core banking modernization\n• Strong leadership and change management skills\n• PMP certification preferred",
+    "category": "Digital Transformation",
+    "priority": "high"
+  },
+  "processed_at": "2026-02-11T09:10:57.894Z"
+}

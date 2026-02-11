@@ -1,0 +1,50 @@
+{
+  "job_id": "job-029",
+  "job_title": "Engagement Manager",
+  "company": "Oliver Wyman",
+  "location": "Dubai, UAE",
+  "category": "Strategy",
+  "priority": "high",
+  "ats_score": 86,
+  "total_keywords": 7,
+  "found_keywords": [
+    "digital transformation",
+    "ai",
+    "financial services",
+    "uae",
+    "dubai",
+    "mba"
+  ],
+  "missing_keywords": [
+    "10 years"
+  ],
+  "recommendations": [],
+  "parsed_jd": {
+    "job_title": "Engagement Manager",
+    "company": "Oliver Wyman",
+    "location": "Dubai, UAE",
+    "salary": null,
+    "employment_type": null,
+    "requirements": [
+      "• 8-10 years experience",
+      "Digital transformation",
+      "Financial services",
+      "Consulting background",
+      "MBA preferred"
+    ],
+    "responsibilities": [],
+    "qualifications": [
+      "MBA preferred"
+    ],
+    "skills": [
+      "digital transformation"
+    ],
+    "experience_years": "8+",
+    "source": "job-029",
+    "parsed_at": "2026-02-11T09:10:57.939Z",
+    "raw_text": "Engagement Manager - Digital\n\nLead digital transformation engagements for financial services clients.\n\nLocation: Dubai, UAE\n\nRequirements:\n• 8-10 years experience\n• Digital transformation\n• Financial services\n• Consulting background\n• MBA preferred",
+    "category": "Strategy",
+    "priority": "high"
+  },
+  "processed_at": "2026-02-11T09:10:57.939Z"
+}

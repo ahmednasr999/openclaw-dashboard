@@ -1,0 +1,51 @@
+{
+  "job_id": "job-033",
+  "job_title": null,
+  "company": "AT Kearney",
+  "location": "Dubai, UAE",
+  "category": "Strategy",
+  "priority": "high",
+  "ats_score": 88,
+  "total_keywords": 8,
+  "found_keywords": [
+    "digital transformation",
+    "ai",
+    "financial services",
+    "uae",
+    "dubai",
+    "10+ years",
+    "mba"
+  ],
+  "missing_keywords": [
+    "middle east"
+  ],
+  "recommendations": [],
+  "parsed_jd": {
+    "job_title": null,
+    "company": "AT Kearney",
+    "location": "Dubai, UAE",
+    "salary": null,
+    "employment_type": null,
+    "requirements": [
+      "• 10+ years experience",
+      "Digital transformation",
+      "Strategy consulting",
+      "Financial services",
+      "MBA required"
+    ],
+    "responsibilities": [],
+    "qualifications": [
+      "MBA required"
+    ],
+    "skills": [
+      "digital transformation"
+    ],
+    "experience_years": "10+",
+    "source": "job-033",
+    "parsed_at": "2026-02-11T09:10:57.944Z",
+    "raw_text": "Principal - Digital Transformation\n\nAT Kearney Middle East seeks Principal for digital work.\n\nLocation: Dubai, UAE\n\nRequirements:\n• 10+ years experience\n• Digital transformation\n• Strategy consulting\n• Financial services\n• MBA required",
+    "category": "Strategy",
+    "priority": "high"
+  },
+  "processed_at": "2026-02-11T09:10:57.945Z"
+}

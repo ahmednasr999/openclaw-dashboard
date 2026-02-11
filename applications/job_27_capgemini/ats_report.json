@@ -1,0 +1,48 @@
+{
+  "job_id": "job-027",
+  "job_title": "Senior Manager",
+  "company": "Capgemini",
+  "location": "Dubai, UAE",
+  "category": "Strategy",
+  "priority": "medium",
+  "ats_score": 83,
+  "total_keywords": 6,
+  "found_keywords": [
+    "ai",
+    "team leadership",
+    "banking",
+    "uae",
+    "dubai"
+  ],
+  "missing_keywords": [
+    "8+ years"
+  ],
+  "recommendations": [],
+  "parsed_jd": {
+    "job_title": "Senior Manager",
+    "company": "Capgemini",
+    "location": "Dubai, UAE",
+    "salary": null,
+    "employment_type": null,
+    "requirements": [
+      "• 8+ years experience",
+      "Banking transformation",
+      "Consulting background",
+      "Digital strategy",
+      "Team leadership"
+    ],
+    "responsibilities": [],
+    "qualifications": [],
+    "skills": [
+      "leadership",
+      "banking"
+    ],
+    "experience_years": "8+",
+    "source": "job-027",
+    "parsed_at": "2026-02-11T09:10:57.937Z",
+    "raw_text": "Senior Manager - Banking\n\nCapgemini Invent seeks Senior Manager for banking clients.\n\nLocation: Dubai, UAE\n\nRequirements:\n• 8+ years experience\n• Banking transformation\n• Consulting background\n• Digital strategy\n• Team leadership",
+    "category": "Strategy",
+    "priority": "medium"
+  },
+  "processed_at": "2026-02-11T09:10:57.937Z"
+}

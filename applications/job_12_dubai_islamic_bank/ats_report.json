@@ -1,0 +1,58 @@
+{
+  "job_id": "job-012",
+  "job_title": "Project Manager",
+  "company": "Dubai Islamic Bank",
+  "location": "Dubai, UAE",
+  "category": "PM",
+  "priority": "medium",
+  "ats_score": 89,
+  "total_keywords": 9,
+  "found_keywords": [
+    "project management",
+    "pmp",
+    "ai",
+    "banking",
+    "core banking",
+    "regulatory",
+    "uae",
+    "dubai"
+  ],
+  "missing_keywords": [
+    "6+ years"
+  ],
+  "recommendations": [],
+  "parsed_jd": {
+    "job_title": "Project Manager",
+    "company": "Dubai Islamic Bank",
+    "location": "Dubai, UAE",
+    "salary": null,
+    "employment_type": null,
+    "requirements": [
+      "• 6+ years project management",
+      "Islamic banking knowledge",
+      "Core banking systems",
+      "PMP certification",
+      "Regulatory compliance experience"
+    ],
+    "responsibilities": [
+      "6+ years project management"
+    ],
+    "qualifications": [
+      "certification • Regulatory compliance experience"
+    ],
+    "skills": [
+      "project management",
+      "compliance",
+      "regulatory",
+      "banking",
+      "pmp"
+    ],
+    "experience_years": null,
+    "source": "job-012",
+    "parsed_at": "2026-02-11T09:10:57.910Z",
+    "raw_text": "Project Manager - Islamic Finance Systems\n\nLead technology projects for Islamic banking products and services.\n\nLocation: Dubai, UAE\n\nRequirements:\n• 6+ years project management\n• Islamic banking knowledge\n• Core banking systems\n• PMP certification\n• Regulatory compliance experience",
+    "category": "PM",
+    "priority": "medium"
+  },
+  "processed_at": "2026-02-11T09:10:57.911Z"
+}

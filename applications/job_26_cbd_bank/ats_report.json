@@ -1,0 +1,53 @@
+{
+  "job_id": "job-026",
+  "job_title": null,
+  "company": "CBD Bank",
+  "location": "Dubai, UAE",
+  "category": "Digital Transformation",
+  "priority": "medium",
+  "ats_score": 71,
+  "total_keywords": 7,
+  "found_keywords": [
+    "agile",
+    "ai",
+    "banking",
+    "uae",
+    "dubai"
+  ],
+  "missing_keywords": [
+    "portfolio management",
+    "8+ years"
+  ],
+  "recommendations": [
+    "Add PM keywords: portfolio management"
+  ],
+  "parsed_jd": {
+    "job_title": null,
+    "company": "CBD Bank",
+    "location": "Dubai, UAE",
+    "salary": null,
+    "employment_type": null,
+    "requirements": [
+      "• 8+ years digital experience",
+      "Banking background",
+      "Project portfolio management",
+      "Agile delivery",
+      "Innovation mindset"
+    ],
+    "responsibilities": [
+      "Project portfolio management"
+    ],
+    "qualifications": [],
+    "skills": [
+      "agile",
+      "banking"
+    ],
+    "experience_years": null,
+    "source": "job-026",
+    "parsed_at": "2026-02-11T09:10:57.935Z",
+    "raw_text": "Head of Digital Projects\n\nLead digital project portfolio for Commercial Bank of Dubai.\n\nLocation: Dubai, UAE\n\nRequirements:\n• 8+ years digital experience\n• Banking background\n• Project portfolio management\n• Agile delivery\n• Innovation mindset",
+    "category": "Digital Transformation",
+    "priority": "medium"
+  },
+  "processed_at": "2026-02-11T09:10:57.936Z"
+}

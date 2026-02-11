@@ -1,0 +1,52 @@
+{
+  "job_id": "job-049",
+  "job_title": "Program Manager",
+  "company": "Cognizant",
+  "location": "Dubai, UAE",
+  "category": "PM",
+  "priority": "medium",
+  "ats_score": 100,
+  "total_keywords": 7,
+  "found_keywords": [
+    "program management",
+    "pmp",
+    "ai",
+    "banking",
+    "uae",
+    "dubai",
+    "10+ years"
+  ],
+  "missing_keywords": [],
+  "recommendations": [],
+  "parsed_jd": {
+    "job_title": "Program Manager",
+    "company": "Cognizant",
+    "location": "Dubai, UAE",
+    "salary": null,
+    "employment_type": null,
+    "requirements": [
+      "• 10+ years program management",
+      "Banking experience",
+      "PMP certification",
+      "Client management",
+      "Offshore coordination"
+    ],
+    "responsibilities": [
+      "10+ years program management"
+    ],
+    "qualifications": [
+      "certification • Client management"
+    ],
+    "skills": [
+      "banking",
+      "pmp"
+    ],
+    "experience_years": null,
+    "source": "job-049",
+    "parsed_at": "2026-02-11T09:10:57.963Z",
+    "raw_text": "Program Manager - Banking\n\nLead banking program delivery for Cognizant.\n\nLocation: Dubai, UAE\n\nRequirements:\n• 10+ years program management\n• Banking experience\n• PMP certification\n• Client management\n• Offshore coordination",
+    "category": "PM",
+    "priority": "medium"
+  },
+  "processed_at": "2026-02-11T09:10:57.964Z"
+}
