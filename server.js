@@ -246,12 +246,13 @@ async function addToGoogleSheet({ company, role, jobUrl, cvUrl, folder }) {
 }
 
 function generateProfessionalHTMLCV(jd, company, role) {
+    const cleanRole = role.replace(/_/g, ' ');
     return `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed Nasr - ${role}</title>
+    <title>${cleanRole} - Ahmed Nasr Resume</title>
     <style>
         * {
             margin: 0;
@@ -658,7 +659,18 @@ function generateProfessionalHTMLCV(jd, company, role) {
         </div>
     </div>
     
-    <button class="print-btn" onclick="window.print()">Save as PDF</button>
+    <button class="print-btn" onclick="savePDF()">Save as PDF</button>
+    
+    <script>
+        function savePDF() {
+            // Set the document title to ensure correct PDF filename
+            const originalTitle = document.title;
+            document.title = '${cleanRole} - Ahmed Nasr Resume';
+            window.print();
+            // Restore original title after print dialog
+            setTimeout(() => { document.title = originalTitle; }, 1000);
+        }
+    </script>
 </body>
 </html>`;
 }
