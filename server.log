@@ -7,44 +7,11 @@ Press Ctrl+C to stop
 
 
 🚀 New job processing request
-URL: https://www.linkedin.com/jobs/view/4361718853/?eBP=NON_CHARGEABLE_CHANNEL&refId=5r4Sw6mjT7mEo0MLa9bUJA%3D%3D&trackingId=EQN8bOIx73C4e%2FT%2FSFmx9Q%3D%3D&trk=flagship3_top_applicant_jobs_collection
-Timestamp: 2026-02-12T01:39:15.697Z
-Output directory: applications/job_356067_company_a_highly_experienced_and_strat
+URL: https://www.linkedin.com/jobs/view/4365657098/?eBP=NON_CHARGEABLE_CHANNEL&refId=5r4Sw6mjT7mEo0MLa9bUJA%3D%3D&trackingId=0dJ%2Fx2e01axWVWi3Lh2Ayg%3D%3D&trk=flagship3_top_applicant_jobs_collection
+Timestamp: 2026-02-12T02:35:37.135Z
+Output directory: applications/job_737444_regional_alliances___channel_manager_po
 📝 Generating Elite Executive Package...
 🎨 Generating Professional HTML CV...
-📤 Committing to GitHub...
-To https://github.com/ahmednasr999/openclaw-dashboard.git
-   b389a9b..6a1f7c6  main -> main
-✅ Committed to GitHub
-⏳ Waiting for GitHub Pages deployment...
-  Checking deployment... attempt 1/30
-  Checking deployment... attempt 2/30
-  Checking deployment... attempt 3/30
-  Checking deployment... attempt 4/30
-  Checking deployment... attempt 5/30
-  Checking deployment... attempt 6/30
-  Checking deployment... attempt 7/30
-  Checking deployment... attempt 8/30
-  Checking deployment... attempt 9/30
-  Checking deployment... attempt 10/30
-  Checking deployment... attempt 11/30
-  Checking deployment... attempt 12/30
-  Checking deployment... attempt 13/30
-  Checking deployment... attempt 14/30
-  Checking deployment... attempt 15/30
-  Checking deployment... attempt 16/30
-  Checking deployment... attempt 17/30
-  Checking deployment... attempt 18/30
-  Checking deployment... attempt 19/30
-  ✅ Deployment complete!
-📊 Adding to Google Sheet...
-✅ Added to Google Sheet
-✅ Complete! Package generated: job_356067_company_a_highly_experienced_and_strat
-
-🚀 New job processing request
-URL: https://www.linkedin.com/jobs/view/4361718853/?eBP=NON_CHARGEABLE_CHANNEL&refId=5r4Sw6mjT7mEo0MLa9bUJA%3D%3D&trackingId=EQN8bOIx73C4e%2FT%2FSFmx9Q%3D%3D&trk=flagship3_top_applicant_jobs_collection
-Timestamp: 2026-02-12T01:51:59.918Z
-Output directory: applications/job_120161_company_a_highly_experienced_and_strat
-📝 Generating Elite Executive Package...
-🎨 Generating Professional HTML CV...
+✓ CV.html tailored: "COMPANY
+Our client is a rapidly scaling AI-driven enterprise - Ahmed Nasr Resume"
 📤 Committing to GitHub...
