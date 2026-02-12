@@ -32,6 +32,19 @@ app.use(express.static('.'));
 // Load CV reference
 const cvReference = fs.readFileSync('Ahmed_Nasr_CV_Reference.md', 'utf8');
 
+// Helper functions for company/role extraction
+function extractCompany(jd) {
+    const match = jd.match(/(?:at|with)\s+([A-Z][A-Za-z0-9\s&]+?)(?:\s+|\n|$)/) ||
+                  jd.match(/^([A-Z][A-Za-z0-9\s&]+?)\s*[-–]/);
+    return match ? match[1].trim().replace(/\s+/g, '_') : 'Company';
+}
+
+function extractRole(jd) {
+    const match = jd.match(/(?:hiring|seeking|for)\s+([A-Z][a-zA-Z\s]+?(?:Manager|Director|VP|Head|Lead|Engineer|Consultant|Analyst))/i) ||
+                  jd.match(/^([A-Z][a-zA-Z\s]+?)\s*[-–]/);
+    return match ? match[1].trim().replace(/\s+/g, '_').slice(0, 30) : 'Position';
+}
+
 // Process job endpoint
 app.post('/api/process-job', async (req, res) => {
     const { jobUrl, jobDescription, timestamp } = req.body;
