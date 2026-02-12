@@ -57,6 +57,11 @@ app.post('/api/process-job', async (req, res) => {
         fs.writeFileSync(path.join(outputDir, '09_FINAL_CV.md'), elitePackage.finalAssembly);
         fs.writeFileSync(path.join(outputDir, 'FULL_PACKAGE.md'), elitePackage.fullPackage);
         
+        // Save professional HTML CV
+        console.log('🎨 Generating Professional HTML CV...');
+        const htmlCV = generateProfessionalHTMLCV(jd, company, role);
+        fs.writeFileSync(path.join(outputDir, 'CV.html'), htmlCV);
+        
         // Save job description
         fs.writeFileSync(path.join(outputDir, 'job_description.txt'), `Job URL: ${jobUrl}\n\n${jobDescription}`);
         
@@ -64,8 +69,9 @@ app.post('/api/process-job', async (req, res) => {
         console.log('📤 Committing to GitHub...');
         commitToGitHub(outputDir, folderName);
         
-        // Generate CV URL
-        const cvUrl = `https://ahmednasr999.github.io/openclaw-dashboard/${outputDir}/09_FINAL_CV.md`;
+        // Generate CV URLs
+        const cvUrl = `https://ahmednasr999.github.io/openclaw-dashboard/${outputDir}/CV.html`;
+        const packageUrl = `https://ahmednasr999.github.io/openclaw-dashboard/${outputDir}/FULL_PACKAGE.md`;
         
         // Add to Google Sheet
         console.log('📊 Adding to Google Sheet...');
@@ -83,7 +89,7 @@ app.post('/api/process-job', async (req, res) => {
             success: true,
             cvUrl: cvUrl,
             folder: folderName,
-            packageUrl: `https://ahmednasr999.github.io/openclaw-dashboard/${outputDir}/FULL_PACKAGE.md`,
+            packageUrl: packageUrl,
             message: 'Elite Executive Package generated successfully'
         });
         
@@ -237,6 +243,509 @@ async function addToGoogleSheet({ company, role, jobUrl, cvUrl, folder }) {
     } catch (error) {
         console.error('❌ Google Sheet error:', error.message);
     }
+}
+
+function generateProfessionalHTMLCV(jd, company, role) {
+    return `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Nasr - ${role}</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            line-height: 1.6;
+            color: #2c3e50;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+        
+        .title {
+            font-size: 1.1rem;
+            font-weight: 400;
+            opacity: 0.95;
+            margin-bottom: 15px;
+        }
+        
+        .contact {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .contact span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .section-title {
+            color: #1e3c72;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #e94560;
+            display: inline-block;
+        }
+        
+        .summary {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #34495e;
+            text-align: justify;
+        }
+        
+        .competencies {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        
+        .competency-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #e94560;
+        }
+        
+        .competency-card h4 {
+            color: #1e3c72;
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .competency-card ul {
+            list-style: none;
+            font-size: 0.9rem;
+            color: #555;
+        }
+        
+        .competency-card li {
+            margin-bottom: 5px;
+            padding-left: 15px;
+            position: relative;
+        }
+        
+        .competency-card li:before {
+            content: "▸";
+            color: #e94560;
+            position: absolute;
+            left: 0;
+        }
+        
+        .job {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .job:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .job-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .job-date {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            font-weight: 500;
+        }
+        
+        .company {
+            color: #e94560;
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .job-context {
+            font-style: italic;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        
+        .bullets {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .bullets li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+            line-height: 1.6;
+            color: #444;
+        }
+        
+        .bullets li:before {
+            content: "•";
+            color: #e94560;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+            line-height: 1.2;
+        }
+        
+        .education {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        .education-item {
+            margin-bottom: 15px;
+        }
+        
+        .education-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .education-item strong {
+            color: #1e3c72;
+            display: block;
+            margin-bottom: 3px;
+        }
+        
+        .certs {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+        }
+        
+        .cert-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 8px;
+        }
+        
+        .cert-badge {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #fff;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        
+        .print-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, #e94560 0%, #ff6b6b 100%);
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            box-shadow: 0 5px 20px rgba(233, 69, 96, 0.4);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        
+        .print-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(233, 69, 96, 0.5);
+        }
+        
+        @media print {
+            body {
+                background: #fff;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                border-radius: 0;
+            }
+            
+            .print-btn {
+                display: none;
+            }
+            
+            .header {
+                background: #1e3c72 !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            
+            .competency-card {
+                border-left: 4px solid #e94560 !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            
+            .cert-badge {
+                background: #1e3c72 !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .name {
+                font-size: 1.8rem;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .job-header {
+                flex-direction: column;
+            }
+            
+            .competencies {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="name">AHMED NASR</h1>
+            <div class="title">MBA (In Progress), PMP, CSM, CBAP, MCAD, MCP, Lean Six Sigma</div>
+            <div class="title">Acting PMO & Regional Engagement Lead | Digital Transformation | Customer Experience</div>
+            <div class="contact">
+                <span>📍 Dubai, UAE</span>
+                <span>📱 +971 50 281 4490</span>
+                <span>✉️ ahmednasr999@gmail.com</span>
+                <span>🔗 linkedin.com/in/ahmednasr</span>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title">Executive Profile</h2>
+                <p class="summary">
+                    Strategic executive with 20+ years leading enterprise-scale digital transformation, customer onboarding optimization, and alternate channel development across banking, FinTech, healthcare, and technology sectors. Proven P&L ownership and regional leadership across KSA, UAE, and Egypt. Track record of 95% technology adoption, 233x operational scale, and 40% friction reduction. Expertise in establishing PMO governance, scaling digital and physical customer touchpoints, and delivering regulatory-compliant solutions that enhance conversion and drive revenue growth.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Core Competencies</h2>
+                <div class="competencies">
+                    <div class="competency-card">
+                        <h4>Strategic Leadership</h4>
+                        <ul>
+                            <li>Regional P&L Ownership</li>
+                            <li>C-Suite Advisory</li>
+                            <li>Board Engagement</li>
+                            <li>Change Management</li>
+                            <li>Cross-Functional Leadership</li>
+                        </ul>
+                    </div>
+                    <div class="competency-card">
+                        <h4>Customer Experience</h4>
+                        <ul>
+                            <li>Onboarding Transformation</li>
+                            <li>Journey Mapping</li>
+                            <li>Touchpoint Optimization</li>
+                            <li>Conversion Optimization</li>
+                            <li>Pain Point Elimination</li>
+                        </ul>
+                    </div>
+                    <div class="competency-card">
+                        <h4>Channel Strategy</h4>
+                        <ul>
+                            <li>Alternate Channel Development</li>
+                            <li>Digital Partnerships</li>
+                            <li>Kiosk Strategy</li>
+                            <li>Go-to-Market</li>
+                            <li>Mobile & Assisted Channels</li>
+                        </ul>
+                    </div>
+                    <div class="competency-card">
+                        <h4>Governance & Compliance</h4>
+                        <ul>
+                            <li>PMO Establishment</li>
+                            <li>Regulatory Compliance</li>
+                            <li>KYC/AML</li>
+                            <li>Risk Management</li>
+                            <li>Policy Simplification</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Professional Experience</h2>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Acting PMO & Regional Engagement Lead</div>
+                        <div class="job-date">June 2024 – Present</div>
+                    </div>
+                    <div class="company">TopMed (Saudi German Hospital Group)</div>
+                    <div class="job-context">Leading HealthTech Digital Transformation Across KSA, UAE, Egypt</div>
+                    <ul class="bullets">
+                        <li>Spearhead enterprise-wide digital transformation across 3 countries, modernizing customer onboarding journeys across physical and digital touchpoints</li>
+                        <li>Establish structured PMO governance framework ensuring seamless execution of large-scale initiatives</li>
+                        <li>Lead strategic partnerships with U.S. technology providers integrating AI-driven analytics and digital identity solutions</li>
+                        <li>Drive 95% adoption of patient digital engagement platforms within 6 months; ensure JCI, HIMSS, MOH compliance</li>
+                        <li>Lead cross-functional teams across technology, operations, clinical, risk, and compliance functions</li>
+                    </ul>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Country Manager</div>
+                        <div class="job-date">April 2021 – January 2022</div>
+                    </div>
+                    <div class="company">PaySky & Yalla SuperApp (Acquired by ENPO)</div>
+                    <div class="job-context">P&L Leadership for Retail Banking & FinTech SuperApp Platform</div>
+                    <ul class="bullets">
+                        <li>Managed full P&L responsibility for digital financial services platform, driving revenue growth and profitability</li>
+                        <li>Built Go-to-Market organization establishing B2B/B2C acquisition channels including digital partnerships and kiosk-led strategies</li>
+                        <li>Delivered merchant onboarding platform serving 500K+ businesses; reduced friction by 40%</li>
+                        <li>Ensured KYC/AML compliance across customer segments; partnered with HR/L&D on training alignment</li>
+                    </ul>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Head of Strategy & VP Advisor</div>
+                        <div class="job-date">January 2020 – December 2021</div>
+                    </div>
+                    <div class="company">El Araby Group</div>
+                    <ul class="bullets">
+                        <li>Led SAP S/4HANA and Hospital ERP implementations</li>
+                        <li>Developed multi-year strategic business plans ensuring executive alignment</li>
+                        <li>Advised C-suite on operations, marketing, and financial planning</li>
+                    </ul>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">PMO Section Head</div>
+                        <div class="job-date">September 2014 – June 2017</div>
+                    </div>
+                    <div class="company">EMP (Acquired by Network International)</div>
+                    <ul class="bullets">
+                        <li>Built PMO function from inception managing portfolio for African banking clients and central bank integrations</li>
+                        <li>Developed strategic dashboard contributing to 3x profit increase</li>
+                        <li>Managed 300 concurrent projects via Microsoft Project Server cloud infrastructure</li>
+                    </ul>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Product Development Manager</div>
+                        <div class="job-date">June 2017 – May 2018</div>
+                    </div>
+                    <div class="company">Talabat, Delivery Hero SE</div>
+                    <ul class="bullets">
+                        <li>Scaled daily order volume from 30,000 to 7 million through customer journey optimization</li>
+                        <li>Established Egypt office operations building engineering and product functions</li>
+                        <li>Implemented tracking analytics harmonizing processes across channels</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Education & Credentials</h2>
+                <div class="education">
+                    <div class="education-item">
+                        <strong>Master of Business Administration (MBA)</strong>
+                        <span>In Progress</span>
+                    </div>
+                    <div class="education-item">
+                        <strong>B.Sc. Computer Sciences & Business Administration</strong>
+                        <span>Sadat Academy, 2006</span>
+                    </div>
+                    <div class="certs">
+                        <strong>Professional Certifications:</strong>
+                        <div class="cert-list">
+                            <span class="cert-badge">PMP</span>
+                            <span class="cert-badge">CSM</span>
+                            <span class="cert-badge">CBAP</span>
+                            <span class="cert-badge">MCAD</span>
+                            <span class="cert-badge">MCP</span>
+                            <span class="cert-badge">Lean Six Sigma</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <button class="print-btn" onclick="window.print()">🖨️ Save as PDF</button>
+</body>
+</html>`;
 }
 
 function commitToGitHub(outputDir, folderName) {
