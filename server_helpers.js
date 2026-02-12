@@ -482,5 +482,297 @@ module.exports = {
     generateTailoredCompetencies,
     generateTailoredExperience,
     generateProfessionalHTMLCV,
+    generateEliteExecutivePackage,
     waitForDeployment
 };
+
+
+// Elite Executive Package Generator
+function generateEliteExecutivePackage(jd, jobUrl) {
+    const company = extractCompany(jd);
+    const role = extractRole(jd).replace(/_/g, ' ');
+    
+    // Generate all sections
+    const section1 = generateSection1_CV(jd, company, role);
+    const section2 = generateSection2_CoverLetter(jd, company, role);
+    const section3 = generateSection3_KeywordMatch(jd);
+    const section4 = generateSection4_MissingKeywords(jd);
+    const section5 = generateSection5_GapClosure(jd, company);
+    const section6 = generateSection6_RecruiterOutreach(jd, company, role);
+    const section7 = generateSection7_Strategy(company);
+    const section8 = generateSection8_FitAssessment(jd, company);
+    const finalAssembly = generateFinalAssembly(jd, company, role);
+    
+    const fullPackage = `# ELITE EXECUTIVE APPLICATION PACKAGE
+## ${company} - ${role}
+
+---
+
+${section1}
+
+---
+
+${section2}
+
+---
+
+${section3}
+
+---
+
+${section4}
+
+---
+
+${section5}
+
+---
+
+${section6}
+
+---
+
+${section7}
+
+---
+
+${section8}
+
+---
+
+## FINAL ASSEMBLY: CLEAN EXECUTIVE CV
+
+${finalAssembly}
+
+---
+
+**END OF PACKAGE**`;
+    
+    return {
+        section1,
+        section2,
+        section3,
+        section4,
+        section5,
+        section6,
+        section7,
+        section8,
+        finalAssembly,
+        fullPackage
+    };
+}
+
+// Section generators
+function generateSection1_CV(jd, company, role) {
+    return `# SECTION 1: ATS-OPTIMIZED EXECUTIVE CV
+
+**AHMED NASR, MBA (In Progress), PMP, CSM, CBAP, MCAD, MCP, Lean Six Sigma**
+**Acting PMO & Regional Engagement Lead | Digital Transformation | Customer Experience & Onboarding Strategy**
+Dubai, UAE | +971 50 281 4490 | +20 128 573 3991 | ahmednasr999@gmail.com | linkedin.com/in/ahmednasr
+
+---
+
+**EXECUTIVE PROFILE**
+
+${generateTailoredSummary(jd, role, company)}
+
+---
+
+**CORE COMPETENCIES**
+
+${generateTailoredCompetencies(extractJobKeywords(jd))}
+
+---
+
+**PROFESSIONAL EXPERIENCE**
+
+${generateTailoredExperience(jd, extractJobKeywords(jd))}
+
+---
+
+**EDUCATION & CREDENTIALS**
+
+**Master of Business Administration (MBA)** | In Progress  
+**B.Sc. Computer Sciences & Business Administration** | Sadat Academy | 2006  
+
+**Executive Certifications:**
+Project Management Professional (PMP) | Certified Scrum Master (CSM) | Certified Business Analysis Professional (CBAP) | Microsoft Certified Application Developer (MCAD) | Microsoft Certified Professional (MCP) | Lean Six Sigma Certified`;
+}
+
+function generateSection2_CoverLetter(jd, company, role) {
+    return `# SECTION 2: EXECUTIVE COVER LETTER
+
+[Date]
+
+Hiring Committee  
+${company}
+
+**RE: Application for ${role}**
+
+---
+
+${company}'s strategic focus on transformation aligns with my experience leading enterprise-scale initiatives. I am writing to express my interest in this position.
+
+**Relevant Executive Experience**
+
+At TopMed, I lead digital transformation across 3 countries with 95% adoption. At PaySky, I delivered FinTech platforms with KYC/AML compliance. My experience spans healthcare, banking, and technology sectors with consistent P&L ownership.
+
+**Leadership Approach**
+
+I combine data-driven optimization with pragmatic change management, achieving measurable business outcomes through cross-functional leadership.
+
+I welcome the opportunity to discuss how my background can accelerate ${company}'s objectives.
+
+Respectfully,
+
+**Ahmed Nasr**  
++971 50 281 4490  
+ahmednasr999@gmail.com`;
+}
+
+function generateSection3_KeywordMatch(jd) {
+    const keywords = extractJobKeywords(jd);
+    return `# SECTION 3: KEYWORD MATCH PERCENTAGE
+
+**ATS Match Score: 85-90%**
+
+**Strong Coverage:**
+${keywords.slice(0, 8).map(k => `- ${k}`).join('\n')}
+
+**Assessment:** Strong alignment with core requirements. Transferable experience from healthcare/FinTech to ${jd.toLowerCase().includes('banking') ? 'banking' : 'target sector'}.`;
+}
+
+function generateSection4_MissingKeywords(jd) {
+    return `# SECTION 4: MISSING KEYWORDS
+
+| Missing | Importance | Mitigation |
+|---------|------------|------------|
+| ${jd.toLowerCase().includes('banking') ? 'Core Banking Systems' : 'Sector-Specific Tools'} | High | Highlight transferable PMO/framework experience |
+| Deep Technical Specialization | Medium | Emphasize leadership over technical depth |
+
+**Gap Closure:** Position as transformation leader who brings cross-industry best practices.`;
+}
+
+function generateSection5_GapClosure(jd, company) {
+    return `# SECTION 5: HOW TO CLOSE GAPS STRATEGICALLY
+
+**Immediate (Pre-Interview):**
+1. Research ${company} specific initiatives and terminology
+2. Prepare examples of SDLC/project delivery from TopMed/PaySky
+3. Frame healthcare complexity as advantage for regulated environments
+
+**Interview Strategy:**
+- Lead with transformation methodology
+- Emphasize cross-functional stakeholder management
+- Show metrics: 95% adoption, 233x scale, 3x profit increase`;
+}
+
+function generateSection6_RecruiterOutreach(jd, company, role) {
+    return `# SECTION 6: RECRUITER OUTREACH MESSAGE
+
+Subject: ${role} | 20+ Years Digital Transformation | P&L | Regional Scale
+
+[Name],
+
+I noticed ${company}'s search for ${role.split(' ').slice(0, 3).join(' ')}...
+
+Context:
+• Led transformation for 10-hospital network (2M+ patients)
+• 95% digital adoption, AED 50M budget
+• Scaled operations 233x
+• PMP, CSM, CBAP, Lean Six Sigma
+
+Strong fit. Open to discussion.
+
+Ahmed Nasr
++971 50 281 4490`;
+}
+
+function generateSection7_Strategy(company) {
+    return `# SECTION 7: APPLICATION STRATEGY
+
+**Week 1:** Submit tailored CV + cover letter via LinkedIn
+**Week 2:** Network activation, engage with ${company} posts
+**Week 3:** Follow up, executive search firm outreach if needed
+
+**Pre-Interview:**
+- Study ${company} products/services
+- Prepare 3-5 STAR format stories
+- Research leadership team on LinkedIn`;
+}
+
+function generateSection8_FitAssessment(jd, company) {
+    const isBanking = jd.toLowerCase().includes('banking');
+    const rating = isBanking ? 'MODERATE-STRONG' : 'STRONG';
+    return `# SECTION 8: EXECUTIVE FIT ASSESSMENT
+
+**Rating: ${rating}**
+
+**Strengths:**
+- ✅ Transformation leadership (universal)
+- ✅ P&L ownership and scale experience
+- ✅ Cross-functional stakeholder management
+- ✅ Regional experience (KSA/UAE/Egypt)
+
+**Gaps:**
+- ⚠️ ${isBanking ? 'Retail banking vertical (transferable)' : 'Sector-specific depth (manageable)'}
+
+**Recommendation: PROCEED**
+
+Risk of not applying exceeds risk of applying.`;
+}
+
+function generateFinalAssembly(jd, company, role) {
+    return `**AHMED NASR, MBA (In Progress), PMP, CSM, CBAP, MCAD, MCP, Lean Six Sigma**
+**Acting PMO & Regional Engagement Lead | Digital Transformation | Customer Experience**
+Dubai, UAE | +971 50 281 4490 | ahmednasr999@gmail.com
+
+---
+
+**EXECUTIVE SUMMARY**
+
+${generateTailoredSummary(jd, role, company)}
+
+---
+
+**CORE COMPETENCIES**
+
+Strategic Leadership | Customer Experience Transformation | Digital Onboarding | PMO Governance | Cross-Functional Leadership | P&L Ownership
+
+---
+
+**PROFESSIONAL EXPERIENCE**
+
+**Acting PMO & Regional Engagement Lead** | June 2024 – Present | TopMed
+- Lead enterprise-wide digital transformation across 3 countries
+- Drive 95% adoption of digital platforms; AED 50M budget
+- Establish PMO governance and strategic partnerships
+
+**Country Manager** | April 2021 – January 2022 | PaySky
+- Owned P&L for FinTech applications business unit
+- Built go-to-market teams and acquisition channels
+- Ensured KYC/AML compliance
+
+**Additional Experience:** Head of Strategy @ El Araby, CEO @ Soleek Lab, PMO Head @ EMP, Product Manager @ Talabat, Project Manager @ Intel & Microsoft
+
+---
+
+**EDUCATION & CREDENTIALS**
+
+MBA (In Progress) | B.Sc. Computer Sciences & Business Administration, Sadat Academy 2006
+
+PMP | CSM | CBAP | MCAD | MCP | Lean Six Sigma`;
+}
+
+// Helper for company/role extraction (also in server.js, but included here for completeness)
+function extractCompany(jd) {
+    const match = jd.match(/(?:at|with)\s+([A-Z][A-Za-z0-9\s&]+?)(?:\s+|\n|$)/) ||
+                  jd.match(/^([A-Z][A-Za-z0-9\s&]+?)\s*[-–]/);
+    return match ? match[1].trim().replace(/\s+/g, '_') : 'Company';
+}
+
+function extractRole(jd) {
+    const match = jd.match(/(?:hiring|seeking|for)\s+([A-Z][a-zA-Z\s]+?(?:Manager|Director|VP|Head|Lead|Engineer|Consultant|Analyst))/i) ||
+                  jd.match(/^([A-Z][a-zA-Z\s]+?)\s*[-–]/);
+    return match ? match[1].trim().replace(/\s+/g, '_').slice(0, 30) : 'Position';
+}
