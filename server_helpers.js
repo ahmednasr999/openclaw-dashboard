@@ -1,3 +1,5 @@
+const https = require('https');
+
 // Helper: Extract job title from job description
 function extractJobTitle(jd) {
     // Look for common patterns in job descriptions
