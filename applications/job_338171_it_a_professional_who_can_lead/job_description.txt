@@ -1,0 +1,62 @@
+Job URL: https://www.linkedin.com/jobs/view/4368100562/?eBP=NON_CHARGEABLE_CHANNEL&refId=5r4Sw6mjT7mEo0MLa9bUJA%3D%3D&trackingId=OaFPodvA83yCnDI7HAmy0Q%3D%3D&trk=flagship3_top_applicant_jobs_collection
+
+We are looking for a dynamic and technically proficient Digital Transformation Senior Officer who brings together strategic transformation capabilities with hands-on experience in application development. This hybrid role is ideal for a professional who can lead digital change initiatives, while also supporting in designing, developing, and deploying web and ERP solutions to drive business modernization. The ideal candidate will have a proven track record in driving technology-enabled transformation programs, coupled with strong programming skills, system integration experience, and a solid understanding of enterprise applications.
+Key Responsibilities
+Digital Transformation Strategy & Execution
+Contribute to the development and execution of the organization’s digital transformation roadmap.
+Identify opportunities to optimize business processes through automation, digitization, or technology enablement.
+Evaluate digital platforms and AI solutions (e.g., chatbots, predictive analytics, NLP tools, generative AI) and support implementation in line with business priorities.
+Work with leadership to ensure transformation initiatives align with strategic goals and operational priorities.
+Application Development & Integration
+Support the design, develop, test, and deploy web applications and ERP modules using modern frameworks and programming languages.
+Assist in building or customizing features on platforms such as Microsoft Dynamics 365, Oracle, or similar ERP systems.
+Collaborate with backend and frontend developers to deliver scalable, secure, and maintainable solutions.
+Integrate third-party APIs, cloud services, and automation tools into enterprise systems
+AI Use Case Discovery & Innovation Enablement
+Collaborate with business units to identify high-impact AI use cases across operations, customer service, HR, marketing, and other areas.
+Support AI proof-of-concept (PoC) design, testing, and scaling for automation, personalization, or forecasting initiatives.
+Help define success metrics, training data needs, and ethical considerations for AI-enabled solutions.
+Monitor industry trends and emerging technologies to inform AI adoption and innovation planning.
+Project Management
+Lead and execute transformation projects using Agile, Waterfall, or hybrid methodologies, ensuring on-time, within-budget delivery.
+Manage cross-functional project teams spanning business, IT, operations, and vendors.
+Define project scopes, objectives, milestones, and KPIs.
+Business Analysis
+Conduct in-depth analysis of current business processes and systems to identify inefficiencies or improvement areas.
+Gather and document business and technical requirements through stakeholder workshops, interviews, and workflow reviews.
+Translate business needs into functional specifications for IT and development teams.
+Perform gap analysis, impact assessments, and feasibility studies.
+Application Oversight & Digital Solutions
+Support the planning, design, and implementation of new digital applications and platforms.
+Oversee application lifecycle management, including user requirements, vendor coordination, testing, and rollout.
+Ensure digital platforms meet business needs and compliance standards.
+Collaborate with IT and technical teams to manage enhancements, feedback loops, and user adoption.
+Stakeholder Engagement & Change Management
+Serve as a liaison between business users, IT, and leadership to ensure alignment across digital projects.
+Lead change management efforts to support successful technology adoption.
+Develop training plans, user guides, and communication strategies to support transformation initiatives.
+Communicate project status, risks, and outcomes to stakeholders and decision-makers.
+Qualifications and Skills
+Required:
+Bachelor’s degree in business, Information systems, Computer Science, Engineering, or related field.
+8+ years of experience in digital transformation, project management, or business analysis.
+Experience delivering AI-enabled or data-driven solutions as part of transformation programs.
+Proven ability to lead medium-to-large-scale digital or IT transformation projects.
+Hands-on experience with ERP platforms (Microsoft Dynamics, Oracle ERP, etc.).
+Proficiency in project management and business analysis tools (e.g., Jira, MS Project, Visio)
+Preferred Certifications:
+PMP, PRINCE2, or Agile Certified Practitioner (PMI-ACP) *
+CBAP, PMI-PBA, or other Business Analysis certifications
+AI/ML certifications from recognized providers (e.g., Google AI, Microsoft AI Engineer, IBM AI, or Coursera/edX)
+Change Management (e.g., Prosci, ADKAR)
+Exposure to enterprise platforms such as Microsoft Dynamics CRM and Oracle ERP.
+Functional Competencies
+Digital transformation planning, process optimization, and automation
+AI use case identification, PoC execution, and emerging tech evaluation
+Application/ERP development, integration, and lifecycle management
+Project management using Agile/Waterfall with KPI and milestone tracking
+Behavioral Competencies
+Strong stakeholder communication and cross‑functional collaboration
+Problem‑solving mindset with ownership and accountability
+Adaptability, learning agility, and innovation orientation
+Change management capability with user‑focused approach

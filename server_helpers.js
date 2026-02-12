@@ -634,14 +634,82 @@ ahmednasr999@gmail.com`;
 
 function generateSection3_KeywordMatch(jd) {
     const keywords = extractJobKeywords(jd);
+    
+    // Industry alignment analysis
+    const ahmedIndustries = ['healthcare', 'healthtech', 'fintech', 'banking', 'technology', 'e-commerce', 'software'];
+    const jdLower = jd.toLowerCase();
+    
+    // Detect target industry from JD
+    const industryKeywords = {
+        'port': ['port', 'maritime', 'shipping', 'terminal', 'vessel', 'container', 'logistics', 'cargo'],
+        'oil_gas': ['oil', 'gas', 'petroleum', 'energy', 'upstream', 'downstream'],
+        'mining': ['mining', 'mineral', 'extraction', 'ore'],
+        'construction': ['construction', 'contractor', 'infrastructure', 'civil engineering'],
+        'manufacturing': ['manufacturing', 'factory', 'production', 'assembly', 'plant'],
+        'airline': ['airline', 'aviation', 'airport', 'aerospace'],
+        'real_estate': ['real estate', 'property', 'development', 'construction'],
+        'pharma': ['pharmaceutical', 'pharma', 'drug', 'clinical trials'],
+        'retail': ['retail', 'merchandising', 'store operations'],
+        'telecom': ['telecom', 'telecommunications', 'network', 'wireless', 'isp']
+    };
+    
+    let detectedIndustry = null;
+    let industryMatchScore = 100; // Default: assume match
+    
+    for (const [industry, terms] of Object.entries(industryKeywords)) {
+        if (terms.some(term => jdLower.includes(term))) {
+            detectedIndustry = industry;
+            // Check if Ahmed has experience in this industry
+            const hasIndustryExperience = ahmedIndustries.some(ind => {
+                if (industry === 'port') return false; // No port experience
+                if (industry === 'oil_gas') return false;
+                if (industry === 'mining') return false;
+                if (industry === 'construction') return false;
+                if (industry === 'manufacturing') return false;
+                if (industry === 'airline') return false;
+                if (industry === 'real_estate') return false;
+                if (industry === 'pharma') return jdLower.includes('healthcare') || jdLower.includes('hospital');
+                if (industry === 'retail') return true; // E-commerce counts
+                if (industry === 'telecom') return false;
+                return true;
+            });
+            
+            if (!hasIndustryExperience) {
+                industryMatchScore = 30; // Major penalty for industry mismatch
+            }
+            break;
+        }
+    }
+    
+    // Calculate final weighted score
+    // Keyword match: 40%, Industry alignment: 40%, Seniority: 20%
+    const keywordScore = Math.min(95, 70 + (keywords.length * 2)); // Base 70 + up to 25 for keywords
+    const seniorityScore = jdLower.includes('director') || jdLower.includes('vp') || jdLower.includes('head') ? 95 : 85;
+    
+    const finalScore = Math.round((keywordScore * 0.40) + (industryMatchScore * 0.40) + (seniorityScore * 0.20));
+    
+    // Determine rating
+    let rating = 'Strong';
+    if (finalScore < 50) rating = 'Weak - Industry Mismatch';
+    else if (finalScore < 70) rating = 'Moderate';
+    else if (finalScore < 80) rating = 'Moderate-Strong';
+    
+    const industryWarning = detectedIndustry && industryMatchScore < 50 ? 
+        `\n\n**⚠️ INDUSTRY MISMATCH DETECTED**\n- Target: ${detectedIndustry.replace('_', ' ')}\n- Ahmed's Background: Healthcare, FinTech, Technology\n- Impact: Significant domain expertise gap. Consider pivot to digital/transformation role instead.` : '';
+    
     return `# SECTION 3: KEYWORD MATCH PERCENTAGE
 
-**ATS Match Score: 85-90%**
+**ATS Match Score: ${finalScore}%** (${rating})
+
+**Score Breakdown:**
+- Keyword Coverage: ${keywordScore}% (weight: 40%)
+- Industry Alignment: ${industryMatchScore}% (weight: 40%)${detectedIndustry ? ` [${detectedIndustry.replace('_', ' ')}]` : ''}
+- Seniority Match: ${seniorityScore}% (weight: 20%)
 
 **Strong Coverage:**
 ${keywords.slice(0, 8).map(k => `- ${k}`).join('\n')}
 
-**Assessment:** Strong alignment with core requirements. Transferable experience from healthcare/FinTech to ${jd.toLowerCase().includes('banking') ? 'banking' : 'target sector'}.`;
+**Assessment:** ${finalScore >= 80 ? 'Strong alignment with core requirements.' : finalScore >= 60 ? 'Moderate alignment. Address gaps in cover letter.' : 'Weak alignment due to industry/domain mismatch.'}${industryWarning}`;
 }
 
 function generateSection4_MissingKeywords(jd) {
@@ -704,24 +772,66 @@ function generateSection7_Strategy(company) {
 }
 
 function generateSection8_FitAssessment(jd, company) {
-    const isBanking = jd.toLowerCase().includes('banking');
-    const rating = isBanking ? 'MODERATE-STRONG' : 'STRONG';
+    const jdLower = jd.toLowerCase();
+    const isBanking = jdLower.includes('banking') || jdLower.includes('fintech');
+    const isHealthcare = jdLower.includes('healthcare') || jdLower.includes('hospital') || jdLower.includes('health');
+    const isTechnology = jdLower.includes('technology') || jdLower.includes('software') || jdLower.includes('digital');
+    
+    // Detect non-aligned industries (same logic as keyword match)
+    const misalignedIndustries = ['port', 'maritime', 'shipping', 'terminal', 'vessel', 'container', 
+                                   'oil', 'gas', 'petroleum', 'mining', 'construction', 'contractor',
+                                   'airline', 'aviation', 'aerospace', 'airport',
+                                   'manufacturing', 'factory', 'production', 'plant'];
+    
+    const isMisaligned = misalignedIndustries.some(term => jdLower.includes(term));
+    
+    let rating, recommendation, gaps;
+    
+    if (isMisaligned) {
+        rating = 'WEAK - INDUSTRY MISMATCH';
+        recommendation = '⚠️ DO NOT APPLY (or pivot angle)';
+        gaps = '- ❌ **Critical: Domain expertise gap** - No experience in target industry\n- ❌ Technical domain knowledge mismatch\n- ❌ Asset-heavy operations vs. tech/software background';
+    } else if (isBanking) {
+        rating = 'MODERATE-STRONG';
+        recommendation = '✅ PROCEED with FinTech angle';
+        gaps = '- ⚠️ Retail banking depth (transferable from FinTech/PMO experience)';
+    } else if (isHealthcare) {
+        rating = 'STRONG';
+        recommendation = '✅ PROCEED - Direct industry match';
+        gaps = '- ⚠️ None significant';
+    } else {
+        rating = 'STRONG';
+        recommendation = '✅ PROCEED';
+        gaps = '- ⚠️ Sector-specific terminology (addressable through research)';
+    }
+    
+    const alternativeRole = isMisaligned ? `
+
+**Alternative Approach:**
+If target company has digital/transformation initiatives, consider applying for:
+- Chief Digital Officer
+- VP of Digital Transformation
+- Head of Technology/IT
+
+Where your tech background IS the fit, not a liability.` : '';
+    
     return `# SECTION 8: EXECUTIVE FIT ASSESSMENT
 
 **Rating: ${rating}**
 
 **Strengths:**
-- ✅ Transformation leadership (universal)
-- ✅ P&L ownership and scale experience
-- ✅ Cross-functional stakeholder management
+- ✅ Transformation leadership (universal applicable)
+- ✅ P&L ownership and scale experience (233x growth delivered)
+- ✅ Cross-functional stakeholder management (50+ teams)
 - ✅ Regional experience (KSA/UAE/Egypt)
+- ✅ ${isHealthcare ? 'Direct healthcare/HealthTech experience' : isBanking ? 'FinTech/Payments regulatory experience' : 'Proven cross-industry adaptability'}
 
 **Gaps:**
-- ⚠️ ${isBanking ? 'Retail banking vertical (transferable)' : 'Sector-specific depth (manageable)'}
+${gaps}
 
-**Recommendation: PROCEED**
+**Recommendation: ${recommendation}**
 
-Risk of not applying exceeds risk of applying.`;
+${isMisaligned ? '**This is a fundamental industry mismatch.** While Ahmed is a strong operational executive in technology-driven sectors, this role demands deep domain expertise that isn\'t present in his background.' : 'Risk of not applying exceeds risk of applying.'}${alternativeRole}`;
 }
 
 function generateFinalAssembly(jd, company, role) {

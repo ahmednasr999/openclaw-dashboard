@@ -25,16 +25,21 @@
 
 ---
 
-### 2. ATS-Optimized Prompt (v2)
+### 2. ATS-Optimized Prompt (v2.1)
 
 **Key Features:**
 - **3-Tier Keyword System:**
   - T1: 3-5x frequency (core skills)
   - T2: 2-3x frequency (secondary)
   - T3: 1-2x frequency (nice-to-have)
+- **Industry-Weighted Scoring (NEW):**
+  - Keyword Coverage: 40%
+  - Industry Alignment: 40% (detects port/maritime/oil/gas/mining/construction mismatches)
+  - Seniority Match: 20%
+  - Auto-flags fundamental industry mismatches (e.g., Port COO = 30% industry score)
 - **Placement Hierarchy:** Summary 40%, Skills 30%, Experience 20%, Education 10%
-- **ATS Score Calculation:** Formula with 4 weighted components
-- **ATS Analysis Output:** breakdown, matched/missing keywords, optimizations
+- **ATS Score Calculation:** Formula with industry alignment weighting
+- **ATS Analysis Output:** breakdown, matched/missing keywords, industry fit warning
 - **Seniority Language Map:** Junior → Executive word conversion
 - **8-Point Validation Checklist**
 

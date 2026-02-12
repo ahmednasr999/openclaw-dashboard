@@ -203,9 +203,10 @@ applications/job_XXXXX_company_role/
 **ATS Optimization Features:**
 - 3-Tier Keyword System (T1: 3-5x, T2: 2-3x, T3: 1-2x)
 - Placement Hierarchy: Summary 40%, Skills 30%, Experience 20%, Education 10%
-- ATS Score Calculation with weighted formula
-- ATS Analysis: breakdown, matched/missing keywords, optimizations applied
-- Target: 85-90% ATS score
+- **Industry-Weighted Scoring (v2.1):** Keyword 40% + Industry Alignment 40% + Seniority 20%
+- Auto-detects industry mismatches (ports, oil/gas, mining, construction, airlines, manufacturing)
+- ATS Score now reflects domain expertise, not just keyword matches
+- Target: 85-90% ATS score (for aligned industries)
 
 **Cost:** ~$44 USD (2,220 EGP) for 50 CVs = $0.88/CV (vs $200-500 market rate = 99% savings)
 
