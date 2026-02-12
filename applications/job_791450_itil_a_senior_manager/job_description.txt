@@ -1,0 +1,43 @@
+Job URL: https://www.linkedin.com/jobs/view/4360799121/?eBP=NON_CHARGEABLE_CHANNEL&refId=5r4Sw6mjT7mEo0MLa9bUJA%3D%3D&trackingId=KiUHE%2FGHCdFILRpUz8tOfQ%3D%3D&trk=flagship3_top_applicant_jobs_collection
+
+Khazna was founded in 2012 and has grown rapidly into becoming the leading and trusted wholesale Data Center provider in the Middle East and North Africa region. Through our Data Centers, we provide industry benchmark levels of power supply and cooling services to better serve the growing need for data center operations in the UAE and wider region.
+We are seeking a Senior Manager – Change Management to serve as the strategic owner of the Change Management framework across all data center sites. This role is critical to safeguarding operational stability by driving strong governance, minimizing risk, and ensuring disciplined, structured execution of changes impacting mission-critical infrastructure.
+The incumbent will lead the Change Management function, chair high-risk Change Advisory Board (CAB) forums, enforce policy and process compliance, and provide risk-based decision support to senior leadership. This position plays a pivotal role in protecting system reliability, maximizing uptime, and strengthening operational resilience across the organization.
+Key Accountabilities:
+In collaboration with the line manager, co-lead the Change Management function across all data centres, setting direction, governance standards, and performance expectations.
+In collaboration with the line manager, implement change strategy aligned with operational resilience, business growth, and regulatory requirements.
+Represent Change Management in executive forums and operational governance committees. Team Leadership & Development
+Lead, mentor, and develop a distributed team of Site Change Engineers, setting performance goals and fostering professional growth.
+Standardize change-management practices across sites through training, coaching, and regular performance reviews.
+Validate and triage all change requests, ensuring completeness, accurate risk and impact analysis, and adherence to ITIL v4 standards.
+Classify changes (standard, normal, emergency), recommend approval paths, and confirm robust back-out plans. Change Advisory Board (CAB) Management
+Schedule and facilitate weekly CAB meetings, setting agendas that align customer demands with operational resilience.
+Present major and high-risk change proposals—supported by data, impact assessments, and mitigation plans—to stakeholders for decision.
+Document CAB decisions, action items, and follow-up tasks in the change-management system. Process Governance & Continuous Improvement
+Own and refine the Change Management policy, workflows, templates, and tools in alignment with ITIL and audit requirements.
+Track metrics (success rates, unauthorized changes, rollback incidents) and deliver performance reports to senior leadership.
+Identify process bottlenecks and lead initiatives to accelerate change lifecycles and improve change quality. Stakeholder Engagement & Communication
+Act as the change-governance single point of accountability, liaising with Operations, Engineering, Security, Compliance, and third-party vendors.
+Communicate planned changes, maintenance windows, and post-implementation reviews to all impacted teams. Documentation & Reporting
+Maintain an accurate Change Management database, ensuring CMDB entries reflect approved changes and configuration item relationships.
+Produce weekly and monthly change-performance dashboards, highlighting trends, risks, and opportunities for improvement.
+Lead post-implementation reviews (PIRs) for failed or emergency changes, driving root cause analysis and corrective actions. Related Assignments Asset Lifecycle Management
+Collaborate with DC Engineering & Asset Management teams to integrate change processes with data center lifecycle planning, including forward maintenance planning, equipment refresh cycles, capacity forecasting, and decommissioning strategies.
+Assess change impacts on asset longevity, maintenance schedules, and total cost of ownership (TCO), recommending optimizations asset management and infrastructure upgrades.
+In collaboration with the line manager, co-lead the development, implement and manage the inventory management strategy.
+Manage the logistic function of the central warehouses, while optimizing logistics related OPEX and CAPEX spent vs operational risk.
+The job holder may be required to undertake additional duties, which may be reasonably expected and forms part of the function of the job. The role will be based in a modern, well-equipped data centre facility.
+Fast-paced and dynamic environment with a focus on innovation, reliability, sustainability and continuous improvement to achieve world class standards.
+Collaborative atmosphere with opportunities for cross-functional teamwork.
+Occasional travel may be required to meet with clients, vendors or attend industry conferences
+Minimum Qualifications:
+Bachelor’s degree in information technology, Engineering, or a related discipline.
+8–10 years in Change/Release/Operations Management in ITIL environments. at least 2 years in a data center or critical-infrastructure setting.
+ITIL Foundation v4 certification required, Practitioner or higher preferred.
+Proven experience leading a multidisciplinary CAB and managing geographically dispersed teams.
+Hands-on with ITSM platforms (ServiceNow, Cherwell, BMC Remedy) and Change Management modules.
+Additional Qualifications:
+Strong analytical skills to identify and mitigate reliability risks.
+Effective stakeholder management to collaborate with Operations, Engineering, and Asset Management teams
+Ability to drive a reliability-focused culture through training, knowledge sharing and process optimization
+Strong communication and reporting skills for conveying risk insights to senior leadership
