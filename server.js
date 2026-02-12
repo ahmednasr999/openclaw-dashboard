@@ -46,6 +46,17 @@ function extractRole(jd) {
     return match ? match[1].trim().replace(/\s+/g, '_').slice(0, 30) : 'Position';
 }
 
+function commitToGitHub(outputDir, folderName) {
+    try {
+        execSync('git add -A', { cwd: '.' });
+        execSync(`git commit -m "feat: Add elite executive package for ${folderName}"`, { cwd: '.' });
+        execSync('git push origin main', { cwd: '.' });
+        console.log('✅ Committed to GitHub');
+    } catch (error) {
+        console.error('Git commit error:', error.message);
+    }
+}
+
 // Process job endpoint
 app.post('/api/process-job', async (req, res) => {
     const { jobUrl, jobDescription, timestamp } = req.body;
