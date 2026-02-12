@@ -59,7 +59,7 @@ app.post('/api/process-job', async (req, res) => {
         
         // Save professional HTML CV
         console.log('🎨 Generating Professional HTML CV...');
-        const htmlCV = generateProfessionalHTMLCV(jd, company, role);
+        const htmlCV = generateProfessionalHTMLCV(jobDescription, cleanCompany, cleanRole);
         fs.writeFileSync(path.join(outputDir, 'CV.html'), htmlCV);
         
         // Save job description
