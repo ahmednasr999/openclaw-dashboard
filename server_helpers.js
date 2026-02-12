@@ -1,3 +1,28 @@
+// Helper: Extract job title from job description
+function extractJobTitle(jd) {
+    // Look for common patterns in job descriptions
+    const patterns = [
+        /the\s+([^,]+(?:Manager|Director|VP|Head|Lead|Officer|Specialist|Analyst|Engineer|Consultant)[^,\n]+)/i,
+        /(?:role|position|title)[:\s]+([^,\n]+(?:Manager|Director|VP|Head|Lead)[^,\n]+)/i,
+        /(?:hiring|seeking)\s+(?:a\s+)?([^,\n]+(?:Manager|Director|VP|Head|Lead)[^,\n]+)/i
+    ];
+    
+    for (const pattern of patterns) {
+        const match = jd.match(pattern);
+        if (match && match[1]) {
+            return match[1].trim().slice(0, 60); // Limit length
+        }
+    }
+    
+    // Fallback: look for first line after "About the Role"
+    const aboutMatch = jd.match(/about the role[:\s]*([^,\n]+)/i);
+    if (aboutMatch && aboutMatch[1]) {
+        return aboutMatch[1].trim().slice(0, 60);
+    }
+    
+    return "Position";
+}
+
 // Helper: Generate tailored experience with ALL historical roles
 function generateTailoredExperience(jd, keywords) {
     const isBanking = jd.toLowerCase().includes('banking') || jd.toLowerCase().includes('fintech');
@@ -215,3 +240,247 @@ function waitForDeployment(url, maxAttempts = 30, delayMs = 2000) {
         check();
     });
 }
+
+// Helper: Generate professional HTML CV
+function generateProfessionalHTMLCV(jd, company, role, jobTitle) {
+    const cleanRole = role.replace(/_/g, ' ');
+    const cleanCompany = company.replace(/_/g, ' ');
+    const cleanJobTitle = jobTitle || cleanRole;
+    
+    // Extract keywords from job description
+    const keywords = extractJobKeywords(jd);
+    
+    // Generate tailored content based on job
+    const tailoredSummary = generateTailoredSummary(jd, cleanRole, cleanCompany);
+    const tailoredExperience = generateTailoredExperience(jd, keywords);
+    const tailoredCompetencies = generateTailoredCompetencies(keywords);
+    
+    return `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${cleanJobTitle} - Ahmed Nasr Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #fff;
+            min-height: 100vh;
+            padding: 40px 20px;
+            line-height: 1.6;
+            color: #000;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+        }
+        
+        .header {
+            text-align: left;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #000;
+            margin-bottom: 20px;
+        }
+        
+        .name {
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            display: inline;
+        }
+        
+        .credentials {
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline;
+        }
+        
+        .contact {
+            font-size: 0.85rem;
+            color: #333;
+            margin-top: 5px;
+        }
+        
+        .content {
+            padding: 0;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #000;
+        }
+        
+        .summary {
+            font-size: 1rem;
+            line-height: 1.7;
+            text-align: justify;
+        }
+        
+        .competencies-list {
+            column-count: 2;
+            column-gap: 30px;
+        }
+        
+        .job {
+            margin-bottom: 20px;
+        }
+        
+        .bullets {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        
+        .bullets li {
+            margin-bottom: 5px;
+            line-height: 1.5;
+        }
+        
+        .education {
+            padding: 0;
+        }
+        
+        .education-item {
+            margin-bottom: 10px;
+        }
+        
+        .certs {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #ccc;
+        }
+        
+        .cert-badge {
+            display: inline-block;
+            margin-right: 15px;
+            font-size: 0.9rem;
+        }
+        
+        .print-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #000;
+            color: #fff;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-weight: 500;
+            z-index: 1000;
+        }
+        
+        .print-btn:hover {
+            background: #333;
+        }
+        
+        @media print {
+            body {
+                padding: 0;
+            }
+            
+            .print-btn {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="name">AHMED NASR</span>
+            <span class="credentials">MBA (In Progress) | PMP | CSM | CBAP | MCAD | MCP | Lean Six Sigma</span>
+            <div class="contact">
+                Dubai, UAE | +971 50 281 4490 | +20 128 573 3991 | ahmednasr999@gmail.com | linkedin.com/in/ahmednasr
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title">EXECUTIVE PROFILE</h2>
+                <p class="summary">
+                    ${tailoredSummary}
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">STRATEGIC COMPETENCIES</h2>
+                <div class="competencies-list" style="font-size: 0.9rem;">
+                    ${tailoredCompetencies}
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">EXECUTIVE LEADERSHIP EXPERIENCE</h2>
+                ${tailoredExperience}
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">EDUCATION & PROFESSIONAL CERTIFICATIONS</h2>
+                <div class="education">
+                    <div class="education-item">
+                        <strong>Master of Business Administration (MBA)</strong>
+                        <span>In Progress</span>
+                    </div>
+                    <div class="education-item">
+                        <strong>B.Sc. Computer Sciences & Business Administration</strong>
+                        <span>Sadat Academy, 2006</span>
+                    </div>
+                    <div class="certs">
+                        <strong>Professional Certifications:</strong>
+                        <div class="cert-list">
+                            <span class="cert-badge">PMP</span>
+                            <span class="cert-badge">CSM</span>
+                            <span class="cert-badge">CBAP</span>
+                            <span class="cert-badge">MCAD</span>
+                            <span class="cert-badge">MCP</span>
+                            <span class="cert-badge">Lean Six Sigma</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <button class="print-btn" onclick="savePDF()">Save as PDF</button>
+    
+    <script>
+        function savePDF() {
+            window.print();
+        }
+    </script>
+</body>
+</html>`;
+}
+
+module.exports = {
+    extractJobKeywords,
+    extractJobTitle,
+    generateTailoredSummary,
+    generateTailoredCompetencies,
+    generateTailoredExperience,
+    generateProfessionalHTMLCV,
+    waitForDeployment
+};

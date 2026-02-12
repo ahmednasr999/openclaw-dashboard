@@ -10,9 +10,11 @@ const https = require('https');
 // Import helper functions
 const {
     extractJobKeywords,
+    extractJobTitle,
     generateTailoredSummary,
     generateTailoredCompetencies,
     generateTailoredExperience,
+    generateProfessionalHTMLCV,
     waitForDeployment
 } = require('./server_helpers');
 
@@ -69,8 +71,10 @@ app.post('/api/process-job', async (req, res) => {
         
         // Save professional HTML CV
         console.log('🎨 Generating Professional HTML CV...');
-        const htmlCV = generateProfessionalHTMLCV(jobDescription, cleanCompany, cleanRole);
+        const extractedJobTitle = extractJobTitle(jobDescription);
+        const htmlCV = generateProfessionalHTMLCV(jobDescription, cleanCompany, cleanRole, extractedJobTitle);
         fs.writeFileSync(path.join(outputDir, 'CV.html'), htmlCV);
+        console.log(`✓ CV.html tailored: "${extractedJobTitle} - Ahmed Nasr Resume"`);
         
         // Save job description
         fs.writeFileSync(path.join(outputDir, 'job_description.txt'), `Job URL: ${jobUrl}\n\n${jobDescription}`);
