@@ -3,7 +3,7 @@
 **Name:** Ahmed Nasr  
 **Title:** Acting PMO & Regional Engagement Lead  
 **Location:** Dubai, UAE  
-**Contact:** +971 50 281 4490 | ahmednasr999@gmail.com | Emirates ID: 143529044  
+**Contact:** +971 50 281 4490 | +20 128 573 3991 | ahmednasr999@gmail.com | Emirates ID: 143529044  
 
 ---
 
@@ -59,10 +59,12 @@
 - Scaled daily order volume from 30,000 to 7 million through operational excellence initiatives and customer experience enhancements
 - Implemented tracking systems and operational excellence programs, optimizing customer journey and service delivery
 
-**Project Manager** | Intel, Microsoft, Revamp Consulting | 2007 – 2014
+**Project Manager** | Intel Corporation & Microsoft | 2007 – 2014
 
 - Technology Project Delivery & Regional Engagement
-- Delivered multiple software engineering projects and regional engagement initiatives across enterprise technology environments
+- Successfully managed and delivered multiple software engineering projects and regional engagement initiatives across enterprise technology environments
+- Demonstrated strong leadership and technical skills working with global technology leaders
+- Delivered solutions for enterprise and government clients across MENA region
 
 ---
 

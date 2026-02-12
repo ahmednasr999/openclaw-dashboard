@@ -486,7 +486,7 @@ function generateProfessionalHTMLCV(jd, company, role) {
             <div class="title">MBA (In Progress), PMP, CSM, CBAP, MCAD, MCP, Lean Six Sigma</div>
             <div class="title">Acting PMO & Regional Engagement Lead | Digital Transformation | Customer Experience</div>
             <div class="contact">
-                Dubai, UAE | +971 50 281 4490 | ahmednasr999@gmail.com | linkedin.com/in/ahmednasr
+                Dubai, UAE | +971 50 281 4490 | +20 128 573 3991 | ahmednasr999@gmail.com | linkedin.com/in/ahmednasr
             </div>
         </div>
         
@@ -614,6 +614,19 @@ function generateProfessionalHTMLCV(jd, company, role) {
                         <li>Scaled daily order volume from 30,000 to 7 million through customer journey optimization</li>
                         <li>Established Egypt office operations building engineering and product functions</li>
                         <li>Implemented tracking analytics harmonizing processes across channels</li>
+                    </ul>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Project Manager</div>
+                        <div class="job-date">2007 – 2014</div>
+                    </div>
+                    <div class="company">Intel Corporation & Microsoft</div>
+                    <ul class="bullets">
+                        <li>Successfully managed and delivered multiple software engineering projects and regional engagement initiatives across enterprise technology environments</li>
+                        <li>Demonstrated strong leadership and technical skills working with global technology leaders</li>
+                        <li>Delivered solutions for enterprise and government clients across MENA region</li>
                     </ul>
                 </div>
             </div>
