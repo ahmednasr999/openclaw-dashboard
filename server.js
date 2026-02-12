@@ -159,36 +159,40 @@ function generateTailoredSummary(jd, role, company) {
 }
 
 function generateTailoredCompetencies(keywords) {
-    // Always include these core competencies
-    let competencies = `| Strategic Leadership | Customer Experience |
-|---|---|
-| • Regional P&L Ownership | • Onboarding Transformation |
-| • C-Suite & Board Engagement | • Journey Mapping & Optimization |
-| • Cross-Functional Leadership (50+) | • Conversion & Friction Reduction |
-
-| Programme Governance | Channel Strategy |
-|---|---|
-| • PMO Establishment | • Alternate Channel Development |
-| • Regulatory Compliance (JCI, HIMSS, MOH, KYC/AML) | • Digital Partnerships |
-| • Risk & Compliance Integration | • Go-to-Market Strategy |`;
+    // Core competencies as bullet list
+    let competencies = `• Strategic Leadership & P&L Ownership<br>
+• C-Suite Advisory & Board Engagement<br>
+• Digital Transformation & Innovation<br>
+• Customer Experience & Journey Mapping<br>
+• Onboarding Transformation & Optimization<br>
+• Go-To-Market Strategy & Execution<br>
+• PMO Establishment & Programme Governance<br>
+• Cross-Functional Team Leadership (50+)<br>
+• Regulatory Compliance (JCI, HIMSS, MOH, KYC/AML)<br>
+• ERP/Enterprise Applications (SAP S/4HANA)<br>
+• Technology Enablement & IT Solutions<br>
+• Risk Management & Compliance (ISO)`;
     
     // Add job-specific competencies based on keywords
     if (keywords.some(k => k.includes('banking') || k.includes('fintech'))) {
-        competencies += `
-
-| Banking & FinTech |
-|---|
-| • KYC/AML/CDD Compliance | • Retail Banking Operations |
-| • Digital Identity Solutions | • Regulatory Frameworks |`;
+        competencies += `<br>• Banking & Financial Services Solutions<br>
+• KYC/AML/CDD Compliance<br>
+• Digital Identity Solutions<br>
+• Financial Services Regulatory Frameworks`;
     }
     
     if (keywords.some(k => k.includes('data') || k.includes('analytics'))) {
-        competencies += `
-
-| Data & Analytics |
-|---|
-| • Data-Driven Decision Making | • Predictive Analytics |
-| • Performance Dashboards | • AI/ML Integration |`;
+        competencies += `<br>• Data-Driven Decision Making<br>
+• Predictive Analytics & Business Intelligence<br>
+• Performance Dashboards & KPIs<br>
+• AI/ML Integration & Clinical Decision Support`;
+    }
+    
+    if (keywords.some(k => k.includes('channel') || k.includes('acquisition'))) {
+        competencies += `<br>• Alternate Channel Development<br>
+• Digital Partnerships & Alliances<br>
+• Kiosk-Led Acquisition Strategies<br>
+• B2B/B2C Go-to-Market Execution`;
     }
     
     return competencies;
@@ -534,34 +538,30 @@ function generateProfessionalHTMLCV(jd, company, role) {
         }
         
         .header {
-            text-align: center;
-            padding-bottom: 20px;
+            text-align: left;
+            padding-bottom: 15px;
             border-bottom: 2px solid #000;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
         
         .name {
-            font-size: 2.2rem;
+            font-size: 1.4rem;
             font-weight: 700;
-            margin-bottom: 8px;
             letter-spacing: 1px;
             text-transform: uppercase;
+            display: inline;
         }
         
-        .title {
-            font-size: 1rem;
-            font-weight: 400;
-            margin-bottom: 10px;
-            color: #333;
+        .credentials {
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline;
         }
         
         .contact {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: #333;
-        }
-        
-        .contact span {
-            margin: 0 10px;
+            margin-top: 5px;
         }
         
         .content {
@@ -755,9 +755,8 @@ function generateProfessionalHTMLCV(jd, company, role) {
         </div>
         
         <div class="header">
-            <h1 class="name">AHMED NASR</h1>
-            <div class="title">MBA (In Progress), PMP, CSM, CBAP, MCAD, MCP, Lean Six Sigma</div>
-            <div class="title">Acting PMO & Regional Engagement Lead | Digital Transformation | Customer Experience</div>
+            <span class="name">AHMED NASR</span>
+            <span class="credentials">MBA (In Progress) | PMP | CSM | CBAP | MCAD | MCP | Lean Six Sigma</span>
             <div class="contact">
                 Dubai, UAE | +971 50 281 4490 | +20 128 573 3991 | ahmednasr999@gmail.com | linkedin.com/in/ahmednasr
             </div>
@@ -765,21 +764,21 @@ function generateProfessionalHTMLCV(jd, company, role) {
         
         <div class="content">
             <div class="section">
-                <h2 class="section-title">Executive Profile</h2>
+                <h2 class="section-title">EXECUTIVE PROFILE</h2>
                 <p class="summary">
                     ${tailoredSummary}
                 </p>
             </div>
             
             <div class="section">
-                <h2 class="section-title">Core Competencies</h2>
-                <div class="competencies-table" style="font-size: 0.9rem;">
+                <h2 class="section-title">STRATEGIC COMPETENCIES</h2>
+                <div class="competencies-list" style="font-size: 0.9rem; column-count: 2; column-gap: 30px;">
                     ${tailoredCompetencies}
                 </div>
             </div>
             
             <div class="section">
-                <h2 class="section-title">Professional Experience</h2>
+                <h2 class="section-title">EXECUTIVE LEADERSHIP EXPERIENCE</h2>
                 ${tailoredExperience}
             </div>
             
