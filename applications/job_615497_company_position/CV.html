@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position - Ahmed Nasr Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #fff;
+            min-height: 100vh;
+            padding: 40px 20px;
+            line-height: 1.6;
+            color: #000;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+        }
+        
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #000;
+            margin-bottom: 25px;
+        }
+        
+        .name {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        
+        .title {
+            font-size: 1rem;
+            font-weight: 400;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .contact {
+            font-size: 0.9rem;
+            color: #333;
+        }
+        
+        .contact span {
+            margin: 0 10px;
+        }
+        
+        .content {
+            padding: 0;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #000;
+        }
+        
+        .summary {
+            font-size: 1rem;
+            line-height: 1.7;
+            text-align: justify;
+        }
+        
+        .competencies {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        
+        .competency-card h4 {
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .competency-card ul {
+            list-style: none;
+            font-size: 0.9rem;
+        }
+        
+        .competency-card li {
+            margin-bottom: 3px;
+            padding-left: 12px;
+            position: relative;
+        }
+        
+        .competency-card li:before {
+            content: "-";
+            position: absolute;
+            left: 0;
+        }
+        
+        .job {
+            margin-bottom: 20px;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 3px;
+        }
+        
+        .job-title {
+            font-size: 1.05rem;
+            font-weight: 600;
+        }
+        
+        .job-date {
+            font-size: 0.9rem;
+            color: #333;
+        }
+        
+        .company {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+        
+        .job-context {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        
+        .bullets {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        
+        .bullets li {
+            margin-bottom: 5px;
+            line-height: 1.5;
+        }
+        
+        .education {
+            padding: 0;
+        }
+        
+        .education-item {
+            margin-bottom: 10px;
+        }
+        
+        .education-item strong {
+            display: block;
+            margin-bottom: 2px;
+        }
+        
+        .certs {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #ccc;
+        }
+        
+        .cert-list {
+            margin-top: 5px;
+        }
+        
+        .cert-badge {
+            display: inline-block;
+            margin-right: 15px;
+            font-size: 0.9rem;
+        }
+        
+        .print-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #000;
+            color: #fff;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-weight: 500;
+            z-index: 1000;
+        }
+        
+        .print-btn:hover {
+            background: #333;
+        }
+        
+        @page {
+            margin: 0.5in;
+            @top-center { content: none; }
+            @top-left { content: none; }
+            @top-right { content: none; }
+            @bottom-center { content: none; }
+            @bottom-left { content: none; }
+            @bottom-right { content: none; }
+        }
+        
+        @media print {
+            body {
+                padding: 0;
+            }
+            
+            .print-btn {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .name {
+                font-size: 1.6rem;
+            }
+            
+            .competencies {
+                grid-template-columns: 1fr;
+            }
+            
+            .job-header {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="name">AHMED NASR</h1>
+            <div class="title">MBA (In Progress), PMP, CSM, CBAP, MCAD, MCP, Lean Six Sigma</div>
+            <div class="title">Acting PMO & Regional Engagement Lead | Digital Transformation | Customer Experience</div>
+            <div class="contact">
+                Dubai, UAE | +971 50 281 4490 | +20 128 573 3991 | ahmednasr999@gmail.com | linkedin.com/in/ahmednasr
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title">Executive Profile</h2>
+                <p class="summary">
+                    Strategic executive with 20+ years leading enterprise-scale digital transformation, customer onboarding optimization, and alternate channel development across banking, FinTech, healthcare, and technology sectors. Proven P&L ownership and regional leadership across KSA, UAE, and Egypt. Track record of 95% technology adoption, 233x operational scale, and 40% friction reduction. Expertise in establishing PMO governance, scaling digital and physical customer touchpoints, and delivering regulatory-compliant solutions that enhance conversion and drive revenue growth.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Core Competencies</h2>
+                <div class="competencies">
+                    <div class="competency-card">
+                        <h4>Strategic Leadership</h4>
+                        <ul>
+                            <li>Regional P&L Ownership</li>
+                            <li>C-Suite Advisory</li>
+                            <li>Board Engagement</li>
+                            <li>Change Management</li>
+                            <li>Cross-Functional Leadership</li>
+                        </ul>
+                    </div>
+                    <div class="competency-card">
+                        <h4>Customer Experience</h4>
+                        <ul>
+                            <li>Onboarding Transformation</li>
+                            <li>Journey Mapping</li>
+                            <li>Touchpoint Optimization</li>
+                            <li>Conversion Optimization</li>
+                            <li>Pain Point Elimination</li>
+                        </ul>
+                    </div>
+                    <div class="competency-card">
+                        <h4>Channel Strategy</h4>
+                        <ul>
+                            <li>Alternate Channel Development</li>
+                            <li>Digital Partnerships</li>
+                            <li>Kiosk Strategy</li>
+                            <li>Go-to-Market</li>
+                            <li>Mobile & Assisted Channels</li>
+                        </ul>
+                    </div>
+                    <div class="competency-card">
+                        <h4>Governance & Compliance</h4>
+                        <ul>
+                            <li>PMO Establishment</li>
+                            <li>Regulatory Compliance</li>
+                            <li>KYC/AML</li>
+                            <li>Risk Management</li>
+                            <li>Policy Simplification</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Professional Experience</h2>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Acting PMO & Regional Engagement Lead</div>
+                        <div class="job-date">June 2024 – Present</div>
+                    </div>
+                    <div class="company">TopMed (Saudi German Hospital Group)</div>
+                    <div class="job-context">Leading HealthTech Digital Transformation Across KSA, UAE, Egypt</div>
+                    <ul class="bullets">
+                        <li>Spearhead enterprise-wide digital transformation across 3 countries, modernizing customer onboarding journeys across physical and digital touchpoints</li>
+                        <li>Establish structured PMO governance framework ensuring seamless execution of large-scale initiatives</li>
+                        <li>Lead strategic partnerships with U.S. technology providers integrating AI-driven analytics and digital identity solutions</li>
+                        <li>Drive 95% adoption of patient digital engagement platforms within 6 months; ensure JCI, HIMSS, MOH compliance</li>
+                        <li>Lead cross-functional teams across technology, operations, clinical, risk, and compliance functions</li>
+                    </ul>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Country Manager</div>
+                        <div class="job-date">April 2021 – January 2022</div>
+                    </div>
+                    <div class="company">PaySky & Yalla SuperApp (Acquired by ENPO)</div>
+                    <div class="job-context">P&L Leadership for Retail Banking & FinTech SuperApp Platform</div>
+                    <ul class="bullets">
+                        <li>Managed full P&L responsibility for digital financial services platform, driving revenue growth and profitability</li>
+                        <li>Built Go-to-Market organization establishing B2B/B2C acquisition channels including digital partnerships and kiosk-led strategies</li>
+                        <li>Delivered merchant onboarding platform serving 500K+ businesses; reduced friction by 40%</li>
+                        <li>Ensured KYC/AML compliance across customer segments; partnered with HR/L&D on training alignment</li>
+                    </ul>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Head of Strategy & VP Advisor</div>
+                        <div class="job-date">January 2020 – December 2021</div>
+                    </div>
+                    <div class="company">El Araby Group</div>
+                    <ul class="bullets">
+                        <li>Led SAP S/4HANA and Hospital ERP implementations</li>
+                        <li>Developed multi-year strategic business plans ensuring executive alignment</li>
+                        <li>Advised C-suite on operations, marketing, and financial planning</li>
+                    </ul>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">PMO Section Head</div>
+                        <div class="job-date">September 2014 – June 2017</div>
+                    </div>
+                    <div class="company">EMP (Acquired by Network International)</div>
+                    <ul class="bullets">
+                        <li>Built PMO function from inception managing portfolio for African banking clients and central bank integrations</li>
+                        <li>Developed strategic dashboard contributing to 3x profit increase</li>
+                        <li>Managed 300 concurrent projects via Microsoft Project Server cloud infrastructure</li>
+                    </ul>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Product Development Manager</div>
+                        <div class="job-date">June 2017 – May 2018</div>
+                    </div>
+                    <div class="company">Talabat, Delivery Hero SE</div>
+                    <ul class="bullets">
+                        <li>Scaled daily order volume from 30,000 to 7 million through customer journey optimization</li>
+                        <li>Established Egypt office operations building engineering and product functions</li>
+                        <li>Implemented tracking analytics harmonizing processes across channels</li>
+                    </ul>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Project Manager</div>
+                        <div class="job-date">2007 – 2014</div>
+                    </div>
+                    <div class="company">Intel Corporation & Microsoft</div>
+                    <ul class="bullets">
+                        <li>Successfully managed and delivered multiple software engineering projects and regional engagement initiatives across enterprise technology environments</li>
+                        <li>Demonstrated strong leadership and technical skills working with global technology leaders</li>
+                        <li>Delivered solutions for enterprise and government clients across MENA region</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Education & Credentials</h2>
+                <div class="education">
+                    <div class="education-item">
+                        <strong>Master of Business Administration (MBA)</strong>
+                        <span>In Progress</span>
+                    </div>
+                    <div class="education-item">
+                        <strong>B.Sc. Computer Sciences & Business Administration</strong>
+                        <span>Sadat Academy, 2006</span>
+                    </div>
+                    <div class="certs">
+                        <strong>Professional Certifications:</strong>
+                        <div class="cert-list">
+                            <span class="cert-badge">PMP</span>
+                            <span class="cert-badge">CSM</span>
+                            <span class="cert-badge">CBAP</span>
+                            <span class="cert-badge">MCAD</span>
+                            <span class="cert-badge">MCP</span>
+                            <span class="cert-badge">Lean Six Sigma</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <button class="print-btn" onclick="savePDF()">Save as PDF</button>
+    
+    <script>
+        function savePDF() {
+            // Set the document title to ensure correct PDF filename
+            const originalTitle = document.title;
+            document.title = 'Position - Ahmed Nasr Resume';
+            window.print();
+            // Restore original title after print dialog
+            setTimeout(() => { document.title = originalTitle; }, 1000);
+        }
+    </script>
+</body>
+</html>
