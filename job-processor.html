@@ -288,11 +288,87 @@
                 <span class="prompt-toggle" id="promptToggle">▼</span>
             </div>
             <div class="prompt-content" id="promptContent">
-                <textarea class="prompt-textarea" id="promptText">RETAINED EXECUTIVE SEARCH STANDARD — Korn Ferry/Spencer Stuart Level
+                <textarea class="prompt-textarea" id="promptText">**RETAINED EXECUTIVE SEARCH STANDARD — Korn Ferry/Spencer Stuart Level**
 
-MANDATORY FIRST STEP: Read Ahmed_Nasr_CV_Reference.md completely. Every metric, title, and date must match this file exactly. If uncertain, ASK — do not guess.
+**MANDATORY FIRST STEP:** Read Ahmed_Nasr_CV_Reference.md completely. Every metric, title, and date must match this file exactly. If uncertain, ASK — do not guess.
 
-YOUR OUTPUT (JSON format):
+---
+
+## **ATS OPTIMIZATION PROTOCOL (90%+ Score Target)**
+
+**CRITICAL ATS RULES — Non-Negotiable:**
+
+### **1. KEYWORD DENSITY & PLACEMENT**
+```
+TIER 1 (Must appear 3-5x): Job title keywords, core skills from JD
+TIER 2 (Must appear 2-3x): Secondary requirements, industry terms
+TIER 3 (Must appear 1-2x): Nice-to-have skills, related competencies
+PLACEMENT HIERARCHY:
+  1. Summary/Profile (weight: 40%)
+  2. Skills/Core Competencies section (weight: 30%)
+  3. Job descriptions (weight: 20%)
+  4. Certifications/Education (weight: 10%)
+```
+
+### **2. ATS-SAFE FORMATTING**
+**✓ ALLOWED:**
+- Standard fonts: Arial, Calibri, Helvetica, Georgia
+- Simple bullets: • or -
+- Bold text: **text** or <strong>text</strong>
+- Standard headers: Experience, Education, Skills
+- Clear date formats: MM/YYYY or Month YYYY
+- Phone: +XXX XX XXX XXXX (international format)
+
+**✗ FORBIDDEN:**
+- Tables for main content (skills tables OK if simple 2-column)
+- Text boxes, headers/footers with critical info
+- Images, logos, graphics
+- Columns for experience section
+- Special characters: ♦, ►, ✓ in body text
+- Underlines (ATS may misread)
+
+### **3. KEYWORD EXTRACTION PROCESS**
+**STEP-BY-STEP:**
+1. **Hard Skills** — Extract every technical term, tool, methodology
+2. **Soft Skills** — Extract leadership/management terms
+3. **Industry Terms** — Extract sector-specific language
+4. **Job-Specific Verbs** — Extract action verbs from requirements
+5. **Certifications** — Match EXACT certification names
+
+### **4. ATS SCORE CALCULATION**
+```
+SCORING FORMULA:
+- Keyword Match (50%): (Matched keywords / Total keywords) × 0.5
+- Format Compliance (25%): (Readable fields / Total fields) × 0.25
+- Completeness (15%): (Filled sections / Required sections) × 0.15
+- Experience Match (10%): (Years matched / Years required) × 0.10
+
+TARGET: 85%+ for interview consideration
+EXCELLENT: 90%+ for top-tier roles
+```
+
+### **5. SECTION-SPECIFIC ATS OPTIMIZATION**
+
+**PROFESSIONAL SUMMARY (200-250 words):**
+- First sentence: [Job Title] + [Years] + [Industry]
+- Include 8-12 JD keywords naturally
+- Mirror JD language structure
+
+**CORE COMPETENCIES (Skills Section):**
+- **Format:** Two-column table OR bullet list (ATS-safe)
+- **Content:** 20-30 keywords from JD
+- **Order:** Exact matches first, then related skills
+- **Include:** Acronym AND full term if JD has both
+
+**EXPERIENCE SECTION:**
+- **Job titles:** Match JD terminology where truthful
+- **Bullet Structure:** [Action Verb] + [Task] + [Metric] + [JD Keyword]
+- **Keyword Distribution:** 3-5 JD keywords per role, front-loaded in first 2 bullets
+
+---
+
+## **YOUR OUTPUT (JSON format):**
+```json
 {
   "cv_markdown": "ATS-optimized executive CV",
   "cover_letter": "Executive cover letter",
@@ -302,40 +378,89 @@ YOUR OUTPUT (JSON format):
   "recruiter_message": "LinkedIn outreach template",
   "application_strategy": "Week-by-week plan",
   "fit_assessment": "STRONG|MODERATE|WEAK with detailed rationale",
-  "cv_html": "Complete HTML with embedded CSS"
+  "cv_html": "Complete HTML with embedded CSS",
+  "ats_analysis": {
+    "overall_score": "89%",
+    "breakdown": {
+      "keyword_density": "92% (46/50 keywords matched)",
+      "format_compliance": "95% (ATS-safe formatting)",
+      "completeness": "100% (all sections present)",
+      "experience_match": "90% (15 years vs 10+ required)"
+    },
+    "matched_keywords": ["keyword1", "keyword2", ...],
+    "missing_critical": ["keyword_x (appears 3x in JD)", ...],
+    "optimization_applied": [
+      "Relocated 'digital transformation' from bullet 5 to bullet 1",
+      "Added 'Agile/Scrum' to Core Competencies (appeared 4x in JD)",
+      "Changed 'Programme' to 'Program' to match JD spelling"
+    ]
+  }
 }
+```
 
-ABSOLUTE RULES — Violation = Regenerate:
+---
+
+## **ABSOLUTE RULES — Violation = Regenerate:**
 • No invented metrics (only use: 95%, 233x, 3x, AED 50M, 50+ teams, 300+ projects, 500K+, 40%, 6 months, 2M+, 10+ hospitals, 100+ person, 25-person, 3 countries)
 • Titles EXACT: "Acting PMO & Regional Engagement Lead", "Country Manager", "Head of Strategy & VP Advisor", "PMO Section Head", "Product Development Manager"
 • MBA status: "In Progress" (never "completed")
 • Certifications ALL: PMP, CSM, CBAP, MCAD, MCP, Lean Six Sigma
 • Contact: +971 50 281 4490 AND +20 128 573 3991
+• **ATS RULE:** Every keyword from JD must appear at least 1x if relevant to Ahmed's experience
 
-TAILORING REQUIREMENT — Each CV.html MUST be UNIQUE:
-[ ] Extract keywords from THIS job description
-[ ] Generate summary highlighting matching achievements FIRST
-[ ] Reorder bullets: most relevant to THIS job at top
-[ ] Wrap 3-5 matching bullets in <strong> tags
-[ ] Add relevance context: "— directly matching your [requirement]"
-[ ] Include banner: "✓ TAILORED FOR: [Company] — [Role]"
-[ ] Add job-specific competency tables (Banking/FinTech, Data/Analytics if relevant)
-[ ] PROOF: If this were a different job, would this CV look different? If NO → regenerate.
+---
 
-SENIORITY LANGUAGE:
+## **TAILORING REQUIREMENT — Each CV.html MUST be UNIQUE:**
+- [ ] Extract keywords from THIS job description (use ATS extraction process above)
+- [ ] **ATS CHECK:** Run keyword density analysis — is each Tier 1 keyword appearing 3-5x?
+- [ ] Generate summary highlighting matching achievements FIRST (with 8-12 JD keywords)
+- [ ] Reorder bullets: most relevant to THIS job at top
+- [ ] Wrap 3-5 matching bullets in <strong> tags
+- [ ] Add relevance context: "— directly matching your [requirement]"
+- [ ] Include banner: "✓ TAILORED FOR: [Company] — [Role] | ATS Score: XX%"
+- [ ] Add job-specific competency tables (Banking/FinTech, Data/Analytics if relevant)
+- [ ] **ATS TEST:** If this were uploaded to Greenhouse/Workday/Taleo, would it parse correctly?
+- [ ] **PROOF:** If this were a different job, would this CV look different? If NO → regenerate.
+
+---
+
+## **SENIORITY LANGUAGE:**
 "Responsible for" → "Accountable for" | "Helped" → "Drove" | "Participated" → "Led"
 "Supported" → "Owned" | "Assisted" → "Directed" | "Managed team" → "Built and led 50+ person organization"
 
-VALIDATION CHECKLIST (Before output):
-□ All metrics verified against Ahmed_Nasr_CV_Reference.md
-□ Titles match CV exactly
-□ "Acting" included in PMO title
-□ Both phone numbers present
-□ CV.html has dynamic content (not copy-paste from previous)
-□ Banner shows THIS company and THIS role
-□ At least 3 bullets have <strong> emphasis for THIS job
+---
 
-QUALITY TEST: Would Korn Ferry present this to a Fortune 500 board? If NO → rewrite.</textarea>
+## **VALIDATION CHECKLIST (Before output):**
+
+**Content Accuracy:**
+- □ All metrics verified against Ahmed_Nasr_CV_Reference.md
+- □ Titles match CV exactly
+- □ "Acting" included in PMO title
+- □ Both phone numbers present
+
+**ATS Optimization:**
+- □ **Keyword density:** Tier 1 keywords appear 3-5x
+- □ **Format compliance:** No tables in experience, no text boxes
+- □ **Parsing test:** All dates, titles, companies in standard format
+- □ **Skills section:** 20-30 keywords from JD, both acronyms and full terms
+- □ **File name:** AhmedNasr_CV_[CompanyName]_[Role].pdf (ATS-friendly)
+
+**Customization:**
+- □ CV.html has dynamic content (not copy-paste from previous)
+- □ Banner shows THIS company, THIS role, AND ATS score
+- □ At least 3 bullets have <strong> emphasis for THIS job
+- □ Summary mirrors JD language structure
+
+---
+
+## **QUALITY TEST:**
+1. **Executive Standard:** Would Korn Ferry present this to a Fortune 500 board? If NO → rewrite.
+2. **ATS Standard:** Would this score 85%+ in an ATS parser? If NO → add keywords.
+3. **Uniqueness Test:** Is this CV different from the last one generated? If NO → regenerate with job-specific focus.
+
+---
+
+**END OF PROMPT**</textarea>
             </div>
         </div>
         
