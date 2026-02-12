@@ -108,6 +108,216 @@ app.post('/api/process-job', async (req, res) => {
 });
 
 // Elite Executive Package Generator
+// Helper functions for tailored CV generation
+function extractJobKeywords(jd) {
+    const keywords = [];
+    const patterns = [
+        /\b(onboarding|transformation|digital|strategy|leadership|governance)\b/gi,
+        /\b(KYC|AML|CDD|compliance|risk)\b/gi,
+        /\b(stakeholder|management|PMO|programme|project)\b/gi,
+        /\b(customer experience|journey mapping|CX|UX)\b/gi,
+        /\b(data-driven|analytics|metrics|KPIs?)\b/gi,
+        /\b(change management|training|L&D|capability)\b/gi,
+        /\b(retail banking|fintech|healthcare|technology)\b/gi,
+        /\b(channels|digital channels|alternate channels|kiosks)\b/gi
+    ];
+    
+    patterns.forEach(pattern => {
+        const matches = jd.match(pattern);
+        if (matches) {
+            keywords.push(...matches.map(m => m.toLowerCase()));
+        }
+    });
+    
+    return [...new Set(keywords)];
+}
+
+function generateTailoredSummary(jd, role, company) {
+    // Base summary
+    let summary = `Strategic executive with 20+ years leading enterprise-scale digital transformation, customer onboarding optimization, and alternate channel development across banking, FinTech, healthcare, and technology sectors.`;
+    
+    // Add job-specific emphasis
+    if (jd.toLowerCase().includes('onboarding')) {
+        summary += ` Proven track record redesigning end-to-end onboarding journeys, achieving 95% digital adoption and reducing friction by 40%.`;
+    }
+    
+    if (jd.toLowerCase().includes('stakeholder') || jd.toLowerCase().includes('governance')) {
+        summary += ` Expert in cross-functional stakeholder alignment and programme governance across Technology, Operations, Risk, and Compliance functions.`;
+    }
+    
+    if (jd.toLowerCase().includes('channel') || jd.toLowerCase().includes('acquisition')) {
+        summary += ` Delivered alternate channel strategies scaling operations 233x and managing 500K+ user platforms.`;
+    }
+    
+    if (jd.toLowerCase().includes('banking') || jd.toLowerCase().includes('fintech')) {
+        summary += ` Deep experience in regulated financial services with KYC/AML compliance and CBUAE regulatory frameworks.`;
+    }
+    
+    summary += ` Proven P&L ownership and regional leadership across KSA, UAE, and Egypt, delivering measurable business outcomes that drive revenue growth and operational excellence.`;
+    
+    return summary;
+}
+
+function generateTailoredCompetencies(keywords) {
+    // Always include these core competencies
+    let competencies = `| Strategic Leadership | Customer Experience |
+|---|---|
+| • Regional P&L Ownership | • Onboarding Transformation |
+| • C-Suite & Board Engagement | • Journey Mapping & Optimization |
+| • Cross-Functional Leadership (50+) | • Conversion & Friction Reduction |
+
+| Programme Governance | Channel Strategy |
+|---|---|
+| • PMO Establishment | • Alternate Channel Development |
+| • Regulatory Compliance (JCI, HIMSS, MOH, KYC/AML) | • Digital Partnerships |
+| • Risk & Compliance Integration | • Go-to-Market Strategy |`;
+    
+    // Add job-specific competencies based on keywords
+    if (keywords.some(k => k.includes('banking') || k.includes('fintech'))) {
+        competencies += `
+
+| Banking & FinTech |
+|---|
+| • KYC/AML/CDD Compliance | • Retail Banking Operations |
+| • Digital Identity Solutions | • Regulatory Frameworks |`;
+    }
+    
+    if (keywords.some(k => k.includes('data') || k.includes('analytics'))) {
+        competencies += `
+
+| Data & Analytics |
+|---|
+| • Data-Driven Decision Making | • Predictive Analytics |
+| • Performance Dashboards | • AI/ML Integration |`;
+    }
+    
+    return competencies;
+}
+
+function generateTailoredExperience(jd, keywords) {
+    // Reorder and emphasize bullets based on job requirements
+    const isBanking = jd.toLowerCase().includes('banking') || jd.toLowerCase().includes('fintech');
+    const isOnboarding = jd.toLowerCase().includes('onboarding');
+    const isChannels = jd.toLowerCase().includes('channel') || jd.toLowerCase().includes('acquisition');
+    
+    let experience = '';
+    
+    // TopMed - always first as current role
+    experience += `
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Acting PMO & Regional Engagement Lead</div>
+                        <div class="job-date">June 2024 – Present</div>
+                    </div>
+                    <div class="company">TopMed (Saudi German Hospital Group)</div>
+                    <div class="job-context">Leading HealthTech Digital Transformation Across KSA, UAE, Egypt</div>
+                    <ul class="bullets">`;
+    
+    if (isOnboarding) {
+        experience += `
+                        <li><strong>Lead end-to-end customer onboarding transformation</strong> across 3 countries, modernizing journeys across physical branches, digital platforms, and mobile touchpoints—directly relevant to your onboarding mandate</li>`;
+    } else {
+        experience += `
+                        <li>Spearhead enterprise-wide digital transformation across 3 countries, modernizing customer journeys across physical and digital touchpoints</li>`;
+    }
+    
+    experience += `
+                        <li>Establish structured PMO governance framework ensuring seamless execution of large-scale initiatives</li>
+                        <li>Drive 95% adoption of digital engagement platforms within 6 months; ensure JCI, HIMSS, MOH compliance</li>
+                        <li>Lead cross-functional teams across technology, operations, clinical, risk, and compliance functions</li>
+                    </ul>
+                </div>`;
+    
+    // PaySky - emphasize if banking/fintech
+    experience += `
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Country Manager</div>
+                        <div class="job-date">April 2021 – January 2022</div>
+                    </div>
+                    <div class="company">PaySky & Yalla SuperApp (Acquired by ENPO)</div>
+                    <div class="job-context">P&L Leadership for Retail Banking & FinTech SuperApp Platform</div>
+                    <ul class="bullets">`;
+    
+    if (isBanking) {
+        experience += `
+                        <li><strong>Managed full P&L for digital financial services platform</strong> in regulated FinTech environment, driving revenue growth while ensuring KYC/AML compliance—directly applicable to banking regulatory requirements</li>`;
+    } else {
+        experience += `
+                        <li>Managed full P&L for digital financial services platform, driving revenue growth and profitability</li>`;
+    }
+    
+    if (isChannels) {
+        experience += `
+                        <li><strong>Built Go-to-Market organization establishing B2B/B2C acquisition channels</strong> including digital partnerships and kiosk-led strategies—matching your alternate channel requirements</li>`;
+    } else {
+        experience += `
+                        <li>Built Go-to-Market organization establishing B2B/B2C acquisition channels including digital partnerships and kiosk-led strategies</li>`;
+    }
+    
+    experience += `
+                        <li>Delivered merchant onboarding platform serving 500K+ businesses; reduced friction by 40%</li>
+                        <li>Partnered with HR/L&D to align training with product and policy updates</li>
+                    </ul>
+                </div>`;
+    
+    // Add remaining roles
+    experience += `
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Head of Strategy & VP Advisor</div>
+                        <div class="job-date">January 2020 – December 2021</div>
+                    </div>
+                    <div class="company">El Araby Group</div>
+                    <ul class="bullets">
+                        <li>Led SAP S/4HANA and Hospital ERP implementations</li>
+                        <li>Developed multi-year strategic business plans ensuring executive alignment</li>
+                        <li>Advised C-suite on operations, marketing, and financial planning</li>
+                    </ul>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">PMO Section Head</div>
+                        <div class="job-date">September 2014 – June 2017</div>
+                    </div>
+                    <div class="company">EMP (Acquired by Network International)</div>
+                    <ul class="bullets">
+                        <li>Built PMO function from inception managing portfolio for African banking clients and central bank integrations</li>
+                        <li>Developed strategic dashboard contributing to 3x profit increase</li>
+                        <li>Managed 300 concurrent projects via Microsoft Project Server cloud infrastructure</li>
+                    </ul>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Product Development Manager</div>
+                        <div class="job-date">June 2017 – May 2018</div>
+                    </div>
+                    <div class="company">Talabat, Delivery Hero SE</div>
+                    <ul class="bullets">
+                        <li>Scaled daily order volume from 30,000 to 7 million through customer journey optimization</li>
+                        <li>Established Egypt office operations building engineering and product functions</li>
+                        <li>Implemented tracking analytics harmonizing processes across channels</li>
+                    </ul>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Project Manager</div>
+                        <div class="job-date">2007 – 2014</div>
+                    </div>
+                    <div class="company">Intel Corporation & Microsoft</div>
+                    <ul class="bullets">
+                        <li>Successfully managed and delivered multiple software engineering projects and regional engagement initiatives across enterprise technology environments</li>
+                        <li>Demonstrated strong leadership and technical skills working with global technology leaders</li>
+                        <li>Delivered solutions for enterprise and government clients across MENA region</li>
+                    </ul>
+                </div>`;
+    
+    return experience;
+}
+
 // Wait for GitHub Pages deployment
 function waitForDeployment(url, maxAttempts = 30, delayMs = 2000) {
     return new Promise((resolve, reject) => {
@@ -285,6 +495,16 @@ async function addToGoogleSheet({ company, role, jobUrl, cvUrl, folder }) {
 
 function generateProfessionalHTMLCV(jd, company, role) {
     const cleanRole = role.replace(/_/g, ' ');
+    const cleanCompany = company.replace(/_/g, ' ');
+    
+    // Extract keywords from job description
+    const keywords = extractJobKeywords(jd);
+    
+    // Generate tailored content based on job
+    const tailoredSummary = generateTailoredSummary(jd, cleanRole, cleanCompany);
+    const tailoredExperience = generateTailoredExperience(jd, keywords);
+    const tailoredCompetencies = generateTailoredCompetencies(keywords);
+    
     return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -530,6 +750,10 @@ function generateProfessionalHTMLCV(jd, company, role) {
 </head>
 <body>
     <div class="container">
+        <div class="tailored-banner" style="background: #000; color: #fff; padding: 10px; text-align: center; font-size: 0.85rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;">
+            ✓ TAILORED FOR: ${cleanCompany} — ${cleanRole}
+        </div>
+        
         <div class="header">
             <h1 class="name">AHMED NASR</h1>
             <div class="title">MBA (In Progress), PMP, CSM, CBAP, MCAD, MCP, Lean Six Sigma</div>
@@ -543,141 +767,20 @@ function generateProfessionalHTMLCV(jd, company, role) {
             <div class="section">
                 <h2 class="section-title">Executive Profile</h2>
                 <p class="summary">
-                    Strategic executive with 20+ years leading enterprise-scale digital transformation, customer onboarding optimization, and alternate channel development across banking, FinTech, healthcare, and technology sectors. Proven P&L ownership and regional leadership across KSA, UAE, and Egypt. Track record of 95% technology adoption, 233x operational scale, and 40% friction reduction. Expertise in establishing PMO governance, scaling digital and physical customer touchpoints, and delivering regulatory-compliant solutions that enhance conversion and drive revenue growth.
+                    ${tailoredSummary}
                 </p>
             </div>
             
             <div class="section">
                 <h2 class="section-title">Core Competencies</h2>
-                <div class="competencies">
-                    <div class="competency-card">
-                        <h4>Strategic Leadership</h4>
-                        <ul>
-                            <li>Regional P&L Ownership</li>
-                            <li>C-Suite Advisory</li>
-                            <li>Board Engagement</li>
-                            <li>Change Management</li>
-                            <li>Cross-Functional Leadership</li>
-                        </ul>
-                    </div>
-                    <div class="competency-card">
-                        <h4>Customer Experience</h4>
-                        <ul>
-                            <li>Onboarding Transformation</li>
-                            <li>Journey Mapping</li>
-                            <li>Touchpoint Optimization</li>
-                            <li>Conversion Optimization</li>
-                            <li>Pain Point Elimination</li>
-                        </ul>
-                    </div>
-                    <div class="competency-card">
-                        <h4>Channel Strategy</h4>
-                        <ul>
-                            <li>Alternate Channel Development</li>
-                            <li>Digital Partnerships</li>
-                            <li>Kiosk Strategy</li>
-                            <li>Go-to-Market</li>
-                            <li>Mobile & Assisted Channels</li>
-                        </ul>
-                    </div>
-                    <div class="competency-card">
-                        <h4>Governance & Compliance</h4>
-                        <ul>
-                            <li>PMO Establishment</li>
-                            <li>Regulatory Compliance</li>
-                            <li>KYC/AML</li>
-                            <li>Risk Management</li>
-                            <li>Policy Simplification</li>
-                        </ul>
-                    </div>
+                <div class="competencies-table" style="font-size: 0.9rem;">
+                    ${tailoredCompetencies}
                 </div>
             </div>
             
             <div class="section">
                 <h2 class="section-title">Professional Experience</h2>
-                
-                <div class="job">
-                    <div class="job-header">
-                        <div class="job-title">Acting PMO & Regional Engagement Lead</div>
-                        <div class="job-date">June 2024 – Present</div>
-                    </div>
-                    <div class="company">TopMed (Saudi German Hospital Group)</div>
-                    <div class="job-context">Leading HealthTech Digital Transformation Across KSA, UAE, Egypt</div>
-                    <ul class="bullets">
-                        <li>Spearhead enterprise-wide digital transformation across 3 countries, modernizing customer onboarding journeys across physical and digital touchpoints</li>
-                        <li>Establish structured PMO governance framework ensuring seamless execution of large-scale initiatives</li>
-                        <li>Lead strategic partnerships with U.S. technology providers integrating AI-driven analytics and digital identity solutions</li>
-                        <li>Drive 95% adoption of patient digital engagement platforms within 6 months; ensure JCI, HIMSS, MOH compliance</li>
-                        <li>Lead cross-functional teams across technology, operations, clinical, risk, and compliance functions</li>
-                    </ul>
-                </div>
-                
-                <div class="job">
-                    <div class="job-header">
-                        <div class="job-title">Country Manager</div>
-                        <div class="job-date">April 2021 – January 2022</div>
-                    </div>
-                    <div class="company">PaySky & Yalla SuperApp (Acquired by ENPO)</div>
-                    <div class="job-context">P&L Leadership for Retail Banking & FinTech SuperApp Platform</div>
-                    <ul class="bullets">
-                        <li>Managed full P&L responsibility for digital financial services platform, driving revenue growth and profitability</li>
-                        <li>Built Go-to-Market organization establishing B2B/B2C acquisition channels including digital partnerships and kiosk-led strategies</li>
-                        <li>Delivered merchant onboarding platform serving 500K+ businesses; reduced friction by 40%</li>
-                        <li>Ensured KYC/AML compliance across customer segments; partnered with HR/L&D on training alignment</li>
-                    </ul>
-                </div>
-                
-                <div class="job">
-                    <div class="job-header">
-                        <div class="job-title">Head of Strategy & VP Advisor</div>
-                        <div class="job-date">January 2020 – December 2021</div>
-                    </div>
-                    <div class="company">El Araby Group</div>
-                    <ul class="bullets">
-                        <li>Led SAP S/4HANA and Hospital ERP implementations</li>
-                        <li>Developed multi-year strategic business plans ensuring executive alignment</li>
-                        <li>Advised C-suite on operations, marketing, and financial planning</li>
-                    </ul>
-                </div>
-                
-                <div class="job">
-                    <div class="job-header">
-                        <div class="job-title">PMO Section Head</div>
-                        <div class="job-date">September 2014 – June 2017</div>
-                    </div>
-                    <div class="company">EMP (Acquired by Network International)</div>
-                    <ul class="bullets">
-                        <li>Built PMO function from inception managing portfolio for African banking clients and central bank integrations</li>
-                        <li>Developed strategic dashboard contributing to 3x profit increase</li>
-                        <li>Managed 300 concurrent projects via Microsoft Project Server cloud infrastructure</li>
-                    </ul>
-                </div>
-                
-                <div class="job">
-                    <div class="job-header">
-                        <div class="job-title">Product Development Manager</div>
-                        <div class="job-date">June 2017 – May 2018</div>
-                    </div>
-                    <div class="company">Talabat, Delivery Hero SE</div>
-                    <ul class="bullets">
-                        <li>Scaled daily order volume from 30,000 to 7 million through customer journey optimization</li>
-                        <li>Established Egypt office operations building engineering and product functions</li>
-                        <li>Implemented tracking analytics harmonizing processes across channels</li>
-                    </ul>
-                </div>
-                
-                <div class="job">
-                    <div class="job-header">
-                        <div class="job-title">Project Manager</div>
-                        <div class="job-date">2007 – 2014</div>
-                    </div>
-                    <div class="company">Intel Corporation & Microsoft</div>
-                    <ul class="bullets">
-                        <li>Successfully managed and delivered multiple software engineering projects and regional engagement initiatives across enterprise technology environments</li>
-                        <li>Demonstrated strong leadership and technical skills working with global technology leaders</li>
-                        <li>Delivered solutions for enterprise and government clients across MENA region</li>
-                    </ul>
-                </div>
+                ${tailoredExperience}
             </div>
             
             <div class="section">
