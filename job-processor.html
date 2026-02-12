@@ -335,16 +335,50 @@ PLACEMENT HIERARCHY:
 4. **Job-Specific Verbs** — Extract action verbs from requirements
 5. **Certifications** — Match EXACT certification names
 
-### **4. ATS SCORE CALCULATION**
-```
-SCORING FORMULA:
-- Keyword Match (50%): (Matched keywords / Total keywords) × 0.5
-- Format Compliance (25%): (Readable fields / Total fields) × 0.25
-- Completeness (15%): (Filled sections / Required sections) × 0.15
-- Experience Match (10%): (Years matched / Years required) × 0.10
+### **4. ENHANCED ATS SCORE CALCULATION (Honest Assessment)**
 
-TARGET: 85%+ for interview consideration
-EXCELLENT: 90%+ for top-tier roles
+**SCORING METHODOLOGY (Be Realistic, Not Optimistic):**
+
+```
+STEP 1: REQUIREMENT CATEGORIZATION
+├── MUST-HAVE (Critical): 60% of total score
+│   ├── Years of experience required
+│   ├── Specific certifications (ITIL, PMP, etc.)
+│   ├── Technical skills (ServiceNow, specific tools)
+│   └── Domain expertise (Change Management, Data Center, etc.)
+│
+├── IMPORTANT (Significant): 25% of total score
+│   ├── Leadership scope (team size, budget)
+│   ├── Industry knowledge
+│   └── Methodologies (Agile, ITIL, etc.)
+│
+└── NICE-TO-HAVE (Bonus): 15% of total score
+    ├── Additional certifications
+    ├── Nice-to-have tools
+    └── Preferred but not required skills
+
+STEP 2: SEMANTIC MATCHING (Not Just Keyword Presence)
+❌ WRONG: "Leadership" present anywhere = full points
+✅ RIGHT: 
+   - "ITIL Change Management leadership" = 10/10 points
+   - "General team leadership" = 3/10 points (not specific)
+   - "Digital transformation leadership" = 2/10 points (wrong domain)
+
+STEP 3: EXPERIENCE DEPTH CHECK
+Compare Ahmed's ACTUAL experience vs JD requirement:
+- JD: "8+ years Change Management" → Ahmed: "0 years specific" = 0 points
+- JD: "2+ years data center" → Ahmed: "0 years" = 0 points
+- JD: "ITIL v4 certified" → Ahmed: "Not certified" = 0 points
+- JD: "PMO leadership" → Ahmed: "Acting PMO & Regional Engagement Lead" = 10/10 points
+
+STEP 4: HONEST SCORE CALCULATION
+Formula: (Must-Have × 0.6) + (Important × 0.25) + (Nice × 0.15)
+
+REALISTIC SCORE RANGES:
+- 85-100%: Strong fit, apply confidently
+- 70-84%: Moderate fit, address gaps in cover letter
+- 50-69%: Weak fit, consider reframing or skip
+- Below 50%: Poor fit, don't apply
 ```
 
 ### **5. SECTION-SPECIFIC ATS OPTIMIZATION**
@@ -380,19 +414,103 @@ EXCELLENT: 90%+ for top-tier roles
   "fit_assessment": "STRONG|MODERATE|WEAK with detailed rationale",
   "cv_html": "Complete HTML with embedded CSS",
   "ats_analysis": {
-    "overall_score": "89%",
+    "overall_score": "45/100 ⚠️ MODERATE FIT",
+    "honest_assessment": "Strong executive credentials but gaps in specific requirements",
+    "hiring_likelihood": "15-20% — specialized role requires expertise Ahmed doesn't demonstrate",
+    
     "breakdown": {
-      "keyword_density": "92% (46/50 keywords matched)",
-      "format_compliance": "95% (ATS-safe formatting)",
-      "completeness": "100% (all sections present)",
-      "experience_match": "90% (15 years vs 10+ required)"
+      "must_have_critical": "35% (21/60 points)",
+      "important_significant": "65% (16.25/25 points)",
+      "nice_to_have_bonus": "80% (12/15 points)"
     },
-    "matched_keywords": ["keyword1", "keyword2", ...],
-    "missing_critical": ["keyword_x (appears 3x in JD)", ...],
+    
+    "requirement_analysis": {
+      "critical_gaps": [
+        {
+          "requirement": "ITIL Foundation v4 Certification",
+          "jd_frequency": "Required",
+          "cv_evidence": "Not mentioned",
+          "gap_severity": "🔴 CRITICAL",
+          "points": "0/10"
+        },
+        {
+          "requirement": "8+ years Change Management",
+          "jd_frequency": "Must-have",
+          "cv_evidence": "0 years specific (has transformation, not ITIL change)",
+          "gap_severity": "🔴 CRITICAL", 
+          "points": "0/10"
+        },
+        {
+          "requirement": "Data Center Experience",
+          "jd_frequency": "Required 2+ years",
+          "cv_evidence": "0 years (healthcare/FinTech, not infrastructure)",
+          "gap_severity": "🔴 CRITICAL",
+          "points": "0/10"
+        },
+        {
+          "requirement": "ITSM Platform Expertise (ServiceNow/Cherwell/BMC)",
+          "jd_frequency": "Required",
+          "cv_evidence": "Not mentioned",
+          "gap_severity": "🔴 CRITICAL",
+          "points": "0/10"
+        },
+        {
+          "requirement": "CAB Leadership (Change Advisory Board)",
+          "jd_frequency": "Required",
+          "cv_evidence": "No evidence (has steering committees, not CAB)",
+          "gap_severity": "🔴 CRITICAL",
+          "points": "0/10"
+        }
+      ],
+      
+      "strengths": [
+        {
+          "requirement": "PMO Establishment & Governance",
+          "cv_evidence": "Acting PMO Lead, built PMO at EMP, structured frameworks",
+          "match_quality": "✅ STRONG",
+          "points": "10/10"
+        },
+        {
+          "requirement": "Cross-functional Team Leadership",
+          "cv_evidence": "Led 50+ person teams across 3 countries",
+          "match_quality": "✅ STRONG",
+          "points": "10/10"
+        },
+        {
+          "requirement": "Risk Management & Compliance",
+          "cv_evidence": "JCI, HIMSS, MOH, KYC/AML compliance experience",
+          "match_quality": "✅ STRONG",
+          "points": "8/10"
+        },
+        {
+          "requirement": "PMP Certification",
+          "cv_evidence": "PMP Certified (listed)",
+          "match_quality": "✅ EXACT MATCH",
+          "points": "10/10"
+        }
+      ]
+    },
+    
+    "semantic_analysis": {
+      "wrong_specialization": "Ahmed's background is in Product/Digital/PMO leadership, NOT Change Management/Infrastructure",
+      "transferable_skills": "PMO governance, stakeholder management, compliance frameworks could transfer",
+      "missing_domain": "No evidence of ITIL processes, CABs, data centers, or critical infrastructure",
+      "recommendation": "Apply only if willing to pivot career; otherwise target PMO/Digital roles instead"
+    },
+    
+    "gap_closure_strategy": [
+      "IMMEDIATE: Obtain ITIL Foundation v4 certification (2-4 weeks study)",
+      "REFRAME: Highlight 'change control processes' in PMO work as Change Management adjacent",
+      "BRIDGE: Emphasize 'infrastructure governance' if any cloud/data center exposure exists",
+      "HONEST: Address gap in cover letter — 'My PMO experience required rigorous change control...'",
+      "ALTERNATIVE: Skip this role; apply to PMO/Transformation roles where fit is 85%+"
+    ],
+    
     "optimization_applied": [
-      "Relocated 'digital transformation' from bullet 5 to bullet 1",
-      "Added 'Agile/Scrum' to Core Competencies (appeared 4x in JD)",
-      "Changed 'Programme' to 'Program' to match JD spelling"
+      "Added 'governance' and 'compliance' emphasis (transferable strengths)",
+      "Highlighted PMO framework building as evidence of process discipline",
+      "Added 'change control' language to bridge gap (not same as Change Management, but adjacent)",
+      "Reframed 'steering committees' as closest equivalent to CAB experience"
     ]
   }
 }
@@ -412,13 +530,18 @@ EXCELLENT: 90%+ for top-tier roles
 
 ## **TAILORING REQUIREMENT — Each CV.html MUST be UNIQUE:**
 - [ ] Extract keywords from THIS job description (use ATS extraction process above)
-- [ ] **ATS CHECK:** Run keyword density analysis — is each Tier 1 keyword appearing 3-5x?
+- [ ] **HONEST ATS CHECK:** Compare Ahmed's actual experience vs JD requirements (not just keyword presence)
+  - Categorize: Must-Have (Critical) / Important / Nice-to-Have
+  - Calculate realistic score (don't inflate)
+  - Flag critical gaps honestly (🔴 CRITICAL / 🟡 MODERATE / ✅ MATCH)
 - [ ] Generate summary highlighting matching achievements FIRST (with 8-12 JD keywords)
 - [ ] Reorder bullets: most relevant to THIS job at top
 - [ ] Wrap 3-5 matching bullets in <strong> tags
 - [ ] Add relevance context: "— directly matching your [requirement]"
-- [ ] Include banner: "✓ TAILORED FOR: [Company] — [Role] | ATS Score: XX%"
+- [ ] Include banner: "✓ TAILORED FOR: [Company] — [Role] | ATS Score: XX% | Fit: Strong/Moderate/Weak"
 - [ ] Add job-specific competency tables (Banking/FinTech, Data/Analytics if relevant)
+- [ ] **GAP CLOSURE:** Provide specific recommendations to address critical gaps (certifications, reframing, etc.)
+- [ ] **HONESTY CHECK:** Would you recommend applying based on this fit assessment?
 - [ ] **ATS TEST:** If this were uploaded to Greenhouse/Workday/Taleo, would it parse correctly?
 - [ ] **PROOF:** If this were a different job, would this CV look different? If NO → regenerate.
 
@@ -455,8 +578,15 @@ EXCELLENT: 90%+ for top-tier roles
 
 ## **QUALITY TEST:**
 1. **Executive Standard:** Would Korn Ferry present this to a Fortune 500 board? If NO → rewrite.
-2. **ATS Standard:** Would this score 85%+ in an ATS parser? If NO → add keywords.
+2. **ATS Standard:** Would this score 85%+ in an ATS parser? 
+   - **IMPORTANT:** Score must be HONEST, not inflated
+   - If missing critical requirements → score should reflect gaps (50-70% range)
+   - Don't give 85%+ if must-have requirements are missing
 3. **Uniqueness Test:** Is this CV different from the last one generated? If NO → regenerate with job-specific focus.
+4. **Honesty Test:** Would you tell Ahmed to apply to this job based on this score?
+   - If score < 60% → Flag as "Weak fit, consider skipping"
+   - If score 60-75% → Flag as "Moderate fit, address gaps in cover letter"  
+   - If score > 75% → Flag as "Strong fit, apply confidently"
 
 ---
 
