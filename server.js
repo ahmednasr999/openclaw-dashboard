@@ -46,6 +46,64 @@ function extractRole(jd) {
     return match ? match[1].trim().replace(/\s+/g, '_').slice(0, 30) : 'Position';
 }
 
+// Extract ATS score from keyword match section
+function extractATSScore(section3Content) {
+    const scoreMatch = section3Content.match(/ATS Match Score[:\s]+(\d+)/i);
+    if (scoreMatch) {
+        return parseInt(scoreMatch[1]);
+    }
+    // Try to extract from range format (e.g., "85-90%")
+    const rangeMatch = section3Content.match(/(\d+)[-\s]*(\d+)?\s*%/);
+    if (rangeMatch) {
+        const low = parseInt(rangeMatch[1]);
+        const high = rangeMatch[2] ? parseInt(rangeMatch[2]) : low;
+        return Math.round((low + high) / 2); // Return average
+    }
+    return 75; // Default if not found
+}
+
+// Extract fit rating from fit assessment section
+function extractFitRating(section8Content) {
+    const ratingMatch = section8Content.match(/Rating[:\s]+(STRONG|MODERATE|WEAK)/i);
+    if (ratingMatch) {
+        return ratingMatch[1].toUpperCase();
+    }
+    // Check for emoji indicators
+    if (section8Content.includes('🔴') || section8Content.includes('⚠️')) {
+        return 'WEAK';
+    }
+    if (section8Content.includes('🟡')) {
+        return 'MODERATE';
+    }
+    if (section8Content.includes('✅') || section8Content.includes('✓')) {
+        return 'STRONG';
+    }
+    return 'MODERATE'; // Default
+}
+
+// Extract honest assessment summary
+function extractAssessment(section3Content, section8Content) {
+    // Look for explicit assessment
+    const assessmentMatch = section8Content.match(/(?:Recommendation|Assessment|Verdict)[:\s]+([^\n]+)/i);
+    if (assessmentMatch) {
+        return assessmentMatch[1].trim();
+    }
+    
+    // Look for critical gaps
+    const criticalGapMatch = section3Content.match(/critical gaps?[:\s]+([^\n]+)/i);
+    if (criticalGapMatch) {
+        return `Critical gaps identified: ${criticalGapMatch[1].trim()}`;
+    }
+    
+    // Check for hiring likelihood
+    const hiringMatch = section8Content.match(/hiring likelihood[:\s]+(\d+[-\s]*\d*%)/i);
+    if (hiringMatch) {
+        return `Hiring likelihood: ${hiringMatch[1]}. Consider if effort matches probability.`;
+    }
+    
+    return 'Review the full analysis package for detailed gap assessment.';
+}
+
 function commitToGitHub(outputDir, folderName) {
     try {
         execSync('git add -A', { cwd: '.' });
@@ -169,11 +227,19 @@ app.post('/api/process-job', async (req, res) => {
         
         console.log('✅ Complete! Package generated:', folderName);
         
+        // Extract ATS score from the generated content
+        const atsScore = extractATSScore(elitePackage.section3);
+        const fitRating = extractFitRating(elitePackage.section8);
+        const atsAssessment = extractAssessment(elitePackage.section3, elitePackage.section8);
+        
         res.json({
             success: true,
             cvUrl: cvUrl,
             folder: folderName,
             packageUrl: packageUrl,
+            atsScore: atsScore,
+            fitRating: fitRating,
+            atsAssessment: atsAssessment,
             message: 'Elite Executive Package generated successfully'
         });
         

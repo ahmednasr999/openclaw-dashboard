@@ -675,11 +675,61 @@ REALISTIC SCORE RANGES:
                 
                 if (response.ok) {
                     const result = await response.json();
+                    
+                    // Parse ATS score and determine color/status
+                    const atsScore = result.atsScore || 'N/A';
+                    const fitRating = result.fitRating || 'Unknown';
+                    let scoreColor = '#2ed573'; // green
+                    let scoreMessage = 'Strong fit - Apply confidently!';
+                    let showWarning = false;
+                    
+                    if (atsScore < 60) {
+                        scoreColor = '#ff4757'; // red
+                        scoreMessage = '⚠️ Weak fit - Consider skipping this role';
+                        showWarning = true;
+                    } else if (atsScore < 75) {
+                        scoreColor = '#ffa502'; // orange
+                        scoreMessage = '⚠️ Moderate fit - Address gaps in cover letter';
+                        showWarning = true;
+                    }
+                    
                     status.className = 'status success';
                     status.innerHTML = `
-                        ✅ <strong>CV Generated Successfully!</strong><br>
-                        <a href="${result.cvUrl}" target="_blank" style="color: #2ed573;">View Your Tailored CV</a><br>
-                        <small>Files saved to: ${result.folder}</small>
+                        <div style="margin-bottom: 15px;">
+                            <div style="font-size: 1.3rem; font-weight: bold; color: ${scoreColor};">
+                                ATS Score: ${atsScore}/100
+                            </div>
+                            <div style="font-size: 1rem; color: ${scoreColor}; margin-top: 5px;">
+                                Fit Rating: ${fitRating}
+                            </div>
+                            <div style="font-size: 0.9rem; color: #fff; margin-top: 10px; padding: 10px; background: rgba(0,0,0,0.3); border-radius: 8px;">
+                                ${scoreMessage}
+                            </div>
+                        </div>
+                        
+                        ${showWarning ? `
+                        <div style="margin: 15px 0; padding: 10px; background: rgba(255, 71, 87, 0.2); border: 1px solid #ff4757; border-radius: 8px;">
+                            <strong>⚠️ Honest Assessment:</strong><br>
+                            ${result.atsAssessment || 'This role requires specific expertise not demonstrated in your CV. Consider if the effort is worth the low probability of success.'}
+                        </div>
+                        ` : ''}
+                        
+                        <div style="margin-top: 15px;">
+                            <a href="${result.cvUrl}" target="_blank" style="display: inline-block; background: ${scoreColor}; color: #fff; padding: 12px 25px; border-radius: 8px; text-decoration: none; font-weight: 600; margin-right: 10px;">
+                                ${showWarning ? '⚠️ Download CV Anyway' : '✓ View Your Tailored CV'}
+                            </a>
+                            
+                            ${showWarning ? `
+                            <button onclick="document.getElementById('jobForm').reset(); document.getElementById('status').style.display='none'; document.getElementById('submitBtn').disabled=false; document.getElementById('submitBtn').textContent='🚀 Generate Tailored CV';" style="background: transparent; color: #ff4757; border: 2px solid #ff4757; padding: 12px 25px; border-radius: 8px; cursor: pointer; font-weight: 600;">
+                                ✗ Skip This Job
+                            </button>
+                            ` : ''}
+                        </div>
+                        
+                        <div style="margin-top: 15px; font-size: 0.85rem; color: rgba(255,255,255,0.7);">
+                            Files saved to: ${result.folder}<br>
+                            <a href="${result.packageUrl}" target="_blank" style="color: #74b9ff;">View Full Analysis Package</a>
+                        </div>
                     `;
                     submitBtn.textContent = '✓ Complete';
                 } else {
