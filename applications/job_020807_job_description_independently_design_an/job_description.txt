@@ -1,0 +1,24 @@
+Job URL: https://www.linkedin.com/jobs/view/4360950417/?eBP=NON_CHARGEABLE_CHANNEL&refId=5r4Sw6mjT7mEo0MLa9bUJA%3D%3D&trackingId=gZsgYxuTQoBcAhHo6UwnPg%3D%3D&trk=flagship3_top_applicant_jobs_collection
+
+Job Description
+
+
+
+Independently design and implement end-to-end AI, Generative AI, and agentic AI solutions, taking full technical ownership of architecture, development, deployment, and optimization.
+Architect and build frameworks for autonomous AI agents capable of planning, reasoning, and executing multi-step tasks using APIs, tools, enterprise systems, and external services.
+Develop robust integration patterns for LLMs, ML models, and agentic systems with enterprise applications, including databases, APIs, and legacy platforms, enabling intelligent tool-using agents.
+Hands-on model selection, fine-tuning, evaluation, and optimization for LLMs, transformer-based architectures, diffusion models, and other advanced AI models.
+Design advanced system components such as agent memory, reflection loops, vector stores, and long-horizon planning mechanisms to support scalable agentic intelligence.
+Work closely with cross-functional stakeholders to identify automation and augmentation opportunities, translating business needs into AI architecture and actionable solution designs.
+Implement strong governance, compliance, and Responsible AI controls, ensuring transparency, security, and safe deployment of all autonomous and generative systems.
+Define and operationalize monitoring, observability, and performance evaluation frameworks for continuous improvement of AI models and agentic systems.
+Drive cost optimization strategies across AI infrastructure, training pipelines, inference workloads, and cloud resource utilization.
+Ensure measurable value realization by validating that implemented AI solutions deliver tangible business impact and align with organizational objectives.
+Collaborate with the AI/ML engineering community and provide technical direction when needed, while maintaining personal hands-on ownership of core development activities.
+
+
+Qualifications
+
+Master’s degree (preferred) or Bachelor’s degree in Computer Science, Artificial Intelligence, Machine Learning, Data Science, or a related technical field.
+Advanced certifications or specialization in AI/ML architecture, cloud platforms, or generative AI technologies are a plus
+Certification in Databricks, Azure AI Engineer or Azure Data Scientist Associate
