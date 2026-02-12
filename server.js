@@ -15,6 +15,7 @@ const {
     generateTailoredCompetencies,
     generateTailoredExperience,
     generateProfessionalHTMLCV,
+    generateEliteExecutivePackage,
     waitForDeployment
 } = require('./server_helpers');
 
