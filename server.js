@@ -261,64 +261,56 @@ function generateProfessionalHTMLCV(jd, company, role) {
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            background: #fff;
             min-height: 100vh;
             padding: 40px 20px;
             line-height: 1.6;
-            color: #2c3e50;
+            color: #000;
         }
         
         .container {
             max-width: 900px;
             margin: 0 auto;
             background: #fff;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
-            border-radius: 12px;
-            overflow: hidden;
         }
         
         .header {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: #fff;
-            padding: 40px;
             text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #000;
+            margin-bottom: 25px;
         }
         
         .name {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             font-weight: 700;
             margin-bottom: 8px;
             letter-spacing: 1px;
+            text-transform: uppercase;
         }
         
         .title {
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: 400;
-            opacity: 0.95;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
+            color: #333;
         }
         
         .contact {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
             font-size: 0.9rem;
-            opacity: 0.9;
+            color: #333;
         }
         
         .contact span {
-            display: flex;
-            align-items: center;
-            gap: 5px;
+            margin: 0 10px;
         }
         
         .content {
-            padding: 40px;
+            padding: 0;
         }
         
         .section {
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
         
         .section:last-child {
@@ -326,250 +318,163 @@ function generateProfessionalHTMLCV(jd, company, role) {
         }
         
         .section-title {
-            color: #1e3c72;
-            font-size: 1.2rem;
-            font-weight: 600;
+            font-size: 1.1rem;
+            font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 15px;
-            padding-bottom: 8px;
-            border-bottom: 3px solid #e94560;
-            display: inline-block;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #000;
         }
         
         .summary {
             font-size: 1rem;
-            line-height: 1.8;
-            color: #34495e;
+            line-height: 1.7;
             text-align: justify;
         }
         
         .competencies {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
-        
-        .competency-card {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #e94560;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
         }
         
         .competency-card h4 {
-            color: #1e3c72;
             font-size: 0.95rem;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             font-weight: 600;
         }
         
         .competency-card ul {
             list-style: none;
             font-size: 0.9rem;
-            color: #555;
         }
         
         .competency-card li {
-            margin-bottom: 5px;
-            padding-left: 15px;
+            margin-bottom: 3px;
+            padding-left: 12px;
             position: relative;
         }
         
         .competency-card li:before {
-            content: "▸";
-            color: #e94560;
+            content: "-";
             position: absolute;
             left: 0;
         }
         
         .job {
-            margin-bottom: 25px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #ecf0f1;
-        }
-        
-        .job:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
+            margin-bottom: 20px;
         }
         
         .job-header {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            margin-bottom: 8px;
-            flex-wrap: wrap;
-            gap: 10px;
+            margin-bottom: 3px;
         }
         
         .job-title {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             font-weight: 600;
-            color: #2c3e50;
         }
         
         .job-date {
             font-size: 0.9rem;
-            color: #7f8c8d;
-            font-weight: 500;
+            color: #333;
         }
         
         .company {
-            color: #e94560;
             font-size: 0.95rem;
             font-weight: 600;
-            margin-bottom: 10px;
+            margin-bottom: 3px;
         }
         
         .job-context {
             font-style: italic;
-            color: #7f8c8d;
             font-size: 0.9rem;
-            margin-bottom: 10px;
+            color: #333;
+            margin-bottom: 8px;
         }
         
         .bullets {
-            list-style: none;
-            padding-left: 0;
+            list-style: disc;
+            padding-left: 20px;
         }
         
         .bullets li {
-            margin-bottom: 8px;
-            padding-left: 20px;
-            position: relative;
-            line-height: 1.6;
-            color: #444;
-        }
-        
-        .bullets li:before {
-            content: "•";
-            color: #e94560;
-            font-weight: bold;
-            position: absolute;
-            left: 0;
-            font-size: 1.2rem;
-            line-height: 1.2;
+            margin-bottom: 5px;
+            line-height: 1.5;
         }
         
         .education {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
+            padding: 0;
         }
         
         .education-item {
-            margin-bottom: 15px;
-        }
-        
-        .education-item:last-child {
-            margin-bottom: 0;
+            margin-bottom: 10px;
         }
         
         .education-item strong {
-            color: #1e3c72;
             display: block;
-            margin-bottom: 3px;
+            margin-bottom: 2px;
         }
         
         .certs {
-            margin-top: 15px;
-            padding-top: 15px;
-            border-top: 1px solid #ddd;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #ccc;
         }
         
         .cert-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 8px;
+            margin-top: 5px;
         }
         
         .cert-badge {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: #fff;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 500;
+            display: inline-block;
+            margin-right: 15px;
+            font-size: 0.9rem;
         }
         
         .print-btn {
             position: fixed;
             bottom: 30px;
             right: 30px;
-            background: linear-gradient(135deg, #e94560 0%, #ff6b6b 100%);
+            background: #000;
             color: #fff;
             border: none;
-            padding: 15px 30px;
-            border-radius: 50px;
+            padding: 12px 25px;
+            border-radius: 4px;
             cursor: pointer;
-            font-size: 1rem;
-            font-weight: 600;
-            box-shadow: 0 5px 20px rgba(233, 69, 96, 0.4);
-            transition: all 0.3s ease;
+            font-size: 0.95rem;
+            font-weight: 500;
             z-index: 1000;
         }
         
         .print-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(233, 69, 96, 0.5);
+            background: #333;
         }
         
         @media print {
             body {
-                background: #fff;
                 padding: 0;
-            }
-            
-            .container {
-                box-shadow: none;
-                border-radius: 0;
             }
             
             .print-btn {
                 display: none;
             }
-            
-            .header {
-                background: #1e3c72 !important;
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-            }
-            
-            .competency-card {
-                border-left: 4px solid #e94560 !important;
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-            }
-            
-            .cert-badge {
-                background: #1e3c72 !important;
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-            }
         }
         
         @media (max-width: 768px) {
-            .header {
-                padding: 30px 20px;
-            }
-            
             .name {
-                font-size: 1.8rem;
-            }
-            
-            .content {
-                padding: 30px 20px;
-            }
-            
-            .job-header {
-                flex-direction: column;
+                font-size: 1.6rem;
             }
             
             .competencies {
                 grid-template-columns: 1fr;
+            }
+            
+            .job-header {
+                flex-direction: column;
             }
         }
     </style>
@@ -581,10 +486,7 @@ function generateProfessionalHTMLCV(jd, company, role) {
             <div class="title">MBA (In Progress), PMP, CSM, CBAP, MCAD, MCP, Lean Six Sigma</div>
             <div class="title">Acting PMO & Regional Engagement Lead | Digital Transformation | Customer Experience</div>
             <div class="contact">
-                <span>📍 Dubai, UAE</span>
-                <span>📱 +971 50 281 4490</span>
-                <span>✉️ ahmednasr999@gmail.com</span>
-                <span>🔗 linkedin.com/in/ahmednasr</span>
+                Dubai, UAE | +971 50 281 4490 | ahmednasr999@gmail.com | linkedin.com/in/ahmednasr
             </div>
         </div>
         
@@ -743,7 +645,7 @@ function generateProfessionalHTMLCV(jd, company, role) {
         </div>
     </div>
     
-    <button class="print-btn" onclick="window.print()">🖨️ Save as PDF</button>
+    <button class="print-btn" onclick="window.print()">Save as PDF</button>
 </body>
 </html>`;
 }
