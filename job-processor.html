@@ -438,7 +438,7 @@ After generating all sections, produce one final version that merges improvement
             submitBtn.disabled = true;
             submitBtn.textContent = '⏳ Processing...';
             status.className = 'status processing';
-            status.textContent = '🔍 Analyzing job description and generating tailored CV...';
+            status.innerHTML = '🔍 Analyzing job description...<br><small>This may take 30-60 seconds while we deploy your CV</small>';
             
             try {
                 // Send to backend

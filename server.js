@@ -5,6 +5,7 @@ const { execSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 const { google } = require('googleapis');
+const https = require('https');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -73,6 +74,10 @@ app.post('/api/process-job', async (req, res) => {
         const cvUrl = `https://ahmednasr999.github.io/openclaw-dashboard/${outputDir}/CV.html`;
         const packageUrl = `https://ahmednasr999.github.io/openclaw-dashboard/${outputDir}/FULL_PACKAGE.md`;
         
+        // Wait for GitHub Pages deployment
+        console.log('⏳ Waiting for GitHub Pages deployment...');
+        await waitForDeployment(cvUrl);
+        
         // Add to Google Sheet
         console.log('📊 Adding to Google Sheet...');
         await addToGoogleSheet({
@@ -103,6 +108,39 @@ app.post('/api/process-job', async (req, res) => {
 });
 
 // Elite Executive Package Generator
+// Wait for GitHub Pages deployment
+function waitForDeployment(url, maxAttempts = 30, delayMs = 2000) {
+    return new Promise((resolve, reject) => {
+        let attempts = 0;
+        
+        const check = () => {
+            attempts++;
+            console.log(`  Checking deployment... attempt ${attempts}/${maxAttempts}`);
+            
+            https.get(url, (res) => {
+                if (res.statusCode === 200) {
+                    console.log('  ✅ Deployment complete!');
+                    resolve();
+                } else if (attempts < maxAttempts) {
+                    setTimeout(check, delayMs);
+                } else {
+                    console.log('  ⚠️ Deployment timeout - link may still work shortly');
+                    resolve(); // Resolve anyway, don't block
+                }
+            }).on('error', () => {
+                if (attempts < maxAttempts) {
+                    setTimeout(check, delayMs);
+                } else {
+                    console.log('  ⚠️ Deployment timeout - link may still work shortly');
+                    resolve(); // Resolve anyway, don't block
+                }
+            });
+        };
+        
+        check();
+    });
+}
+
 function generateEliteExecutivePackage(jd, jobUrl) {
     const company = extractCompany(jd);
     const role = extractRole(jd).replace(/_/g, ' ');
