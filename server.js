@@ -455,6 +455,16 @@ function generateProfessionalHTMLCV(jd, company, role) {
             background: #333;
         }
         
+        @page {
+            margin: 0.5in;
+            @top-center { content: none; }
+            @top-left { content: none; }
+            @top-right { content: none; }
+            @bottom-center { content: none; }
+            @bottom-left { content: none; }
+            @bottom-right { content: none; }
+        }
+        
         @media print {
             body {
                 padding: 0;
