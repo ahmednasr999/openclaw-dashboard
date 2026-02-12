@@ -57,6 +57,47 @@ function commitToGitHub(outputDir, folderName) {
     }
 }
 
+async function addToGoogleSheet({ company, role, jobUrl, cvUrl, folder }) {
+    try {
+        const auth = new google.auth.GoogleAuth({
+            keyFile: '/home/openclaw/.openclaw/config/google-sheets-sa.json',
+            scopes: ['https://www.googleapis.com/auth/spreadsheets']
+        });
+        
+        const client = await auth.getClient();
+        const sheets = google.sheets({ version: 'v4', auth: client });
+        
+        const spreadsheetId = '10HMT9ZjFk9eUyCJJR5iVxMXS6iGV6RBS2XTL1K6DhrA';
+        
+        const rowData = [
+            company,
+            role,
+            'CV Ready',
+            'High',
+            'Yes',
+            'No',
+            '',
+            '',
+            jobUrl,
+            'Elite Executive Package Generated',
+            '20+ years, Digital transformation, PMP, CSM, CBAP, MBA',
+            '',
+            cvUrl
+        ];
+        
+        await sheets.spreadsheets.values.append({
+            spreadsheetId: spreadsheetId,
+            range: 'Sheet1!A:M',
+            valueInputOption: 'RAW',
+            requestBody: { values: [rowData] }
+        });
+        
+        console.log('✅ Added to Google Sheet');
+    } catch (error) {
+        console.error('❌ Google Sheet error:', error.message);
+    }
+}
+
 // Process job endpoint
 app.post('/api/process-job', async (req, res) => {
     const { jobUrl, jobDescription, timestamp } = req.body;
