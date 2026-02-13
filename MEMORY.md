@@ -50,10 +50,11 @@ _Your curated wisdom. Distilled from daily logs, not raw data._
 - Current: Building thought leadership to attract inbound
 
 **Job Search Campaign**
-- Status: 6 applications pipeline
-- CVs ready: Emirates NBD, DHA, Dubai Future Foundation, Delphi Consulting
-- Applied: 1 (Confidential Company)
+- Status: 25 CVs tailored, 16 strong applications ready
+- CVs ready: Director Business Ops (91%), EPMO Director (88-92%), Delivery Excellence Lead (88-90%), DIB (87%), Change Mgmt (86%), Head Corp Biz Dev (84%), CTO NBFC (79%), Business Excellence (80-85%), Senior Director PMO (75-80%), and 7 others
+- Applied: Multiple submitted
 - Target: $130K-150K, UAE/GCC
+- System: LinkedIn CV Factory (fully operational)
 
 **LinkedIn Growth**
 - Status: 2K followers → 6K target
@@ -63,9 +64,10 @@ _Your curated wisdom. Distilled from daily logs, not raw data._
 
 **OpenClaw 9-Agent System**
 - Status: Fully operational
-- Skills: 52 installed + 2 custom built
-- Custom skills: cv-tailor, knowledge-base
+- Skills: 52 built-in + 5 custom
+- Custom skills: linkedin-cv-factory, think-deep-human-ai, model-switcher, job-tracker, knowledge-base
 - Automations: Bi-weekly health checks, content calendar
+- Model: Kimi K2.5 only (local models removed after failed experiment)
 
 ---
 
@@ -115,6 +117,8 @@ _Your curated wisdom. Distilled from daily logs, not raw data._
 - Check JSON syntax when editing config files
 - Verify skill repo structure before installing
 - Don't let tokens expire during batch operations
+- **Local LLMs on CPU-only VPS don't work** - 2-core/8GB RAM insufficient for interactive use (20+ min response times)
+- **Always test model speed before building infrastructure** - Test first, configure later
 
 ---
 
@@ -138,6 +142,10 @@ _Your curated wisdom. Distilled from daily logs, not raw data._
 | 2026-02-10 | 9-agent system operational |
 | 2026-02-10 | CV-tailor skill built |
 | 2026-02-10 | Knowledge-base skill built |
+| 2026-02-12 | Local LLM experiment FAILED - 20+ min inference, unusable |
+| 2026-02-12 | CV Arsenal renamed to LinkedIn CV Factory |
+| 2026-02-12 | think-deep-human-ai skill created |
+| 2026-02-12 | model-switcher skill created (not usable) |
 | 2026-02-24 | Next health check (cron) |
 
 ---
